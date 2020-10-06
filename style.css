@@ -149,7 +149,7 @@ header{
     align-items: flex-start;
     flex-direction: row;
     width: 1390px;
-	height: 90px;
+	height: 80px;
 	left: 25px;
   top: 16px;
   margin-left: 20px;
@@ -228,9 +228,9 @@ nav ul li:active{
 	background-color: #FFFFFF;
 	font-weight: bold;
 	left: 5px;
-  top: 130px;
+  	top: 110px;
 	width: 1390px;
-	height: 90px;
+	height: 70px;
   margin-left: 20px;
 }
 .localise p{
