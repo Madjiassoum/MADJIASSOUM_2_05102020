@@ -815,7 +815,7 @@ footer{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap-reverse;
-    margin-left: -115px;
+    margin-left: -105px;
     margin-top: 20px;
   }
   nav ul li{
@@ -892,6 +892,7 @@ footer{
     position: absolute;
     max-width: 414px;
     top: 195px;
+    left: 42px;
     height: auto;
     margin-bottom: 20px;
     margin-top: 12px;
@@ -984,10 +985,10 @@ footer{
     flex-direction: column;
     max-width: 414px;
     height: auto;
-    left: 50px;
+    left: 60px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
 
   }
   .fa-chart-line{
