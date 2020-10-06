@@ -786,10 +786,10 @@ footer{
 @media (max-width: 767px){
 	body{
 		max-width: 767px;
-    margin: auto;
-    height: auto;
-    background-color: #F2F2F2;
-    font-family: 'Raleway', sans-serif, Verdana, Arial;
+	    margin: auto;
+	    height: auto;
+	    background-color: #F2F2F2;
+	    font-family: 'Raleway', sans-serif, Verdana, Arial;
 	}
 
   /*  En-tete de ma page sur mobile*/
@@ -832,7 +832,8 @@ footer{
   }
   #trait_dessus{
   border-top: 2px blue solid;
-  width: 140px;
+  width: 100px;
+  margin-left: 100px;
   position: absolute;
   top: 60px;
   left: 2px;
@@ -841,6 +842,7 @@ footer{
   
   /* partie localisation de la ville sur mobile*/
   .localise{
+  	top: 0px;
     display: flex;
     max-width: 414px;
     height: auto;
@@ -852,7 +854,7 @@ footer{
   .localise ul{
     display: flex;
     flex-direction: row;  
-    top: 140px;
+    top: 120px;
     width: auto;
     list-style-type: none;
   }
@@ -889,16 +891,17 @@ footer{
   .filtre{
     position: absolute;
     max-width: 414px;
-    top: 45px;
+    top: 195px;
     height: auto;
     margin-bottom: 20px;
     margin-top: 12px;
+    padding-top: 0px;
     font-size: 0.7em;
-    margin-left: auto;
+    margin-left: 0px auto;
     margin-right: auto;
-    left: 36px;
     display: inline-block;
     flex-direction: column;
+    background-color: #FFFFFF;
   }
   .filtre h2{
     
@@ -912,10 +915,9 @@ footer{
   position: absolute;
   flex-direction: row;
   flex-wrap: wrap;
-  left: -10px;
-  width: 300px;
-  margin-left: 0px;
-  top: 40px;
+ margin-left: 10px;
+  width: 280px;
+  top: 10px;
   height: 22px;
   
 }
@@ -928,7 +930,7 @@ footer{
   margin-top: 5px;
   background-color: white;
   border-radius: 45%;
-  height: 22px;
+  height: 23px;
   border: 1px gray solid;
   border-radius: 26px 26px 26px 26px;  
 }
@@ -948,17 +950,21 @@ footer{
   margin-top: 60px;
   margin-bottom: 5px;
 }
+.filtre p span{
+	top: 20px;
+	font-size: 1.1em;
+}
 .fa-info{
   content: "\ea0c";
   background-color: #DEEBFF;
-  color: black;
+  color: blue;
   height:13px;
-  width: 10px;
+  width: 10px; 
   border: 0.1em gray solid;
   font-size: 0.7em;
   margin-right: 5px;
   border-radius: 45%;
-  padding-left: 8px;
+  margin-bottom: 15px;
 
 }
 
@@ -972,11 +978,13 @@ footer{
 
   /*========== Partie: Les Plus populaires sur mobile===========*/
   .libelle-droite{
-    top: 730px;
+  	position: absolute;
+    top: 335px;
     display: flex;
     flex-direction: column;
     max-width: 414px;
     height: auto;
+    left: 50px;
     margin-left: auto;
     margin-right: auto;
     background-color: #F2F2F2;
@@ -1029,9 +1037,11 @@ footer{
 
   /*=============Partie HEBERGEMENT à Marseille =================*/
   .heberge{
+  	position: absolute;
     max-width: 414px;
     height: auto;
-    top: 820px;
+    top: 950px;
+    left: 50px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -1049,7 +1059,7 @@ footer{
   width: 315px;
   top: -17px;
   margin-bottom: 10px;
-  margin-left: 50px;
+  margin-left: 45px;
   margin-top: 0px;  
   padding-bottom: 5px;
   border-radius: 6%;
@@ -1087,16 +1097,21 @@ footer{
 
   /* Container activités à Marseille */
   #activite{
+  	position: absolute;
     max-width: 414px;
     height: auto;
-    top: 2220px;
+    top: 2350px;
     display: inline-flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
+    left: 40px;
     background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
 
+  }
+  .sectio{
+  	background-color: #FFFFFF;
   }
   
 .sectio h2{
@@ -1273,10 +1288,11 @@ footer{
 
   /* Partie PIED DE PAGE */
   footer{
-    top: 2200px;
+    top: 3380px;
     max-width: 414px;
     height: auto;
     margin-right: auto;
+    left: 50px;
     margin-left: auto;
     position: relative;
     display: inline-block;
@@ -1289,7 +1305,7 @@ footer{
     display: inline;
     flex-direction: column;
     width: auto;
-    font-size: 0.51em;
+    font-size: 0.71em;
     margin-left: 20px;
 
   }
@@ -1298,11 +1314,14 @@ footer{
     font-weight: bold;
     color: black;
   }
+  .footer menu-foot .sousfoot ul li{
+  	padding-top: 5px;
+  }
 
   footer .menu-foot ul{
     display: inline-table;
     width: 414px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     list-style-type: none;
   }
   
