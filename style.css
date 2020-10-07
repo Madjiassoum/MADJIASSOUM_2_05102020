@@ -898,7 +898,7 @@ footer{
     margin-top: 12px;
     padding-top: 0px;
     font-size: 0.7em;
-    margin-left: 0px auto;
+    margin-left: auto;
     margin-right: auto;
     display: inline-block;
     flex-direction: column;
