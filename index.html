@@ -28,83 +28,108 @@
                     </div>
 
             </header>
-                <div class="localise">
+                <section class="localise">
                    <p><strong>Trouver votre hébergement pour des vacances de rêve</strong><br>
                    En plein centre ville ou en pleine nature </p>               
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>Marseille, France<i class="fas fa-search"></i> <span class="rechercher">Recherche</span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input class="chercheville" type="search" name="localise" value="Marseille, France" selected />
+                            <i class="fas fa-search"></i> <span class="rechercher">Recherche</span>
                         </li>
                     </ul>                    
-                </div>
+                </section>
 
-            <div class="filtre">
+            <section class="filtre">
                 <h2>Filtres</h2> 
-                <ul>                    
-                    <li><i class="fas fa-money-bill-wave-alt"></i>Economique</li>
-                    <li><i class="fas fa-child"></i>Familial</li>
-                    <li><i class="fas fa-heart"></i>Romantique</li>
-                    <li><i class="fas fa-dog"></i> Animaux Domestiques</li>                       
-                </ul>    
+                <article class="choix-filtre">               
+                    <div class="option">
+                        <i class="fas fa-money-bill-wave-alt" aria-hidden="true"></i>
+                        <input type="search" name="econom" value="Economique" selected />      
+                    </div>
+                
+                    <div class="option">
+                        <i class="fas fa-child"></i>
+                        <input type="search" name="famille" value="Familial" selected />
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-heart"></i>
+                        <input type="search" name="roman" value="Romantique" selected />
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-dog"></i>
+                        <input type="search" name="anima" value="Animaux domestiques" selected />         
+                    </div>                      
+                </article>    
                 <p><i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
-           </div>
+           </section>
 
            <!--  Le libelle de droite contenant LES PLUS POPULAIRES   -->            
-            <div class="libelle-droite" >           
+            <section class="libelle-droite" >           
                <h2>Les plus populaires <i class="fas fa-chart-line"></i><!--<img src="images/chart-line-solid.png" alt="un repere de popularité">--></h2>
                 <div class="cote-droit">
                    <div class="hot">
                         <div class="imag">
                             <a href="#"><img src="images/hebergements/4_small/3emile.jpg" alt="" title="J'envoie vers un lien"></a>
                         </div>
-                        <div class="information">
+                        <div class="information"><a href="#">
                             <p><strong>Hôtel Le soleil du matin</strong><br/>
                             Nuit à partir de 128€<br/><br/><br>
                             <span class="icon-star-full"></span><span class="icon-star-full"></span>
                             <span class="icon-star-full"></span><span class="icon-star-full"></span>
                             <span class="icon-star-full"></span>
-                            </p>    
+                            </p>  
+                            </a>  
                         </div>
                     </div>
                     <div class="hot">
                         <div class="imag">
-                            <a href="#"><img src="images/hebergements/4_small/2aw.jpg" alt="maison de aw-creative" title="J'envoie vers un lien"></a>
+                            <a href="#">
+                                <img src="images/hebergements/4_small/2aw.jpg" alt="maison de aw-creative" title="J'envoie vers un lien">
+                            </a>
                         </div>                
                         <div class="information">
-                            <p><strong>Au coeur de l'eau Chambre d'hôtes</strong><br/>
-                            Nuit à partir de 71€<br/><br/><br>
-                            <span class="icon-star-full"></span><span class="icon-star-full"></span>
-                            <span class="icon-star-full"></span><span class="icon-star-full"></span><i class="fas fa-star"></i>
-                            </p>
+                            <a href="#">
+                                <p><strong>Au coeur de l'eau Chambre d'hôtes</strong><br/>
+                                Nuit à partir de 71€<br/><br/><br>
+                                <span class="icon-star-full"></span><span class="icon-star-full"></span>
+                                <span class="icon-star-full"></span><span class="icon-star-full"></span><i class="fas fa-star"></i>
+                                </p>
+                             </a>
                         </div>  
                     </div>
                     <div class="hot">
                         <div class="imag">
-                            <a href="#"><img src="images/hebergements/4_small/5febrian.jpg" alt="maison de febrian" title="J'envoie vers un lien"></a>
+                            <a href="#">
+                                <img src="images/hebergements/4_small/5febrian.jpg" alt="maison febrian" title="J'envoie vers un lien">
+                            </a>
                         </div>
                         <div class="information">
-                            <strong>Hôtel Tout bleu et Blanc<br></strong>
-                            Nuit à partir de 68 €<br><br><br><br>
-                            <span class="icon-star-full"></span><span class="icon-star-full"></span>
-                            <span  class="icon-star-full"></span><span class="icon-star-full"></span><i class="fas fa-star"></i>                           
+                            <a href="#">
+                                <strong>Hôtel Tout bleu et Blanc<br></strong>
+                                Nuit à partir de 68 €<br><br><br><br>
+                                <span class="icon-star-full"></span><span class="icon-star-full"></span>
+                                <span  class="icon-star-full"></span><span class="icon-star-full"></span><i class="fas fa-star"></i>
+                            </a>                           
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
                
                <!--  La partie contenant les hébergements de Marseille
                         contenant SIX hébergements                 -->
-           <div id="hebergement" class="heberge"> 
+           <section id="hebergement" class="heberge"> 
                 <h2>Hébergements à Marseille</h2>
                 <div class="heb">
                     <figure>
                         <a href="#"><img src="images/hebergements/4_small/7marcus.jpg" alt="maison de aw-creative" title="J'envoie vers un lien"></a>
-                        <figcaption>
+                        <figcaption><a href="#">
                             <strong>Auberge la Cannebière</strong><br/>
                             Nuit à partir de 25€<br>
                             <span class="icon-star-full"></span><span class="icon-star-full"></span>
                             <span class="icon-star-full"></span><span class="icon-star-full"></span>
                             <i class="fas fa-star"></i>
+                        </a>
                         </figcaption>
                     </figure>
                 </div>
@@ -166,18 +191,18 @@
                         </figcaption>                  
                     </figure>
                 </div>
-                <p><strong>Afficher plus</strong></p>
-            </div>
+                <p><strong><a href="#">Afficher plus</a></strong></p>
+            </secttion>
 
         <!--================   Activité à Marseille ======= -->
-            <div id="activite" class="sectio">
+            <section id="activite" class="sectio">
                 <h2 class="act">Activités à Marseille</h2>
                 <div class="hot6" class="hotel">
                     <div class="imag">
                         <a href="images/activites/3_medium/6reno.jpg"><img src="images/activites/4_small/6reno.jpg" alt="maison de reno" title="J'envoie vers un lien"></a>
                     </div>
                     <div class="information">
-                        <strong>Vieux Port</strong>
+                        <h4>Vieux Port</h4>
                     </div>
                 </div>
                 <div class="hot5" class="hotel">
@@ -185,7 +210,7 @@
                         <a href="images/activites/3_medium/5paul.jpg"><img src="images/activites/4_small/5paul.jpg" alt="maison de paul" title="J'envoie vers un lien"></a>
                     </div>
                     <div class="information">
-                        <strong>Fort de Pomègues</strong>
+                        <h4>Fort de Pomègues</h4>
                     </div>
                 </div>       
                 <div class="hot2" class="hotel">  
@@ -193,7 +218,7 @@
                         <a href="images/activites/3_medium/2kevin.jpg"><img src="images/activites/4_small/2kevin.jpg" alt="maison de kevin" title="J'envoie vers un lien"></a>
                     </div>
                     <div class="information">
-                        <strong>Iles du Frioul</strong>
+                        <h4>Iles du Frioul</h4>
                     </div>
                 </div>          
                 <div class="hot3" class="hotel">
@@ -201,7 +226,7 @@
                         <a href="images/activites/3_medium/3kilyan.jpg"><img src="images/activites/4_small/3kilyan.jpg" alt="maison de kilyan" title="J'envoie vers un lien"></a>
                     </div>
                     <div class="information">
-                        <strong>Parc National des Calanques</strong>
+                        <h4>Parc National des Calanques</h4>
                     </div>
                 </div>          
                 <div class="hot1" class="hotel">
@@ -209,7 +234,7 @@
                         <a href="images/activites/3_medium/1florian.jpg"><img src="images/activites/4_small/1florian.jpg" alt="maison florian w" title="J'envoie vers un lien"></a>
                     </div>
                     <div class="information">
-                            <strong>Notre-Dame-de-la-Garde</strong>
+                            <h4>Notre-Dame-de-la-Garde</h4>
                     </div>
                 </div>
                 <div class="hot4" class="hotel">
@@ -217,14 +242,14 @@
                         <a href="images/activites/3_medium/4lena.jpg"><img src="images/activites/4_small/4lena.jpg" alt="maison de lena" title="J'envoie vers un lien"></a>
                     </div>
                     <div class="information">
-                        <strong>Parc Longchamp</strong>
+                        <h4>Parc Longchamp</h4>
                     </div>
                 </div>
-            </div>
+            </section>
 
         <!--========================= Pied de Page====================   -->
         <footer>
-            <div class="menu-foot">
+            <section class="menu-foot">
                 <div class="sousfoot"> 
                     <strong>A propos </strong>                       
                     <ul>                        
@@ -247,7 +272,7 @@
                         <li><a href="#"> Nous contacter </a> </li>
                     </ul>
                 </div>
-            </div>        
+            </section>        
         </footer>
 </body>
 </html>

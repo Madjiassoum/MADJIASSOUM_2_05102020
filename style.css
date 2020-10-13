@@ -148,12 +148,12 @@ header{
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-    width: 1390px;
-	height: 80px;
+    width: 1346px;
+	height: 70px;
 	left: 25px;
   top: 16px;
   margin-left: 20px;
-	background-color: #FFFFFF;
+	background-color: yellow;
 }
 
 /* Menu de navigation */
@@ -222,19 +222,20 @@ nav ul li:active{
 }
 /* zone de recherche de la ville   */
 .localise{
+  position: absolute;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	background-color: #FFFFFF;
+	background-color: green;
 	font-weight: bold;
-	left: 5px;
-  	top: 110px;
-	width: 1390px;
-	height: 70px;
-  margin-left: 20px;
+  top: 60px;
+	width: 1360px;
+	height: 100px;
+  margin: auto;  
+  padding-right: 10px;
 }
 .localise p{
-  font-size: 0.8em;
+  font-size: 0.7em;
+
 }
 .localise p strong{
   font-size: 1.5em;
@@ -246,7 +247,7 @@ nav ul li:active{
 	background-color: #0065FC;
 	color: #F2F2F2;
 	font-weight: bold;
-	margin-left: 5px;
+	
 	text-align: justify;	
 	padding-right: 20px;
 	height: 23px;
@@ -257,17 +258,23 @@ nav ul li:active{
 	border: 18px;
 	margin-right: 10px;
   left: 0px;  
-  padding-left: 3px;
+
   list-style-type: none;
 }
 .localise ul li{
+  position: absolute;
 	float: left;
-	top: 30px;
+	top: 60px;
 	background-color: #F2F2F1;
 	width: auto;
 	height: 30px;
 	border: 1px white solid;
 	border-radius: 17px 17px 17px 17px;	
+}
+.localise ul li input{
+  font-size: 10px;
+  border: none;
+  background-color: #F2F2F2;
 }
 .localise ul li .fa-search{
   display: none;
@@ -282,7 +289,7 @@ nav ul li:active{
 	width: 24px;
   border-radius: 35%;
 	margin-bottom: 5px;
-  color: blue;
+  color: #000000;
   background-color: #DEEBFF;
 }
 .rechercher{
@@ -291,56 +298,68 @@ nav ul li:active{
 
 /* DEBUT Filtre  */
 .filtre{
+  position: absolute;
 	display: flex;
 	flex-direction: column;
-	background-color: #FFFFFF;
-	width: 1390px;
+	background-color: blue;
+	width: 1346px;
 	height: 120px;
-  left: 20px;
-	top: 20px;
-  padding-top: 25px;
-  margin-left: 20px;	
+	top: 165px;
+  margin-left: 0px;
+  margin: auto;	
+  padding-right: 10px;
 }
 .filtre h2{
   padding-top: 8px;
   margin-left: 5px;
-  top: 185px;
+  font-size: 1.1em;
+  top: 15px;
 }
 
-.filtre ul{
-	display: flex;
+.choix-filtre{
   position: absolute;
-	flex-direction: row;
-	top: 190px;
+  display: flex;
+	top: 20px;
+  max-width: 60%;
+  margin-left: 70px;
   height: 15px;
-	margin-left: 50px;
 }
-.filtre ul li{
+.option{
+  display: flex;
+  font-size: 1.3em;
+  width: 25%;
+  align-items: center;
 	font-weight: bold;
-	display: flex;
-	flex-direction: row;
-	padding-right: 10px;
-	padding-top: 0px;	
-	margin-right: 20px;
 	width: auto;
-	background-color: white;
-	border-radius: 45%;
-	height: 25px;
+	background-color: #FFFFFF;
+	height: 30px;
 	border: 1px gray solid;
-	border-radius: 26px 26px 26px 26px;	
+	border-radius: 26px;
 }
-.filtre ul li:hover{
+.option > i{
+  font-size: 15px;
+}
+.option > input{
+  flex: 1;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  border-radius: 25px;
+}
+.filtre .choix-filtre .option:hover{
   background-color: rgb(111,148,208);
   color: white;
   font-weight: bold;
   font-size: 1.1em;
-
 }
 
 .fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{
 
-	height: 20px;
-	width: 22px;
+	height: 25px;
+	width: 25px;
 	border: 0px gray solid;
 	font-size: 1em;
 	margin-right: 5px;
@@ -387,16 +406,18 @@ nav ul li:active{
 			 LIBELLE de Droite    =================*/
 
 .libelle-droite{
+  position: absolute;
+
   width: 380px;
   height: 618px;
-  left: 715px;
+  top: 315px;
+  left: 980px;
   margin-top: 22px;
-  background-color: #F2F2F2;
-  margin-left: 985px; 
-  margin-bottom: 450px;
-  display: flex;
+  background-color: orange;
+  display: inline-block;
   flex-direction: column;
   border: 0px gray solid;
+  margin: auto;
 
 }
 
@@ -434,11 +455,11 @@ nav ul li:active{
 	background-color: #FFFFFF;
 	width: 320px;
 	height: 150px;
-	margin-left: 15px;
+	margin-left: 25px;
 	border-radius: 5%;
 	border: 2px white solid;
 	margin-right: 5px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 /*-------------- L'information qui accompagne la photo----------*/
@@ -461,7 +482,7 @@ nav ul li:active{
 	display: inline-block;
   background-color: #F2F2F2;
   margin-left: 20px;
-  width: 940px;
+  width: 900px;
 	height: 620px;
   margin-right: 390px;
 }
@@ -478,12 +499,12 @@ nav ul li:active{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-right: 25px;
-  	border: 0px white solid;
+	margin-right: 15px;
+  border: 0px white solid;
 	height: 190px;
 	width: 250px;
-  	top: -17px;
-  	margin-bottom: 40px;
+  top: -17px;
+  margin-bottom: 40px;
 	margin-left: 25px;
   padding-bottom: 5px;
 	border-radius: 6%;
@@ -525,12 +546,10 @@ nav ul li:active{
 .sectio{
 	position: absolute;
 	display:flex;
-	margin: 0px;
-	padding: 0px;
-	top: 950px;
-	padding-top: 0px;
-	padding-left: 0px;
-	width: 1440px;
+	margin: auto;
+	
+	top: 650px;
+	width: 1346px;
 	height: 550px;
 	background-color: #FFFFFF;
 }
@@ -548,7 +567,7 @@ nav ul li:active{
 	flex-direction: column;
 	display: inline-block;
 	top: 75px;
-	margin-left: 10px;
+	margin-left: 5px;
   margin-right: 20px;
 	width: 320px;
 	height: 430px;
@@ -558,157 +577,120 @@ nav ul li:active{
   
 }
 .sectio .hot6 .imag img{
-	width: 320px;
+	width: 300px;
 	height: 400px;
   border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
-.sectio .hot6 .information{
-	width: 320px;
-	height: 30px;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-	background-color: white;
-  border: 1px gray solid;
+.information{
+	width: 298px;
+	height: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+	background-color: #DEDBDB;
+  border: 1px white solid;  
+  margin-top: -3px;
+}
+.information h4{
+  position: absolute;
+  margin-left: 10px;
+  padding-bottom: 10px;
 }
 
-.sectio .hot3{
+.hot3{
 	position: absolute;
 	flex-direction: column;
 	display: flex;
 	top: 75px;
-	left: 735px;
+	left: 715px;
 	margin-right: 20px;
-	width: 320px;
+	width: 300px;
 	height: 430px;
 	border: 0px gray solid;
 	border-top: 5px;
 	border-radius: 5%;
 }
-.sectio .hot3 .imag img{
-	width: 320px;
+.hot3 .imag img{
+	width: 300px;
 	height: 400px;
    border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
-.sectio .hot3 .information{
-	width: 319px;
-	height: 30px;
-	background-color: white;
-  border: 1px gray solid;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
-.sectio .hot5 {
+.hot5 {
 	position: absolute;
 	flex-direction: column;
 	top: 75px;
-	margin-left: 370px;
+	margin-left: 350px;
 	margin-right: 10px;
-	width: 320px;
+	width: 300px;
 	height: 200px;
 	border: 0px gray solid;
 	border-top: 0px gray solid;
 	border-bottom: 2px;
 	border-radius: 3%;
 } 
-.sectio .hot5 .information{
-	text-align: left;
-	height: 30px;
-	width: 320px;
-  border: 1px gray solid;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-	background-color: white;
-}
-.sectio .hot5 .imag img{
-	width: 320px;
+.hot5 .imag img{
+	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
 
-.sectio .hot2 {
+.hot2 {
 	position: absolute;
 	top: 305px;
 	display: flex;
 	flex-direction: column;
-	margin-left: 370px;
+	margin-left: 350px;
 	margin-right: 10px;
-	width: 320px;
+	width: 300px;
 	height: 200px;
 	border: 0px gray solid;
 	border-top: 7px;
 	border-radius: 7%;
 }
 
-.sectio .hot2 .imag img{
-	width: 320px;
+.hot2 .imag img{
+	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
-.sectio .hot2 .information{
-	text-align: left;
-	height: 30px;
-	width: 320px;
-  border: 1px gray solid;
-	background-color: white;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
 
-.sectio .hot1{
+.hot1{
 	position: absolute;
 	flex-direction: column;
 	top: 75px;
-	margin-left: 1089px;
-	width: 320px;
+	margin-left: 1069px;
+	width: 300px;
 	height: 200px;
 	border: 0px gray solid;
 	border-top: 7px;
 	border-radius: 7%;
 }
-.sectio .hot1 .imag img{
-	width: 320px;
+.hot1 .imag img{
+	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
-.sectio .hot1 .information{
-	text-align: left;
-	height: 30px;
-	width: 320px;
-	background-color: white;
-  border: 1px gray solid;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
 
-.sectio .hot4 {
+.hot4 {
 	position: absolute;
 	top: 305px;
 	flex-direction: column;
-	left: 1089px;
-	width: 320px;
+	left: 1069px;
+	width: 300px;
 	height: 200px;
 	border: 0px gray solid;
 	border-top: 5px;
 	border-radius: 3px;
 }
-.sectio .hot4 .imag img{
-	width: 320px;
+.hot4 .imag img{
+	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
-}
-.sectio .hot4 .information{
-	width: 320px;
-	height: 30px;
-	background-color: white;
-  border: 1px gray solid;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
 }
 /* ========Fin mise en page des activités à maseille========*/
 
@@ -716,14 +698,14 @@ nav ul li:active{
 /* MISE EN PAGE du PIED de PAGE.*/
 footer{
   position: absolute;
-	display: inline-block;
+	display: flex;
   flex-direction: row;
-  top: 1500px;
-	width: 1440px;
-	height: 150px;
+  top: 1250px;
+	width: 1390px;
+	height: 160px;
   margin-left: auto;
   margin-right: auto;
-	background-color: #F2F2F2;
+	background-color: pink;
 }
 .menu-foot{
 	display: flex;
