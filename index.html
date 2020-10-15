@@ -5,8 +5,8 @@
         <title>site de réservation</title>
         <link rel="stylesheet" href="style.css"/>     
         <link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">            
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400&;display=swap" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css"/>  
         <meta name="viewport" content="widh=device-width, initial-scale=1.0, user-scalable=yes">    
 </head>    
 <body>
@@ -27,15 +27,21 @@
             </div>
         </header>
         <section class="localise">
+        
            <p><strong>Trouver votre hébergement pour des vacances de rêve</strong><br>
-           En plein centre ville ou en pleine nature </p>               
-            <ul>
-                <li>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input class="chercheville" type="search" name="localise" value="Marseille, France" selected />
-                    <i class="fas fa-search"></i> <span class="rechercher"><a href="#">Recherche</a></span>
-                </li>
-            </ul>                    
+           En plein centre ville ou en pleine nature </p>  
+                        
+            <table>
+                <tr>
+                    <td class="ico"><i class="fas fa-map-marker-alt"></i></td>
+                    <td class="inp"><form>
+                    
+                    <input class="chercheville" type="search" name="localise" value="Marseille, France" selected/>
+                </form></td>
+                    <td class="fa-searc"><i class="fas fa-search"></i> <span class="rechercher"><a href="#">Recherche</a></span></td>
+                </tr>
+            </table>
+                               
         </section>
 
             <section class="filtre">
@@ -43,20 +49,28 @@
                 <article class="choix-filtre">               
                     <div class="option">
                         <i class="fas fa-money-bill-wave-alt" aria-hidden="true"></i>
-                        <input type="search" name="econom" value="Economique" selected />      
+                        <form>
+                            <input type="text" name="econom" value="Economique" selected /> 
+                        </form>     
                     </div>
                 
                     <div class="option">
                         <i class="fas fa-child"></i>
-                        <input type="search" name="famille" value="Familial" selected />
+                        <form>
+                            <input type="text" name="famille" value="Familial" selected />
+                        </form>
                     </div>
                     <div class="option">
                         <i class="fas fa-heart"></i>
-                        <input type="search" name="roman" value="Romantique" selected />
+                        <form>
+                            <input type="text" name="roman" value="Romantique" selected />
+                        </form>
                     </div>
                     <div class="option">
                         <i class="fas fa-dog"></i>
-                        <input type="search" name="anima" value="Animaux domestiques" selected />         
+                        <form>
+                            <input type="text" name="anima" value="Animaux domestiques" selected /> 
+                        </form>        
                     </div>                      
                 </article>    
                 <p><i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
@@ -178,7 +192,7 @@
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/9reisetopia.jpg" alt="maison de reisetopia" title="J'envoie vers un lien">
                                 </div>
-                                <div class="inf" background-color="white">
+                                <div class="inf">
                                     <span><strong>Hôtel Les mouettes</strong><br/>
                                         Nuit à partir de 76€
                                     </span>
@@ -241,7 +255,7 @@
                     </li>                    
                 </ul>
                 <p><strong><a href="#">Afficher plus</a></strong></p>
-            </secttion>
+            </section>
 
         <!--================   Activité à Marseille ======= -->
             <section id="activite" class="sectio">
@@ -299,8 +313,9 @@
                         </a>
                     </li>
                     <li class="hot4" class="hotel">
-                        <a href="#">
+                        
                         <div class="imag">
+                            <a href="#">
         
                                 <img src="images/activites/4_small/4lena.jpg" alt="maison de lena" title="J'envoie vers un lien">
                             </a>
@@ -318,26 +333,26 @@
         <footer>
             <section class="menu-foot">
                 <div class="sousfoot"> 
-                    <strong>A propos </strong>                       
-                    <ul>                        
-                    <li> <a href="#"> Fonctionnement du site </a> </li>
-                    <li><a href="#"> Conditions générales de vente </a></li>
-                    <li><a href="#"> Données et confidentialité </a></li>
-                    </ul>
+                    <span><strong>A propos</strong> </span>                       
+                        
+                     <a href="#"> Fonctionnement du site </a>
+                    <a href="#"> Conditions générales de vente </a>
+                    <a href="#"> Données et confidentialité </a>
+                    
                 </div>
                 <div class="sousfoot"> 
-                        <strong>Nos hébergements </strong>   
-                        <ul>                            
-                            <li><a href="#"> Charte qualité </a> </li>
-                            <li><a href="#"> Soumettre votre hôtel </a></li>
-                        </ul>
+                        <span><strong>Nos hébergements</strong> </span>   
+                                               
+                            <a href="#"> Charte qualité </a>
+                            <a href="#"> Soumettre votre hôtel </a>
+                        
                 </div>
                 <div class="sousfoot"> 
-                    <strong> Assistance </strong>                      
-                    <ul>                        
-                        <li><a href="#"> Centre d'aide </a> </li>
-                        <li><a href="#"> Nous contacter </a> </li>
-                    </ul>
+                    <span><strong> Assistance </strong></span>                      
+                                          
+                        <a href="#"> Centre d'aide </a>
+                        <a href="#"> Nous contacter </a>
+                    
                 </div>
             </section>
         </footer>       

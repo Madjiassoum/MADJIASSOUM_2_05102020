@@ -1,10 +1,10 @@
-/*  Pour la recuperer les icones */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 body{
 	background-color: white;
 	max-width: 1440px;
-  margin: auto;
-	height: auto;
+  margin: 0;
+
 	font-family: 'Raleway', sans-serif, Verdana, Arial;
 }
 .contain-page{
@@ -20,6 +20,87 @@ li{
 
 /* en-tête */
 header{
+  display: flex;
+  align-items: center;
+  max-width: 1346px;
+  height: 90px;
+  margin: auto;
+  left: 48px;
+  top: 0px;
+  background-color: yellow;
+}
+
+/* Menu de navigation */
+
+ header nav{
+  color: blue;
+}
+
+img{
+  float: left;
+  margin-left: 10px;
+  height: 60px;
+  width: 120px;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-top: 5px;
+  color: blue;
+  margin-left: 700px;
+}
+
+
+nav ul li{
+  display: flex;
+  flex-direction: row;
+    margin-left: 35px;
+  font-size: 1.5em;
+  color: blue;
+}
+nav ul li strong{
+  font-weight: bold;
+  color: blue;
+  font-size: 1.1em;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: blue;
+}
+nav ul li span{
+  color: rgb(85,85,85);
+}
+
+
+nav ul li:hover{
+  color: blue;
+  text-decoration: none;
+  padding-right: 4px;
+  border-left: 5px solid #0065FC;
+  
+}
+nav ul li:active{
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+
+}
+.upline{
+  display: flex;
+  position: absolute;
+  width: 190px; 
+  left: 935px;
+  right: 300px;
+  top: 0px;
+  margin: auto;
+  height: 0px;
+  color: blue;
+  border: 1px blue solid;
+}
+/*
+header{
 	display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -33,6 +114,7 @@ header{
 }
 
 /* Menu de navigation */
+/*
  header nav{
 	color: blue;
 }
@@ -115,122 +197,152 @@ nav ul li:active{
 }
 .localise span{
 	float: right;
+  padding: 8px;
 	border: 1px gray solid;
 	background-color: #0065FC;
 	color: #F2F2F2;
 	font-weight: bold;
-	
+  line-height: 20px;
+	margin-left: -5px;
 	text-align: justify;	
 	padding-right: 20px;
 	height: 23px;
 	border-radius: 0px 10px 10px 0px;
 	padding-top: 5px;
 }
-.localise ul{
-	border: 18px;
-	margin-right: 10px;
-  left: 0px;  
-
-  list-style-type: none;
+.ico{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
 }
-.localise ul li{
-  position: absolute;
-	float: left;
-	top: 60px;
-	background-color: #F2F2F1;
-	width: auto;
-	height: 30px;
-	border: 1px white solid;
-	border-radius: 17px 17px 17px 17px;	
-}
-.localise ul li input{
+.localise tr td input{
   font-size: 20px;
   border: none;
-  height: 29px;
+  height: 35px;
+  margin-left: -10px;
   background-color: #F2F2F2;
 }
-.localise ul li .fa-search{
+.localise tr td .fa-search{
   display: none;
 }
+input{
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  
+ /* 
+  border: none;
+  height: 35px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000000;
+  border: 1px 0px 1px 0px;
 
-.localise ul li .fa-map-marker-alt{
+  width: 250px;
+  margin-right: 10px;
+  */
+}
+.localise tr td .fa-map-marker-alt{
 	left: 27px;
   padding-top: 6px;
   padding-left: 10px;
-  margin-right: 10px;
-	height: 24px;
-	width: 24px;
+  margin-right: -5px;
+	height: 30px;
+	width: 30px;
   border-radius: 35%;
 	margin-bottom: 5px;
   color: #000000;
   background-color: #DEEBFF;
 }
-.rechercher{
+.rechercher a{
 	padding-left: 10px;
   color: #F2F2F2;
+  text-decoration: none;
+}
+.inp{
+  border: 1px gray solid;
+}
+.fa-searc i{
+  display: none;
 }
 
-ul li a{
+tr td a{
   color: black;
   text-decoration: none;
 }
-.localise ul li:hover{
+.localise tr td:hover{
   padding-right: 5px;
   border-bottom: 3px blue solid;
 }
-.localise ul li input:hover{
-  font-size: 1.5em;
+.localise input:hover{
+  font-size: 1.3em;
   font-weight: bold;
 
 }
 
 /* DEBUT Filtre  */
 .filtre{
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  /*
   position: absolute;
 	display: flex;
 	flex-direction: column;
 	background-color: #FFFFFF;
-	width: 1440px;
+	width: 1340px;
 	height: 120px;
 	top: 161px;
-  margin-left: 0px;
+  margin-left: 20px;
   margin: auto;	
-  padding-right: 10px;
+  padding-right: 0px;
+  */
 }
 .filtre h2{
+  margin: 0 2rem 1rem 0;
+  display: flex;
+  align-items: center;
+  /*
+
   padding-top: 8px;
   margin-left: 5px;
-  font-size: 1.1em;
+  font-size: 1.4em;
   top: 15px;
+  */
 }
 .choix-filtre{
   position: absolute;
   display: flex;
-	top: 20px;
-  max-width: 60%;
+	top: 20px;  
   margin-left: 70px;
   height: 15px;
 }
 .option{
   display: flex;
   font-size: 1.3em;
-  width: 25%;
   align-items: center;
 	font-weight: bold;
 	width: auto;
 	background-color: #F2F2F2;
-	height: 30px;
+	height: 25px;
 	border: 1px gray solid;
 	border-radius: 26px;
 }
 .option > i{
-  font-size: 15px;
+  font-size: 20px;
 }
 .option > input{
   flex: 1;
-  height: 30px;
+  height: 20px;
   border: none;  
-  font-size: 15px;
+  font-size: 10px;
   font-weight: bold;
   margin-left: 10px;
   border-radius: 25px;
@@ -291,6 +403,7 @@ ul li a{
   height: 660px;
   top: 245px;
   left: 950px;
+  padding-right: auto;
   background-color: #F2F2F2;
   display: inline-block;
   flex-direction: column;
@@ -366,6 +479,16 @@ ul li a{
 .notation span{
   color: gray;
 }
+.name-cite a{
+  text-decoration: none;
+  color: black;
+}
+.heb a{
+  text-decoration: none;
+}
+.hotel .information{
+  text-decoration: none;
+}
 
 /*======================FIN LIBELLE dE DROITE ==================*/
 
@@ -391,6 +514,7 @@ ul li a{
   left: 2px;
   top: 530px;
   margin-left: 23px;
+
 }
 /* bac #F2F2F2*/
 #container-heb{
@@ -434,6 +558,7 @@ ul li a{
 
 }
 
+
 .heb{  
   border: 0px gray solid;
 	height: 200px;
@@ -442,6 +567,9 @@ ul li a{
   margin-left: 5px;
   margin-right: 40px;
 	border-radius: 6%;
+}
+.heberge p a{
+  text-decoration: none;
 }
 /*   Fin pour Hégergements à marseille    */
 
@@ -452,7 +580,7 @@ ul li a{
 	display:flex;
 	margin: auto;
 	
-	top: 601px;
+	top: 931px;
 	width: 1346px;
 	height: 550px;
 	background-color: #FFFFFF;
@@ -506,6 +634,7 @@ ul li a{
   margin-left: 10px;
   padding-bottom: 10px;
 }
+
 
 .hot3{
 	position: absolute;
@@ -570,6 +699,7 @@ ul li a{
 }
 .sectio .information{
    height: 30px;
+   text-decoration: none;
 }
 
 .hot2 .information{
@@ -618,48 +748,36 @@ ul li a{
 
 /* MISE EN PAGE du PIED de PAGE.*/
 footer{
-  position: absolute;
-	display: flex;
-  flex-direction: row;
-  top: 1200px;
-	width: 1390px;
-	height: 160px;
-  margin-left: auto;
-  margin-right: auto;
+
 	background-color: #F2F2F2;
 }
 .menu-foot{
-	display: flex;
-	flex-direction: row;
-	float: left;
+  display: flex;
+  flex-direction: row;
+  top: 1540px;
+  width: 1346px;
+  height: 160px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
 
 }
-.menu-foot .sousfoot{
+.sousfoot{
+  width: 30%;
 	display: flex;
 	flex-direction: column;
 	margin-right: 205px;
 	padding-left: 10px;
-	padding-top: 25px;
+	padding-top: 25px;	
 }
-.menu-foot .sousfoot strong{
-  font-size: 1.5em;
-}
-.menu-foot .sousfoot ul{
-	padding-left: 2px;
-  list-style-type: none;
-}
-.menu-foot .sousfoot ul li{
-	margin-left: 0px;
-	margin-right: 50px;
-}
-.menu-foot .sousfoot ul li a{
+
+.menu-foot .sousfoot a{
 	text-decoration: none;
 	color: black;
 }
-.menu-foot .sousfoot ul li a:hover{
+.sousfoot a: hover{
 	text-decoration: none;
 	font-style: normal;
-
 }
 
 
@@ -667,11 +785,11 @@ footer{
 /* UTILISATION DU RESPONSIVE  */
 
 /*  ICI grands écrans jusqu'à 1280px  */
-@media (min-width: 1389px){
+@media screen and(min-width: 1389px){
 	body{
 		background-color: #FFFFFF;
 		}
-  .container{
+  .contain-page{
     width: 1440px;
     height: 1024px;
     margin-left: 20px;
@@ -681,19 +799,28 @@ footer{
 }
 
 
-@media (min-width: 768px) and (max-width: 1388px){
+@media screen and(min-width: 768px) and (max-width: 1388px){
 	body{
 		background-color: #DEEBFF;
 	}
 }
-@media (max-width: 767px){
+@media screen and(max-width: 414px){
 	body{
-		max-width: 767px;
 	    margin: auto;
 	    height: auto;
-	    background-color: #F2F2F2;
+	    background-color: orange;
 	    font-family: 'Raleway', sans-serif, Verdana, Arial;
 	}
+  .container-page{
+    display: flex;
+    flex-direction: column;
+    max-width: 414px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+
+
+  }
 
   /*  En-tete de ma page sur mobile*/
   
@@ -714,15 +841,25 @@ footer{
     margin-left: 20px;
     color: blue;
 }
+header nav{
+  position: absolute;
+  background-color: red;
+  width: 400px;
+  margin-left: 20px;
+  margin-right: 600px;
+}
+
   header nav ul{
+
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap-reverse;
-    margin-left: -105px;
     margin-top: 20px;
   }
+
   nav ul li{
-    margin-right: 135px;
+    margin-right: 5px;
   }
   header nav ul li strong{
     position: relative;
@@ -744,6 +881,7 @@ footer{
   
   
   /* partie localisation de la ville sur mobile*/
+  /*
   .localise{
   	top: 0px;
     display: flex;
@@ -791,6 +929,7 @@ footer{
 }
 
   /* Partie concernant les filtres sur mobile*/
+  /*
   .filtre{
     position: absolute;
     max-width: 414px;
@@ -879,18 +1018,17 @@ footer{
   font-size: 1.1em;
 }
 
-
+*/
   /*========== Partie: Les Plus populaires sur mobile===========*/
+  
   .libelle-droite{
   	position: absolute;
-    top: 335px;
+    top: 935px;
     display: flex;
     flex-direction: column;
     max-width: 414px;
-    height: auto;
     left: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     background-color: #FFFFFF;
 
   }
@@ -910,6 +1048,7 @@ footer{
   margin-left: 10px;
 }
   /*  réglage de la taille des photos sur mobile  */
+  /*
 .libelle-droite .hot .imag img{                      
   width: 75px;
   height: 75px;
@@ -917,6 +1056,7 @@ footer{
   border-bottom-left-radius: 5%;
 }
 /* Hauteur de chaque photo et son information sur mobile  */
+/*
 .libelle-droite .hot{
   display: flex;
   flex-direction: row;
@@ -930,6 +1070,7 @@ footer{
   margin-bottom: 5px;
 }
 /* L'information qui accompagne la photo sur mobile */
+/*
 .libelle-droite .hot .information{
   display: inline-block;    
   width: 75px;
@@ -941,10 +1082,10 @@ footer{
 
   /*=============Partie HEBERGEMENT à Marseille =================*/
   .heberge{
-  	position: absolute;
-    max-width: 414px;
+
+    max-width: 400px;
     height: auto;
-    top: 950px;
+    
     left: 50px;
     display: flex;
     flex-direction: column;
@@ -952,6 +1093,12 @@ footer{
     margin-right: auto;
     background-color: #F2F2F2;
   }
+  ul .sectio-hotel{
+    display: flex;
+    flex-direction: column;
+
+  }
+  /*
   .heberge .heb{
   position: relative;
   display: inline-flex;
@@ -1156,27 +1303,22 @@ footer{
 
   /* Partie PIED DE PAGE */
   footer{
-    top: 3380px;
     max-width: 414px;
-    height: auto;
-    margin-right: auto;
-    left: 50px;
-    margin-left: auto;
-    position: relative;
-    display: inline-block;
-    flex-direction: column;
+    margin: auto;  
+    flex-direction: 
+    
     background-color: #FFFFFF;
    
   }
+  
 
-  footer .menu-foot{
-    display: inline;
+  .menu-foot{
+    display: flex;
     flex-direction: column;
-    width: auto;
-    font-size: 0.71em;
-    margin-left: 20px;
-
   }
+
+
+
   footer .menu-foot .sousfoot strong{
     font-size: 1.5em;
     font-weight: bold;
@@ -1186,7 +1328,7 @@ footer{
   	padding-top: 5px;
   }
 
-  footer .menu-foot ul{
+  .menu-foot ul{
     display: inline-table;
     width: 414px;
     font-size: 1.2em;
