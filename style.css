@@ -1,17 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
 
 body{
+  display: block;
 	background-color: white;
 	max-width: 1440px;
-  margin: 0;
-
-	font-family: 'Raleway', sans-serif, Verdana, Arial;
+}
+*{
+  font-family: 'Raleway', sans-serif, Verdana, Arial;
 }
 .contain-page{
+  position: absolute;
+  display: block;
   max-width: 1440px;
-  margin: auto;
-  padding: 0 2rem;
+  margin: 0;
+  padding: 5px;
+ 
+  top: 0px;
+  
   box-sizing: border-box;
+  background-color: black;
 }
 
 li{
@@ -22,12 +29,12 @@ li{
 header{
   display: flex;
   align-items: center;
-  max-width: 1346px;
-  height: 90px;
+  max-width: 1400px;
+  height: 100px;
   margin: auto;
-  left: 48px;
+  padding-top: 0em;
   top: 0px;
-  background-color: yellow;
+  background-color: pink;
 }
 
 /* Menu de navigation */
@@ -36,11 +43,11 @@ header{
   color: blue;
 }
 
-img{
+header img{
   float: left;
   margin-left: 10px;
-  height: 60px;
-  width: 120px;
+  height: 40px;
+  width: 180px;
 }
 nav ul{
   display: flex;
@@ -48,14 +55,14 @@ nav ul{
   list-style-type: none;
   padding-top: 5px;
   color: blue;
-  margin-left: 700px;
+  margin-left: 650px;
 }
 
 
 nav ul li{
   display: flex;
   flex-direction: row;
-    margin-left: 35px;
+  margin-left: 35px;
   font-size: 1.5em;
   color: blue;
 }
@@ -87,114 +94,126 @@ nav ul li:active{
   font-weight: bold;
 
 }
-.upline{
-  display: flex;
-  position: absolute;
+.nav-ul-li-hebergement{
+  
+    border-top: 2px red solid;
+    text-decoration: overline;
+}
+/*
+.upline::click{
   width: 190px; 
   left: 935px;
   right: 300px;
-  top: 0px;
+  top: 10px;
   margin: auto;
   height: 0px;
   color: blue;
   border: 1px blue solid;
 }
-/*
-header{
-	display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    width: 1346px;
-	height: 70px;
-	left: 25px;
-  top: 16px;
-  margin-left: 20px;
-	background-color: white;
-}
 
-/* Menu de navigation */
-/*
- header nav{
-	color: blue;
-}
-
-#trait_dessus{
-  position: absolute;
-  border-top: 2px blue solid;
-  width: 170px;
-  top: 2px;
-  margin-left: 58%;
-
-
-}
-
-nav ul{
-	display: flex;
-	flex-direction: row;
-	list-style-type: none;
-	padding-top: 2px;
-	color: blue;
-	margin-left: 650px;
-}
-nav ul li{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-right: 5em;
-  margin-left: 30px;
-	font-size: 1em;
-	color: blue;
-}
-nav ul li .inscrire{
-	font-weight: bold;
-	color: blue;
-}
-nav ul li a{
-	text-decoration: none;
-	color: blue;
-}
-nav ul li span{
-  color: rgb(85,85,85);
-}
-.logo img
-{
-    width: 100px;
-    height: 50px;
-}
-nav ul li:hover{
-	color: blue;
-  font-weight: bold;
-  background-color: #F2F2F2;
-	text-decoration: none;
-	padding-right: 4px;
-}
-nav ul li:active{
-	color: black;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: #0065FC;
-}
+*/
 
 /* zone de recherche de la ville   */
+
+
 .localise{
   position: absolute;
-	display: flex;
-	flex-direction: column;
-	background-color: #FFFFFF;
+	display: block;
+	flex-direction: row;
+	background-color: orange;
 	font-weight: bold;
-  top: 60px;
-	width: 1360px;
-	height: 100px;
+  top: 110px;
+	width: 1380px;
+	height: 180px;
   margin: auto;  
   padding-right: 10px;
 }
+.economique, .romantique, .famille{
+  flex: 0;
+  margin-left: -3px;
+  margin-right: 25px;
+  padding-left: 25px;
+  width: 95px;
+  height: 25px;
+  font-size: 1em;
+  border-right: 0.09em;
+  border: 0.09em gray solid;
+  border-left: none}
+.input-fil{
+  z-index: 0
+   
+  border-image: 20px;
+}
+.animaux{
+  margin-left: -3px;
+  margin-right: 30px;
+  padding-left: 25px;
+  height: 25px;
+  font-size: 1em;
+  width: 190px;
+  border-right: 0.09em;
+  border: 0.09em gray solid;
+  border-left: none;
+}
+.button {
+  border: none;
+  color: white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px 2px;
+  cursor: pointer;
+  background-color: blue;
+  margin-left: -4px;
+}
+
+.choix-ville .fa-search {
+  display: none;
+}
+.fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{
+  z-index: 1;
+  height: 25px;
+  width: 25px;
+  border: 0px gray solid;
+  font-size: 1em;
+  margin-right: -10px;
+  margin-left: 15px;
+  border-radius: 40%;
+  background-color: #DEEBFF;
+  padding-left: 5px;
+  padding-top: 6px;
+  color: blue;
+}
+.fa-info{
+  content: "\ea0c";
+  background-color: #DEEBFF;
+  color: blue;
+  height: 13px;
+  width: 10px;
+  border: 0.1em gray solid;
+  font-size: 0.6em;
+  margin-right: 5px;
+  border-radius: 45%;
+  padding-left: 8px;
+  padding-top: 7px;
+}
+
 .localise p{
   font-size: 0.7em;
+  font-weight: normal;
 }
 .localise p strong{
-  font-size: 1.5em;
+  font-size: 1.9em;
 }
+label{
+  font-size: 1em;
+}
+/*
 .localise span{
 	float: right;
   padding: 8px;
@@ -212,43 +231,36 @@ nav ul li:active{
 }
 .ico{
   width: 50px;
-  height: 50px;
+  height: 35px;
   border-radius: 50%;
   background-color: #DEEBFF;
-}
-.localise tr td input{
-  font-size: 20px;
   border: none;
-  height: 35px;
-  margin-left: -10px;
+}
+/*
+.localise tr td input{
+  font-size: 15px;
+  border: none;
+  height: 45px;
+  width: 200px;
+  margin-left: -1px;
   background-color: #F2F2F2;
 }
 .localise tr td .fa-search{
   display: none;
 }
+/*
 input{
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
   padding: 0 1.5rem;
-  box-sizing: border-box;
-  width: 14rem;
+  box-sizing: border-box; 
   font-size: 1rem;
   font-weight: bold;
-  
- /* 
-  border: none;
-  height: 35px;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #000000;
-  border: 1px 0px 1px 0px;
-
-  width: 250px;
-  margin-right: 10px;
-  */
+  width: 160px;
 }
+/*
 .localise tr td .fa-map-marker-alt{
 	left: 27px;
   padding-top: 6px;
@@ -261,14 +273,18 @@ input{
   color: #000000;
   background-color: #DEEBFF;
 }
+/*
 .rechercher a{
 	padding-left: 10px;
   color: #F2F2F2;
   text-decoration: none;
 }
+/*
 .inp{
   border: 1px gray solid;
 }
+/*
+
 .fa-searc i{
   display: none;
 }
@@ -282,40 +298,24 @@ tr td a{
   border-bottom: 3px blue solid;
 }
 .localise input:hover{
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
 
 }
-
+*/
 /* DEBUT Filtre  */
+/*
 .filtre{
   display: flex;
   margin-top: 2rem;
   flex-wrap: wrap;
-  /*
-  position: absolute;
-	display: flex;
-	flex-direction: column;
-	background-color: #FFFFFF;
-	width: 1340px;
-	height: 120px;
-	top: 161px;
-  margin-left: 20px;
-  margin: auto;	
-  padding-right: 0px;
-  */
+  
 }
 .filtre h2{
   margin: 0 2rem 1rem 0;
   display: flex;
   align-items: center;
-  /*
-
-  padding-top: 8px;
-  margin-left: 5px;
-  font-size: 1.4em;
-  top: 15px;
-  */
+   
 }
 .choix-filtre{
   position: absolute;
@@ -390,7 +390,7 @@ tr td a{
   padding-left: 8px;
   padding-top: 7px;
 }
-
+*/
 /*========== FIN FILTRE==============================*/
 
 
@@ -400,8 +400,8 @@ tr td a{
 .libelle-droite{
   position: relative;
   width: 380px;
-  height: 660px;
-  top: 245px;
+  height: 620px;
+  top: 210px;
   left: 950px;
   padding-right: auto;
   background-color: #F2F2F2;
@@ -501,7 +501,7 @@ tr td a{
   background-color: #F2F2F2;
   margin-left: 10px;
   width: 900px;
-	height: 600px;
+	height: 620px;
   margin-right: 390px;
 }
 .heberge h2{
@@ -578,8 +578,7 @@ tr td a{
 .sectio{
 	position: absolute;
 	display:flex;
-	margin: auto;
-	
+	margin: auto;	
 	top: 931px;
 	width: 1346px;
 	height: 550px;
@@ -599,49 +598,45 @@ tr td a{
 
 }
 
-.sectio .hot6{
+.sectio .hotel6{
 	position: absolute;
 	flex-direction: column;
-	display: inline-block;
+	display: flex;
 	top: 75px;
   left: 20px;
 	margin-left: 5px;
   margin-right: 20px;
-	width: 290px;
+	width: 300px;
 	height: 430px;
 	border: 0px gray solid;
 	border-top: 5px;
 	border-radius: 5%;
   
 }
-.sectio .hot6 .imag img{
+.hotel6 .imag img{
 	width: 300px;
 	height: 400px;
   border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
-.information{
-	width: 298px;
-	height: 40px;
+.info-hotel-activi{
+	width: 290px;
+	height: 30px;
+  font-size: 0.9em;
+  padding-left: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-	background-color: #FFFFFF;
-  border: 1px solid #F2F2F2;  
-  margin-top: -3px;
-}
-.information h4{
-  position: absolute;
+	background-color: #F1F1F1;
+  border: 0em white solid;    
+  margin-top: 0px;
   margin-left: 10px;
-  padding-bottom: 10px;
 }
-
-
-.hot3{
+.hotel3{
 	position: absolute;
 	flex-direction: column;
 	display: flex;
 	top: 75px;
-	left: 700px;
+	left: 690px;
 	margin-right: 20px;
 	width: 300px;
 	height: 430px;
@@ -649,17 +644,18 @@ tr td a{
 	border-top: 5px;
 	border-radius: 5%;
 }
-.hot3 .imag img{
+.hotel3 .imag img{
 	width: 300px;
 	height: 400px;
    border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
-.hot5 {
+.hotel5 {
 	position: absolute;
+  display: flex;
 	flex-direction: column;
 	top: 75px;
-  left: 370px;
+  left: 360px;
 	margin-right: 10px;
 	width: 290px;
 	height: 200px;
@@ -668,19 +664,19 @@ tr td a{
 	border-bottom: 2px;
 	border-radius: 3%;
 } 
-.hot5 .imag img{
+.hotel5 .imag img{
 	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
 
-.hot2 {
+.hotel2 {
 	position: absolute;
 	top: 305px;
 	display: flex;
 	flex-direction: column;
-	left: 375px;
+	left: 360px;
 	width: 290px;
 	height: 200px;
 	border: 0px gray solid;
@@ -688,28 +684,16 @@ tr td a{
 	border-radius: 7%;
 }
 
-.hot2 .imag img{
-	width: 290px;
+.hotel2 .imag img{
+	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
-.sectio .information span{
-  margin-left: 10px;
-}
-.sectio .information{
-   height: 30px;
-   text-decoration: none;
-}
 
-.hot2 .information{
-  width: 285px;
-
-
-}
-
-.hot1{
+.hotel1{
 	position: absolute;
+  display: flex;
 	flex-direction: column;
 	top: 75px;
 	left: 1025px;
@@ -719,16 +703,17 @@ tr td a{
 	border-top: 7px;
 	border-radius: 7%;
 }
-.hot1 .imag img{
+.hotel1 .imag img{
 	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
 
-.hot4 {
+.hotel4 {
 	position: absolute;
 	top: 305px;
+  display: flex;
 	flex-direction: column;
 	left: 1025px;
 	width: 300px;
@@ -737,7 +722,7 @@ tr td a{
 	border-top: 5px;
 	border-radius: 3px;
 }
-.hot4 .imag img{
+.hotel4 .imag img{
 	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
@@ -752,9 +737,10 @@ footer{
 	background-color: #F2F2F2;
 }
 .menu-foot{
+  background-color: #F2F2F2;
   display: flex;
   flex-direction: row;
-  top: 1540px;
+  top: 1480px;
   width: 1346px;
   height: 160px;
   position: absolute;

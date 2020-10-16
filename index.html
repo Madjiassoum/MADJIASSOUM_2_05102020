@@ -7,47 +7,89 @@
         <link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">            
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400&;display=swap" rel="stylesheet">
         <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css"/>  
-        <meta name="viewport" content="widh=device-width, initial-scale=1.0, user-scalable=yes">    
+        <meta name="viewport" content="widh=device-width, initial-scale=1.0, user-scalable=yes">  
 </head>    
 <body>
     <div class="contain-page">
         <header>
-            <div class="logo">
-                <img src="images/Reservia@3x.png" alt="logo du site reservia"/>
-            </div>
+            
+            
+                <img src="images/Reservia@3x.png" id="logo" alt="logo du site reservia"/>
+            
+            
                 <nav>           
                     <ul>
-                        <li><a href="#hebergement"> Hébergements </a> </li>
-                        <li class="act"> <a href="#activite"><span>Activités</span> </a> </li>
-                        <li class="inscrire"> <a href="#"><strong> S'inscrire</strong> </a></li>                      
+                        <li class="nav-ul-li-hebergement upline"><a href="#hebergement"> Hébergements </a> </li>
+                        <li class="nav-ul-li-activite"> <a href="#activite"><span>Activités</span> </a> </li>
+                        <li class="nav-ul-li-inscrire inscrire"> <a href="#"><strong> S'inscrire</strong> </a></li>                      
                     </ul>
                 </nav>
-            <p class="ligne-dessus"></p>
+            </p>
+           <!-- <p class="ligne-dessus"></p>
             <div id="trait_dessus">
             </div>
+        -->
         </header>
+
         <section class="localise">
-        
-           <p><strong>Trouver votre hébergement pour des vacances de rêve</strong><br>
-           En plein centre ville ou en pleine nature </p>  
-                        
+                <P><strong>Trouver votre hébergement pour des vacances de rêve</strong><br>
+                    En plein centre ville ou en pleine nature
+                </P>
+                <form method="post" action="" class="choix-ville">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <input type="search" value="Marseille, France" id="gsearch" name="">
+                  <i class="fas fa-search"></i>
+                  <button class="button bouton" type="submit">Rechercher</button>
+                </form>
+                                      
+                <p>            
+                <form method="post" action="" class="filtre-option"> 
+                    <label class="label-filtre">
+                        FILTRES
+                    </label>                 
+                    <i class="fas fa-money-bill-wave-alt" ></i>                    
+                    <input type="text" class="economique input-fil" name="econom" value="Economique" selected />                                
+                    <i class="fas fa-child"></i>    
+                    <input type="text" class="famille input-fil" name="famille" value="Familial" selected />
+                    <i class="fas fa-heart"></i>
+                    <input type="text" class="romantique input-fil" name="roman" value="Romantique" selected />                  
+                    <i class="fas fa-dog"></i>
+                    <input type="text" class="animaux input-fil" name="anima" value="Animaux domestiques" selected /> 
+                </form>                              
+                </p>
+                <p class="info">
+                    <i class="fas fa-info"></i>
+                    Plus de 500 logements sont disponibles dans cette ville
+                </p>                
+           </form> 
+        </section>
+  <!--                      
             <table>
                 <tr>
-                    <td class="ico"><i class="fas fa-map-marker-alt"></i></td>
-                    <td class="inp"><form>
-                    
-                    <input class="chercheville" type="search" name="localise" value="Marseille, France" selected/>
-                </form></td>
-                    <td class="fa-searc"><i class="fas fa-search"></i> <span class="rechercher"><a href="#">Recherche</a></span></td>
+                    <td class="ico">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </td>
+                    <td class="inp">
+                        <form>                    
+                            <input class="chercheville" type="search" name="localise" value="Marseille, France" selected/>
+                        </form>
+                    </td>
+                    <td class="fa-searc">
+                        <i class="fas fa-search"></i> 
+                        <span class="rechercher"><a href="#">Recherche</a></span>
+                    </td>
                 </tr>
             </table>
                                
         </section>
+-->
 
-            <section class="filtre">
+<!--
+        <section class="filtre">
                 <h2>Filtres</h2> 
                 <article class="choix-filtre">               
                     <div class="option">
+                        
                         <i class="fas fa-money-bill-wave-alt" aria-hidden="true"></i>
                         <form>
                             <input type="text" name="econom" value="Economique" selected /> 
@@ -74,7 +116,8 @@
                     </div>                      
                 </article>    
                 <p><i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
-           </section>
+        </section>
+    -->
 
            <!--  Le libelle de droite contenant LES PLUS POPULAIRES   -->            
            <section class="libelle-droite" >           
@@ -261,69 +304,69 @@
             <section id="activite" class="sectio">
                 <h2 class="act">Activités à Marseille</h2>
                 <ul class="sectio-hotel">
-                    <li class="hot6" class="hotel">
-                        <a href="#">
-                        <div class="imag">   
-                            <img src="images/activites/4_small/6reno.jpg" alt="maison de reno" title="J'envoie vers un lien">
+                    <li class="hotel6 hotel">                        
+                        <div class="imag"> 
+                            <a href="#">  
+                                <img src="images/activites/4_small/6reno.jpg" alt="maison de reno" title="J'envoie vers un lien">
+                            </a>
                         </div>
-                        <div class="information">
+                        <div class="info-hotel-activi">
                             <span><strong>Vieux Port</strong></span>
-                        </div>
-                        </a>
+                        </div>                    
                     </li>
 
-                    <li class="hot5" class="hotel">
-                        <a href="#">
-                        <div class="imag">
-                                <img src="images/activites/4_small/5paul.jpg" alt="maison de paul" title="J'envoie vers un lien">
-                        </div>
-                        <div class="information">
-                                <span><strong>Fort de Pomègues</strong></span>
-                        </div>
-                        </a>
-                    </li>       
-                    <li class="hot2" class="hotel"> 
-                        <a href="#"> 
-                        <div class="imag">      
-                            <img src="images/activites/4_small/2kevin.jpg" alt="maison de kevin" title="J'envoie vers un lien">
-                        </div>
-                        <div class="information">
-                                <span><strong>Iles du Frioul</strong></span>
-                        </div>
-                        </a>
-                    </li>          
-                    <li class="hot3" class="hotel">
-                        <a href="#">
-                        <div class="imag">
-                                <img src="images/activites/4_small/3kilyan.jpg" alt="maison de kilyan" title="J'envoie vers un lien">
-                        </div>
-                        <div class="information">
-                                <span><strong>Parc National des Calanques</strong></span>
-                        </div>
-                        </a>
-                    </li>          
-                    <li class="hot1" class="hotel">
-                        <a href="#">
-                        <div class="imag">
-                            <img src="images/activites/4_small/1florian.jpg" alt="maison florian" title="j'envoie vers un lien">       
-                        </div>
-                        <div class="information">
-                                <span><strong>Notre-Dame-de-la-Garde</strong></span>
-                        </div>
-                        </a>
-                    </li>
-                    <li class="hot4" class="hotel">
-                        
+                    <li class="hotel5 hotel">                        
                         <div class="imag">
                             <a href="#">
-        
+                                <img src="images/activites/4_small/5paul.jpg" alt="maison de paul" title="J'envoie vers un lien">
+                            </a>
+                        </div>
+                        <div class="info-hotel-activi">
+                            <span><strong>Fort de Pomègues</strong></span>
+                        </div>                        
+                    </li>
+
+                    <li class="hotel2 hotel">                          
+                        <div class="imag">  
+                            <a href="#">    
+                                <img src="images/activites/4_small/2kevin.jpg" alt="maison de kevin" title="J'envoie vers un lien">
+                            </a>
+                        </div>
+                        <div class="info-hotel-activi">
+                            <span><strong>Iles du Frioul</strong></span>
+                        </div>                        
+                    </li>
+
+                    <li class="hotel3 hotel">                       
+                        <div class="imag">
+                             <a href="#">
+                                <img src="images/activites/4_small/3kilyan.jpg" alt="maison de kilyan" title="J'envoie vers un lien">
+                            </a>
+                        </div>                        
+                        <div class="info-hotel-activi">
+                            <span><strong>Parc National des Calanques</strong></span>
+                        </div>                        
+                    </li>     
+
+                    <li class="hotel1 hotel">                        
+                        <div class="imag">
+                            <a href="#">
+                                <img src="images/activites/4_small/1florian.jpg" alt="maison florian" title="j'envoie vers un lien">
+                            </a>       
+                        </div>
+                        <div class="info-hotel-activi">
+                                <span><strong>Notre-Dame-de-la-Garde</strong></span>
+                        </div>             
+                    </li>
+
+                    <li class="hotel4 hotel">                        
+                        <div class="imag">
+                            <a href="#">        
                                 <img src="images/activites/4_small/4lena.jpg" alt="maison de lena" title="J'envoie vers un lien">
                             </a>
                         </div>
-                        <div class="information">
-                            <a href="#">
-                                <span><strong>Parc Longchamp</strong></span>
-                            </a>
+                        <div class="info-hotel-activi">                        
+                            <span><strong>Parc Longchamp</strong></span>                        
                         </div>
                     </li>
                 </ul>
