@@ -3,127 +3,70 @@
 <head>
                 <meta charset="utf-8" />
         <title>site de réservation</title>
-        <link rel="stylesheet" href="style.css"/>     
+        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">            
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400&;display=swap" rel="stylesheet">
-        <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css"/>  
-        <meta name="viewport" content="widh=device-width, initial-scale=1.0, user-scalable=yes">  
+
+        <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>    
 <body>
     <div class="contain-page">
-        <header>
-            
-            
+        <header>                  
                 <img src="images/Reservia@3x.png" id="logo" alt="logo du site reservia"/>
-            
-            
+                        
                 <nav>           
                     <ul>
                         <li class="nav-ul-li-hebergement upline"><a href="#hebergement"> Hébergements </a> </li>
                         <li class="nav-ul-li-activite"> <a href="#activite"><span>Activités</span> </a> </li>
                         <li class="nav-ul-li-inscrire inscrire"> <a href="#"><strong> S'inscrire</strong> </a></li>                      
                     </ul>
-                </nav>
-            </p>
-           <!-- <p class="ligne-dessus"></p>
-            <div id="trait_dessus">
-            </div>
-        -->
+                </nav>   
+                     
         </header>
 
         <section class="localise">
-                <P><strong>Trouver votre hébergement pour des vacances de rêve</strong><br>
-                    En plein centre ville ou en pleine nature
-                </P>
-                <form method="post" action="" class="choix-ville">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <input type="search" value="Marseille, France" id="gsearch" name="">
-                  <i class="fas fa-search"></i>
-                  <button class="button bouton" type="submit">Rechercher</button>
-                </form>
-                                      
-                <p>            
-                <form method="post" action="" class="filtre-option"> 
-                    <label class="label-filtre">
-                        FILTRES
-                    </label>                 
-                    <i class="fas fa-money-bill-wave-alt" ></i>                    
-                    <input type="text" class="economique input-fil" name="econom" value="Economique" selected />                                
-                    <i class="fas fa-child"></i>    
-                    <input type="text" class="famille input-fil" name="famille" value="Familial" selected />
-                    <i class="fas fa-heart"></i>
-                    <input type="text" class="romantique input-fil" name="roman" value="Romantique" selected />                  
-                    <i class="fas fa-dog"></i>
-                    <input type="text" class="animaux input-fil" name="anima" value="Animaux domestiques" selected /> 
-                </form>                              
-                </p>
-                <p class="info">
-                    <i class="fas fa-info"></i>
-                    Plus de 500 logements sont disponibles dans cette ville
-                </p>                
-           </form> 
-        </section>
-  <!--                      
-            <table>
-                <tr>
-                    <td class="ico">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </td>
-                    <td class="inp">
-                        <form>                    
-                            <input class="chercheville" type="search" name="localise" value="Marseille, France" selected/>
-                        </form>
-                    </td>
-                    <td class="fa-searc">
-                        <i class="fas fa-search"></i> 
-                        <span class="rechercher"><a href="#">Recherche</a></span>
-                    </td>
-                </tr>
-            </table>
-                               
-        </section>
--->
+                <h1 class="first-p"><strong>Trouver votre hébergement pour des vacances de rêve</strong></h1>
+                   <p><span>En plein centre ville ou en pleine nature</span> </P>
 
-<!--
-        <section class="filtre">
-                <h2>Filtres</h2> 
-                <article class="choix-filtre">               
-                    <div class="option">
-                        
-                        <i class="fas fa-money-bill-wave-alt" aria-hidden="true"></i>
-                        <form>
-                            <input type="text" name="econom" value="Economique" selected /> 
-                        </form>     
+                    <div class="loc">
+                        <form method="post" action="#" class="choix-ville">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <input type="search" value="Marseille, France" id="gsearch">
+                          <i class="fas fa-search"></i>
+                          <button class="button bouton" type="submit">Rechercher</button>
+                        </form> 
                     </div>
-                
-                    <div class="option">
-                        <i class="fas fa-child"></i>
-                        <form>
-                            <input type="text" name="famille" value="Familial" selected />
-                        </form>
-                    </div>
-                    <div class="option">
-                        <i class="fas fa-heart"></i>
-                        <form>
-                            <input type="text" name="roman" value="Romantique" selected />
-                        </form>
-                    </div>
-                    <div class="option">
-                        <i class="fas fa-dog"></i>
-                        <form>
-                            <input type="text" name="anima" value="Animaux domestiques" selected /> 
-                        </form>        
-                    </div>                      
-                </article>    
-                <p><i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
-        </section>
-    -->
 
+                    <div class="loc">                                                       
+                        <form method="post" action="#" class="filtre-option">
+                            <label class="label-filtre">
+                                FILTRES
+                            </label>                       
+                            <i class="fas fa-money-bill-wave-alt fadroite" ></i>                    
+                            <input type="text" class="economique input-fil" name="econom" value="Economique" />                                                 
+                            <i class="fas fa-child fadroite"></i>    
+                            <input type="text" class="famille input-fil" name="famille" value="Familial" />                                       
+                            <i class="fas fa-heart fadroite"></i>
+                            <input type="text" class="romantique input-fil" name="roman" value="Romantique"/>                                      
+                            <i class="fas fa-dog fadroite"></i>
+                            <input type="text" class="animaux input-fil" name="anima" value="Animaux domestiques"/>                                   
+                        </form>
+                    </div> 
+                                         
+                    <div class="loc info">
+                      <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+                    </div>                       
+        </section>
+ 
            <!--  Le libelle de droite contenant LES PLUS POPULAIRES   -->            
            <section class="libelle-droite" >           
-               <h2>Les plus populaires <i class="fas fa-chart-line"></i><!--<img src="images/chart-line-solid.png" alt="un repere de popularité">--></h2>
+               <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
                 <ul class="cote-droit">
 
+                    <!-- hot pour designer hotel -->
                     <li class="hot">
                         <div class="imag">
                             <a href="#">
@@ -259,7 +202,7 @@
                                     </span> 
                                 </div>
                                 <div class="notation">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span><span class="fas fa-star"></span>                  
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span><span class="fas fa-star"></span>     
                                 </div>
                             </a>
                         </div>
@@ -295,7 +238,7 @@
                                 </div>                  
                             </a>
                         </div>
-                    </li>                    
+                    </li>                   
                 </ul>
                 <p><strong><a href="#">Afficher plus</a></strong></p>
             </section>
@@ -303,7 +246,7 @@
         <!--================   Activité à Marseille ======= -->
             <section id="activite" class="sectio">
                 <h2 class="act">Activités à Marseille</h2>
-                <ul class="sectio-hotel">
+                <ul class="sectio-hotel sectmobile">
                     <li class="hotel6 hotel">                        
                         <div class="imag"> 
                             <a href="#">  
@@ -374,7 +317,7 @@
 
         <!--========================= Pied de Page====================   -->
         <footer>
-            <section class="menu-foot">
+            <section class="menu-foot"><h4></h4>
                 <div class="sousfoot"> 
                     <span><strong>A propos</strong> </span>                       
                         
