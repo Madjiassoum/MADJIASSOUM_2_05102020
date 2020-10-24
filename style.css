@@ -1,7 +1,6 @@
 body{
   display: block;
-	background-color: #FFFFFF;
-	max-width: 1440px;
+	width: 1440px;
   margin: auto;
 }
 
@@ -15,9 +14,9 @@ body{
   max-width: 1400px;
   height: auto;
   margin: auto;
-  padding: 5px;
-  top: 0px;  
+  top: 5px;  
   box-sizing: border-box;
+  background-color: ;
   }
 
 li{
@@ -28,12 +27,9 @@ li{
 header{
   display: flex;
   align-items: center;
-  max-width: 1346px;
-  height: 100px;
+  max-width: 1440px;
+  height: 80px;
   margin: auto;
-  padding-top: 0em;
-  top: 0px;
-  background-color: #FFFFFF;
   
 }
 
@@ -73,13 +69,9 @@ nav ul li{
   border-left: none;
   border-right: none;
   border-bottom: none;
-  height: 85px;
-  padding: 0px 25px 0px 25px;
-}
-
-nav-ul-li-hebergement{
-  border-top: 6px blue solid;
-  box-sizing: border-box;
+  height: 70px;
+  
+  padding: 0px 25px 0px 25px;*/
 
 }
 
@@ -88,14 +80,14 @@ nav ul li strong{
   color: blue;
   font-size: 1.1em;
 
-}
+  }
 nav ul li a{
   text-decoration: none;
   color: blue;
-}
+  }
 nav ul li span{
   color: rgb(85,85,85);
-}
+  }
 
 
 nav ul li:hover{
@@ -103,64 +95,52 @@ nav ul li:hover{
   text-decoration: none;
   padding-right: 2px;  
   border-top: 2px solid #0065FC; 
-}
+  }
 
-nav ul li:active{
-  color: black;
-  font-size: 1.3em;
-  font-weight: bold;
 
-}
-
-/* zone de recherche de la ville   */
+  /* zone de recherche de la ville   */
 .localise{
   position: absolute;
-	display: block;
-	flex-direction: row;
-	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
 	font-weight: bold;
-  top: 110px;
-	width: 1336px;
+  top: 101px;
+	width: 1335px;
 	height: 240px;
   margin: auto;
-  padding-left: 10px;
 
-}
-.loc{
-  display: flex;
-  flex-direction: row;
-  height: 50px;
-}
+  }
 
-
-.economique, .romantique, .famille, .animaux{
+.input-filtre{
   margin-right: 15px;
   text-align: center;  
   height: 25px;
   font-size: 1em;
   font-weight: bold;
-  border: 0.001em  gray solid;
-  border-left: none;
+  border: 1px  gray solid;
+  border-radius: 10px;
   cursor: pointer;
-}
+  }
 
 
 /* bouton rechercher*/
+
 .button {
   border: none;
   color: white;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  padding: 4px 10px;
+  padding: 7px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: bold;
-  margin: 2px 2px;
+  margin: 2px;
   cursor: pointer;
   background-color: blue;
-  margin-left: -5px;
+  padding: 5px 10px 5px 10px;
+  margin-left: -1px;
 }
 
 #gsearch{
@@ -169,88 +149,95 @@ nav ul li:active{
   font-size: 1.2em;
   margin-left: 9px;
 }
+
 .choix-ville .fa-search {
   display: none;
 }
 
+.filtre-doption{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+.filtre-doption .option{
+  display: flex;
+  flex-direction: row;
+  border-radius: 40px;
+}
+.filtre-doption .option:focus{
+  border: 1px  gray solid;
+  border-radius: 10px;
+  background-color: #DEEBFF;
+
+}
+
+.intersection .input-filtre{
+  border: 1px gray solid;
+}
+
+.sous-titre{
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
 /*  les icones du filtres */
+
 .fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{ 
   position: absolute;
   background-color: #DEEBFF;
-  color: blue;
-  height: 26px;
-  width: 26px;
+  color: blue;  
   border: none;
-  font-size: 1.1em;
-  margin-right: 5px;
-  border-radius: 45%;
-  padding-left: 8px;
-  padding-top: 7px;
+  margin-top: 1px;
+  border-radius: 50%;
+  padding: 6px;
+  margin-left: 1px;
+  
     
 }
 /* icone d'information plus de 500 logements */
+
 .fa-info{
-  content: "\ea0c";
   background-color: #DEEBFF;
   color: blue;
-  height: 13px;
-  width: 10px;
-  border: 0.1em gray solid;
   font-size: 0.6em;
   margin-right: 5px;
   border-radius: 45%;
-  padding-left: 8px;
-  padding-top: 7px;
+  padding: 5px;
+  padding-top: 3px;
 }
 
-.localise p{
-  display: flex;
-  flex-direction: column;
-  font-size: 0.7em;
-  font-weight: normal;
-}
-.localise p strong{
-  font-size: 2em;
-}
-label{
-  font-size: 1.3em;
-  margin-right: 20px;
-}
-.localise .info{
-  display: flex;
-  position: absolute;
+.logement-info{
   font-size: 0.9em;
   font-weight: normal;
+  margin-left: 5px;
 }
 
-.localise span{
-  font-size: 1em;
-  font-weight: normal;
+.label-filtre{
+  font-size: 1.3em;
+  margin-right: 10px;
 }
-
-.localise p span{
-  font-size: 1.4em;
-  font-weight: normal;
-}
-/* pour donner width semblable */
+/* Pour donner un widh personnalisé à chaque input de la class: filtre-doption */
 .economique, .romantique{
   border-radius: 55px;
   width: 180px;
-  height: 30px;
+
 }
-/* donner lgueur à cet input */
+
+
 .famille{
   width: 150px;
-  height: 30px;
   border-radius: 55px;
+
 }
-/* class input Animaux domestiques pour donner width spécifique */
+
 .animaux{
-  width: 260px;
-  height: 30px;
+  width: 250px;
   border-radius: 55px;
 }
 /*  carte à gauche ville Marseille */
+
 .localise .fa-map-marker-alt{
   padding-top: 6px;
   padding-left: 10px;
@@ -265,20 +252,27 @@ label{
   color: #000000;
   background-color: rgb(240,240,240);
 }
+
 /* input choix ville */
+
 .choix-ville input{
   border: none;
 }
-.loc .filtre-option .input-fil:hover{
+
+.input-filtre:hover{
   background-color: #DEEBFF;
   padding-right: 2px;
+  border: 1px  gray solid;
+  border-radius: 10px;
+
+  
 }
 /*=========== LES VILLES POPULAIRES LIBELLE de Droite    =================*/
 .libelle-droite{
   position: relative;
   width: 400px;
-  height: 620px;
-  top: 275px;
+  height: 600px;
+  top: 256px;
   left: 935px;
   background-color: #F2F2F2;
   display: inline-block;
@@ -304,7 +298,7 @@ label{
 }
 
 /* réglage de la taille des photos */
-.hot .imag img{                      
+.hotel-lpp .imag img{                      
 	width: 140px;
 	height: 140px;
 	border-top-left-radius: 5%;
@@ -313,7 +307,7 @@ label{
 
 /* Hauteur de chaque photo et son information */
 
-.cote-droit .hot{
+.cote-droit .hotel-lpp{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -332,12 +326,12 @@ label{
   margin-left: 1px;
 
 }
-.hot .name-cite span strong{
+.hotel-lpp .name-cite span strong{
   font-weight: bold;
   font-size: 1.1em;
 }
 /*-------------- L'information qui accompagne la photo----------*/
-.hot .information{
+.hotel-lpp .information-lpp{
 	display: inline-block;	 	
 	width: 164px;
 	height: 137px;
@@ -351,50 +345,53 @@ label{
   width: 100px;
   height: 65px; 
 } 
-.notation{font-size: 0.7em;}
+.notation-lpp{font-size: 0.7em;}
 
-.notation i{
+.notation-lpp i{
   color: blue;
 }
-.notation span{
+.notation-lpp span{
   color: gray;
 }
 .name-cite a{
   text-decoration: none;
   color: black;
 }
-.heb a{
-  text-decoration: none;
-}
-.hotel .information{
+.hotel-lpp .information-lpp{
   text-decoration: none;
 }
 
 /* DEBUT HEBERGEMENTS a MARSEILLE   */
 .heberge{
 	position: absolute;
-	top: 380px;
+	top: 340px;
 	display: flex;
   background-color: #F2F2F2;
   margin-left: 0px;
   width: 900px;
-	height: 620px;
+	height: 600px;
   margin-right: 390px;
 }
 .heberge h2{
 	margin-left: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
-.heberge p{
+.heberge p strong a{
   position: absolute;
   left: 5px;
   top: 530px;
   margin-left: 30px;
+  color: #000000;
 
 }
+.hebergement-am a{
+  text-decoration: none;
+
+}
+
 /* bac #F2F2F2*/
-#container-heb{
+#container-hebergement-am{
   position: absolute;
   top: 32px;
   width: 840px;
@@ -417,7 +414,7 @@ label{
   border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
-.heb-div-column .inf{
+.heb-div-column .inf-am{
   position: relative;
   width: 220px;
   height: 50px;
@@ -426,25 +423,29 @@ label{
   padding-left: 10px;
   color: #000000;
 }
-.heb-div-column .inf span strong{
+.heb-div-column .inf-am span strong{
     font-size: 1.3em;
     font-weight: bold;
   }
 
-.heb-div-column .inf span{
+.heb-div-column .inf-am span{
     font-size: 0.9em;
   }
-.heb-div-column .notation{
+.heb-div-column .notation-am{
   background-color: #FFFFFF;
   width: 220px;
   font-size: 0.7em;
   padding-left: 10px;
+  color: blue;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 
 }
+.heb-div-column .notation-am span{
+  color: gray;
+}
 
-.heb{  
+.hebergement-am{  
   border: 0px gray solid;
 	height: 200px;
   margin-top: 25px;
@@ -493,6 +494,7 @@ label{
 	border-radius: 5%;
   
 }
+/* hotel vieux port */
 .hotel6 .imag img{
 	width: 300px;
 	height: 400px;
@@ -512,6 +514,7 @@ label{
   margin-left: 0px;
   font-weight: bold;
 }
+/* parc nat des calanques */
 .hotel3{
 	position: absolute;
 	flex-direction: column;
@@ -531,6 +534,7 @@ label{
    border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
+/*fort de Pomègue */
 .hotel5 {
 	position: absolute;
   display: flex;
@@ -551,7 +555,7 @@ label{
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
-
+/* iles du frioul */
 .hotel2 {
 	position: absolute;
 	top: 305px;
@@ -571,7 +575,7 @@ label{
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
-
+/* notre dame */
 .hotel1{
 	position: absolute;
   display: flex;
@@ -590,7 +594,7 @@ label{
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
-
+/*parc lonchamps */
 .hotel4 {
 	position: absolute;
 	top: 305px;
@@ -657,7 +661,7 @@ footer{
 		background-color: rgb(200,200,200);
 	}
   .contain-page{
-    
+
     margin: auto;
     background-color: rgb(200,200,200);
   }

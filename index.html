@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="Fr-fr">
 <head>
-                <meta charset="utf-8" />
-        <title>site de réservation</title>
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">            
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400&;display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css"/>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="utf-8" />
+    <title>site de réservation</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">            
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400&;display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 </head>    
 <body>
     <div class="contain-page">
@@ -23,42 +20,54 @@
                         <li class="nav-ul-li-activite"> <a href="#activite"><span>Activités</span> </a> </li>
                         <li class="nav-ul-li-inscrire inscrire"> <a href="#"><strong> S'inscrire</strong> </a></li>                     
                     </ul>
-                </nav>   
-                     
+                </nav>                    
         </header>
 
         <section class="localise">
-                <h1 class="first-p"><strong>Trouver votre hébergement pour des vacances de rêve</strong></h1>
-                   <p><span>En plein centre ville ou en pleine nature</span> </P>
+                <h1 class="titre-h1">Trouver votre hébergement pour des vacances de rêve<br>
+                <span class="sous-titre">En plein centre ville ou en pleine nature</span></h1>
 
-                    <div class="loc">
-                        <form method="post" action="#" class="choix-ville">
-                          <i class="fas fa-map-marker-alt"></i>
-                          <input type="search" value="Marseille, France" id="gsearch">
-                          <i class="fas fa-search"></i>
-                          <button class="button bouton" type="submit">Rechercher</button>
-                        </form> 
+                <form method="post" action="#" class="choix-ville">
+
+                    <div class="choix-ville intersection">   
+                        <label><i class="fas fa-map-marker-alt"></i></label>
+                        <input type="search" value="Marseille, France" id="gsearch">
+                        <label><i class="fas fa-search"></i></label>
+                        <button class="button bouton" type="submit">Rechercher</button>
+                    </div>
+                                                                    
+                    <div class="filtre-doption intersection">
+
+                        <label class="label-filtre">
+                            FILTRES
+                        </label>
+
+                        <div class="option">
+                            <label><i class="fas fa-money-bill-wave-alt" ></i> </label>
+                            <input type="text" class="economique input-filtre" name="econom" value="Economique" />
+                        </div>
+
+                        <div class="option">                                                
+                            <label><i class="fas fa-child"></i></label>   
+                            <input type="text" class="famille input-filtre" name="famille" value="Familial" >
+                        </div>
+
+                         <div class="option">                                      
+                            <label><i class="fas fa-heart"></i></label>
+                            <input type="text" class="romantique input-filtre" name="roman" value="Romantique"/>
+                        </div>
+
+                        <div class="option">                                      
+                            <label><i class="fas fa-dog"></i></label>
+                            <input type="text" class="animaux input-filtre" name="anima" value="Animaux domestiques"/>
+                        </div>
+                    </div>  
+
+                    <div class="logement-info intersection">
+                        <label><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</label>
                     </div>
 
-                    <div class="loc">                                                       
-                        <form method="post" action="#" class="filtre-option">
-                            <label class="label-filtre">
-                                FILTRES
-                            </label>                       
-                            <i class="fas fa-money-bill-wave-alt fadroite" ></i>                    
-                            <input type="text" class="economique input-fil" name="econom" value="Economique" />                                                 
-                            <i class="fas fa-child fadroite"></i>    
-                            <input type="text" class="famille input-fil" name="famille" value="Familial" />                                       
-                            <i class="fas fa-heart fadroite"></i>
-                            <input type="text" class="romantique input-fil" name="roman" value="Romantique"/>                                      
-                            <i class="fas fa-dog fadroite"></i>
-                            <input type="text" class="animaux input-fil" name="anima" value="Animaux domestiques"/>                                   
-                        </form>
-                    </div> 
-                                         
-                    <div class="loc info">
-                      <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
-                    </div>                       
+                </form>                                           
         </section>
  
            <!--  Le libelle de droite contenant LES PLUS POPULAIRES   -->            
@@ -67,13 +76,13 @@
                 <ul class="cote-droit">
 
                     <!-- hot pour designer hotel -->
-                    <li class="hot">
+                    <li class="hotel-lpp">
                         <div class="imag">
                             <a href="#">
                                 <img src="images/hebergements/4_small/3emile.jpg" alt="" title="J'envoie vers un lien">
                             </a>
                         </div>
-                        <div class="information">                                
+                        <div class="information-lpp">                                
                             <div class="name-cite"> 
                                 <a href="#">                               
                                     <span><strong>Hôtel Le soleil du matin</strong><br>
@@ -81,7 +90,7 @@
                                 </a>
                              </div>
                             <div class="white-space"><a href="#"></a></div>
-                            <div class="notation">
+                            <div class="notation-lpp">
                                 <a href="#">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                 </a>
@@ -89,13 +98,13 @@
                         </div>                                                   
                     </li>
 
-                    <li class="hot">
+                    <li class="hotel-lpp">
                         <div class="imag">
                             <a href="#">
                                 <img src="images/hebergements/4_small/2aw.jpg" alt="maison de aw-creative" title="J'envoie vers un lien">
                             </a>
                         </div>                
-                        <div class="information">                           
+                        <div class="information-lpp">                           
                             <div class="name-cite">
                                  <a href="#">                                
                                     <span><strong>Au coeur de l'eau Chambre d'hôtes</strong><br>
@@ -103,7 +112,7 @@
                                 </a>                                
                             </div>
                             <div class="white-space"><a href="#"></a></div>
-                            <div class="notation">
+                            <div class="notation-lpp">
                                 <a href="#">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span>
                                 </a>
@@ -111,13 +120,13 @@
                         </div>  
                     </li>
 
-                   <li class="hot">
+                   <li class="hotel-lpp">
                         <div class="imag">
                             <a href="#">
                                 <img src="images/hebergements/4_small/5febrian.jpg" alt="maison febrian" title="J'envoie vers un lien">
                             </a>
                         </div>
-                        <div class="information">
+                        <div class="information-lpp">
                             <div class="name-cite">
                                 <a href="#">
                                     <span><strong>Hôtel Tout bleu et Blanc</strong><br>
@@ -125,7 +134,7 @@
                                 </a>
                             </div>
                             <div class="white-space"><a href="#"></a></div>
-                            <div class="notation">
+                            <div class="notation-lpp">
                                 <a href="#">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star" ></span>
                                 </a>
@@ -139,51 +148,54 @@
                         contenant SIX hébergements                 -->
            <section id="hebergement" class="heberge"> 
                 <h2>Hébergements à Marseille</h2>
-                <ul id="container-heb">
+                <ul id="container-hebergement-am">
                     <li class="first-line">
-                        <div class="heb">   
+                        <!-- herbergement-am pour hebergement à Marseille
+                            inf-am pour info à marseille
+                            notation-am pour notation à Marseille -->
+                        <div class="hebergement-am">   
                             <a href="#" class="heb-div-column">                         
                                 <div class="imag">                                    
                                     <img src="images/hebergements/4_small/7marcus.jpg" alt="maison de aw-creative" title="J'envoie vers un lien">                            
                                 </div>
-                                <div class="inf">                                    
+                                <div class="inf-am">                                    
                                     <span><strong>Auberge la Cannebière</strong><br>
                                         Nuit à partir de 25€
                                     </span>                                
                                 </div>
-                                <div class="notation">                        
+                                <div class="notation-am">                        
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span>      
                                 </div>
                             </a>                                                   
                         </div>
             
-                        <div class="heb">                        
+                        <div class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/6fred.jpg" alt="maison de kleber" title="J'envoie vers un lien">
                                 </div>
-                                <div class="inf">
+                                <div class="inf-am">
                                     <span><strong>Hôtel du port</strong><br/>
                                         Nuit à partir de 52€
                                     </span>
                                 </div>
-                                <div class="notation">
+                                <div class="notation-am">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>                     
                                 </div>
                             </a>
                         </div>
 
-                        <div class="heb">
+                        <div class="hebergement-am">
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/9reisetopia.jpg" alt="maison de reisetopia" title="J'envoie vers un lien">
                                 </div>
-                                <div class="inf">
+                                <div class="inf-am">
                                     <span><strong>Hôtel Les mouettes</strong><br/>
                                         Nuit à partir de 76€
                                     </span>
                                 </div>
-                                <div class="notation">
+                                <div class="notation-am">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i><span class="fas fa-star"></span>
                                 </div>
@@ -191,49 +203,49 @@
                         </div>
                     </li>
                     <li class="second-line">
-                        <div class="heb">                        
+                        <div class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/1annie.jpg" alt="annie-spratt" title="J'envoie vers un lien"/>
                                 </div>
-                                <div class="inf">
+                                <div class="inf-am">
                                     <span><strong>Hôtel de la mer</strong><br>
                                         Nuit à Partir de 46€
                                     </span> 
                                 </div>
-                                <div class="notation">
+                                <div class="notation-am">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span><span class="fas fa-star"></span>     
                                 </div>
                             </a>
                         </div>
 
-                        <div class="heb">                        
+                        <div class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/8nicate.jpg" alt="maison de lee" title="J'envoie vers un lien">
                                 </div>
-                                <div class="inf">
+                                <div class="inf-am">
                                     <span><strong>Auberge Le panier</strong><br>
                                         Nuit à partir de 23€
                                     </span>
                                 </div>
-                                <div class="notation">
+                                <div class="notation-am">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span>
                                 </div>                                    
                             </a>
                         </div>
 
-                        <div class="heb">                        
+                        <div class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">                                
                                     <img src="images/hebergements/4_small/4febrian.jpg" alt="maison de zakaria" title="J'envoie vers un lien">
                                 </div>
-                                <div class="inf">
+                                <div class="inf-am">
                                     <span><strong>Hôtel chez Amina</strong><br>
                                     Nuit à partir de 96€ 
                                     </span>
                                 </div>                            
-                                <div class="notation">
+                                <div class="notation-am">
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>           
                                 </div>                  
                             </a>
@@ -246,8 +258,9 @@
         <!--================   Activité à Marseille ======= -->
             <section id="activite" class="sectio">
                 <h2 class="act">Activités à Marseille</h2>
+
                 <ul class="sectio-hotel sectmobile">
-                    <li class="hotel6 hotel">                        
+                    <li class="hotel6 hotel-ac">                        
                         <div class="imag"> 
                             <a href="#">  
                                 <img src="images/activites/4_small/6reno.jpg" alt="maison de reno" title="J'envoie vers un lien">
@@ -258,7 +271,7 @@
                         </div>                    
                     </li>
 
-                    <li class="hotel5 hotel">                        
+                    <li class="hotel5 hotel-ac">                        
                         <div class="imag">
                             <a href="#">
                                 <img src="images/activites/4_small/5paul.jpg" alt="maison de paul" title="J'envoie vers un lien">
@@ -269,7 +282,7 @@
                         </div>                        
                     </li>
 
-                    <li class="hotel2 hotel">                          
+                    <li class="hotel2 hotel-ac">                          
                         <div class="imag">  
                             <a href="#">    
                                 <img src="images/activites/4_small/2kevin.jpg" alt="maison de kevin" title="J'envoie vers un lien">
@@ -280,7 +293,7 @@
                         </div>                        
                     </li>
 
-                    <li class="hotel3 hotel">                       
+                    <li class="hotel3 hotel-ac">                       
                         <div class="imag">
                              <a href="#">
                                 <img src="images/activites/4_small/3kilyan.jpg" alt="maison de kilyan" title="J'envoie vers un lien">
@@ -291,7 +304,7 @@
                         </div>                        
                     </li>     
 
-                    <li class="hotel1 hotel">                        
+                    <li class="hotel1 hotel-ac">                        
                         <div class="imag">
                             <a href="#">
                                 <img src="images/activites/4_small/1florian.jpg" alt="maison florian" title="j'envoie vers un lien">
@@ -302,7 +315,7 @@
                         </div>             
                     </li>
 
-                    <li class="hotel4 hotel">                        
+                    <li class="hotel4 hotel-ac">                        
                         <div class="imag">
                             <a href="#">        
                                 <img src="images/activites/4_small/4lena.jpg" alt="maison de lena" title="J'envoie vers un lien">
