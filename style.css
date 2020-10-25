@@ -41,7 +41,7 @@ header{
   color: blue;
   display: flex;
   align-items: center;
-  margin-right: 0px;
+
 }
 
 header img{
@@ -104,7 +104,7 @@ nav ul li:hover{
 	display: flex;
 	flex-direction: column;
 	font-weight: bold;
-  top: 101px;
+  top: 80px;
 	width: 1335px;
 	height: 240px;
   margin: auto;
@@ -495,7 +495,7 @@ nav ul li:hover{
   
 }
 /* hotel vieux port */
-.hotel6 .imag img{
+.hotel6 .imag-am img{
 	width: 300px;
 	height: 400px;
   border-top-left-radius: 7%;
@@ -528,7 +528,7 @@ nav ul li:hover{
 	border-top: 5px;
 	border-radius: 5%;
 }
-.hotel3 .imag img{
+.hotel3 .imag-am img{
 	width: 300px;
 	height: 400px;
    border-top-left-radius: 7%;
@@ -549,7 +549,7 @@ nav ul li:hover{
 	border-bottom: 2px;
 	border-radius: 3%;
 } 
-.hotel5 .imag img{
+.hotel5 .imag-am img{
 	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
@@ -569,7 +569,7 @@ nav ul li:hover{
 	border-radius: 7%;
 }
 
-.hotel2 .imag img{
+.hotel2 .imag-am img{
 	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
@@ -588,7 +588,7 @@ nav ul li:hover{
 	border-top: 7px;
 	border-radius: 7%;
 }
-.hotel1 .imag img{
+.hotel1 .imag-am img{
 	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
@@ -607,7 +607,7 @@ nav ul li:hover{
 	border-top: 5px;
 	border-radius: 3px;
 }
-.hotel4 .imag img{
+.hotel4 .imag-am img{
 	width: 300px;
 	height: 170px;
   border-top-right-radius: 7%;
@@ -658,12 +658,11 @@ footer{
 	body{
 
     margin: auto;
-		background-color: rgb(200,200,200);
+		background-color: #FFFFFF;
 	}
   .contain-page{
 
     margin: auto;
-    background-color: rgb(200,200,200);
   }
 }
 
@@ -685,12 +684,12 @@ footer{
   header{
   display: block;
   flex-direction: column;
+  align-items: center;
   max-width: 414px;  
-  margin: auto;
-  left: 5px;
-  top: 0px;
-  background-color: #FFFFFF;
-  z-index: 2;
+  margin: 0px;
+  margin-left: 50px;
+  z-index: 1;
+  
 }
 
 /* Menu de navigation */
@@ -722,7 +721,7 @@ nav .heb-act-sin{
   position: relative;
   margin-right: 0px;
   display: flex;
-  top: 40px;
+  top: 55px;
   font-size: 1em;
   left: -120px;
   padding: 0px 0px 25px 0px;
@@ -761,7 +760,8 @@ nav ul li span{
 nav ul li:hover{
   color: blue;
   text-decoration: none;
-  padding-right: 2px;
+  padding-right: 5px;
+  margin-left: 10px;
   border-bottom: 3px solid #0065FC;
   
 }
@@ -781,156 +781,162 @@ nav ul li:hover{
 }
 
   /* partie localisation de la ville sur mobile*/  
-  .localise{
-    top: 108px;
 
-    display: block;
+
+  .localise{
+    top: 96px;
+    display: flex;
     width: 414px;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 330px;
+    margin: auto;
+    margin-left: 40px;    
     font-size: 0.8em;
     background-color: #FFFFFF;
     z-index: 4;
+
   }
   .localise h1{
     font-size: 1.3em;
-    width: 350px;
+    width: 65%;
   }
-  /* affichage de fa-search */
-  .choix-ville .fa-search{
-    margin-left: 244px;
-    width: 28px;
-    height: 25px;
+  .choix-ville .intersection{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .choix-ville .choix-ville-premier{
+    display: inline-block;    
+
+  }
+  .button {
+  display: none;
+ 
+}
+
+.intersection .fa-search{
+    margin-left: 235px;
+    width: 25px;
+    height: 25px;    
     background-color: blue;
-    border-radius: 6px;
+    border-radius: 10px;
     display: flex;
     color: #F2F2F2F2;
-    position: absolute;
-    padding-top: 5px;
-    padding-left: 6px;
+    position: absolute;    
+    top: 85px;
+    padding: 5px 5px 2px 10px;
     font-size: 1.5em;
   }
-  .loc .choix-ville  .button{
-    display: none;
-  }
-  .loc .choix-ville{
-    position: absolute;
-    display: flex;
-    width: 380px;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .choix-ville #gsearch{
-    margin-left: 0px;
-    padding-left: 10px;
-  }
-  
-  .localise .fa-map-marker-alt{
+
+  /*  icone carte à gauche ville Marseille */
+
+.localise .fa-map-marker-alt{
   padding-top: 6px;
   padding-left: 10px;
-  margin-right: 0px;
-  margin-left: 15px;
-  height: 24px;
+  margin-right: -5px;
+  margin-left: 5px;
+  height: 26px;
   width: 20px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  border-left: none;  
-  margin-bottom: 5px;
+  border-left: none; 
+  margin-bottom: 5px; 
   color: #000000;
   background-color: rgb(240,240,240);
 }
 
-  
-  .fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{ 
-  position: absolute;
-  background-color: #DEEBFF;
-  color: blue;
-  height: 20px;
-  width: 20px;
-  border: none;
-  font-size: 1.1em;
-  margin-right: 5px;
-  border-radius: 45%;
-  padding-left: 8px;
-  padding-top: 7px;
-  left: 12px;
-    
-}
-.fa-heart{
-  margin-top: 81px;
-  left: 3px;
+.localise h1 span{
+  font-size: 0.8em;
 }
 
-.fa-dog{
-  margin-top: 136px;
-  left: 2px;
-}
-.fa-child{
-  position: absolute;
-  left: 201px;
-  margin-top: 26px;
-}
-.fa-money-bill-wave-alt{
-  margin-top: 26px;
-  left: 1px;
-
-}
-
-
-.economique, .romantique, .famille, .animaux{
-  text-align: center;  
-  height: 35px;
-  font-size: 1.1em;
-  font-weight: bold;
-  border: 0.001em  gray solid;
-  border-left: none;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.loc .filtre-option{
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 370px;
-}
-
-  .label-filtre{
-    position: absolute;
-    padding-top: 0px;
-  }
-
-  .loc .filtre-option .input-fil{ 
-    display: flex;
-    flex-direction: row;
-    height: 25px;
-    left: 5px;
-    padding-top: 2px;
-    margin-top: 25px;
-    margin-bottom: 0px;
-  }
-
-  .localise .info{
-    top: 330px;
+.choix-ville .logement-info{
+    top: 325px;
     display: flex;
     position: absolute;
+    width: 63%;
     font-size: 0.9em;
     font-weight: normal;
   }
+  /* icone d'information plus de 500 logements */
 
+.fa-info{
+  background-color: #DEEBFF;
+  color: blue;
+  font-size: 0.6em;
+  padding-left: 10px;
+  border-radius: 45%;
+  padding: 5px;
+  padding-top: 3px;
+}
+
+#gsearch{
+  height: 30px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 9px;
+}
+
+
+/* deuxièment ligne concernant les options */
+  .filtre-doption .option{
+  display: inline-flex;
+  flex-direction: row;
+   flex-wrap: wrap;
+   width: 400px;
+  border-radius: 40px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 5px;
+  position: relative;  
+
+}
+
+
+/* Pour donner un widh personnalisé à chaque input de la class: filtre-doption */
+.economique, .romantique{
+  border-radius: 55px;
+  width: 160px;
+
+}
+
+
+.famille{
+  width: 150px;
+  border-radius: 55px;
+
+}
+
+.animaux{
+  width: 250px;
+  border-radius: 55px;
+}
+
+
+  .filtre-doption .option:focus{
+  border: 1px  gray solid;
+  border-radius: 10px;
+  background-color: #DEEBFF;
+
+}
+ 
+.input-filtre:hover{
+  background-color: #DEEBFF;
+  padding-right: 2px;
+  border: 1px  gray solid;
+  border-radius: 10px;
+  
+}
+  
   /* Libelle-droite: Les PLUS POPULAIRES */
   .libelle-droite{
-  position: absolute;
+  position: relative;
   max-width: 414px;
   height: 550px;
-  top: 480px;
-  left: 10px;
+  margin-right: 20px;
+  margin-left: 35px;
+  top: 400px;
+  left: 0px;
   background-color: #F1F1F1;
   border: 0px gray solid;
-  margin: auto;
 
 }
 
@@ -951,7 +957,7 @@ nav ul li:hover{
 }
 
 /*----------réglage de la taille des photos--------------*/
-.hot .imag img{                      
+.hotel-lpp .imag img{                      
   width: 140px;
   height: 140px;
   border-top-left-radius: 5%;
@@ -959,7 +965,7 @@ nav ul li:hover{
 }
 
 /* Hauteur de chaque photo et son information */
-.cote-droit .hot{
+.cote-droit .hotel-lpp{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -982,175 +988,219 @@ nav ul li:hover{
   position: absolute;
   max-width: 414px;
   height: 840px;  
-  background-color: white;
+  background-color: #FFFFFF;
   border: 0px gray solid;
   margin: auto;
 
 }
 
-#container-heb{
+#container-hebergement-am{
   position: absolute;
   top: 32px;
-  width: 410px;
+  width: 400px;
   height: 1400px;
   display: flex;  
   flex-direction: column;
-  background-color: #FFFFFF;
-
-}
-.heberge h2{
   
-  max-width: 414px;
+
+}
+#hebergement h2{
+  
+ position: absolute;
+ margin-left: 25px;
   font-size: 1.3em;
-  margin-bottom: 10px;
+  z-index: 1;
 }
 
-#container-heb .first-line{
+#container-hebergement-am .first-line{
   
   display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
-  width: 390px;
-  top: 5px;
-  left: 0px;
-}
-#container-heb .second-line{
-  flex-direction: column;
-  width: 390px;
-  left: 0px;
+  z-index: 5;
 
 }
-#container-heb .second-line .heb{
-  margin-left: -10px;
+#container-hebergement-am .second-line{
+  display: flex;
+  flex-direction: column;
+
+}
+
+#container-hebergement-am .second-line .hebergement-am{
+  margin-left: 10px;
+}
+
+#container-hebergement-am .first-line{
+  margin-left: 5px;
 }
 .heb-div-column{
   display: flex;
   flex-direction: column;
 }
 .heb-div-column .imag img{
-  width: 360px;
+  width: 350px;
   height: 140px;
   border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
-.heb-div-column .inf{
+.heb-div-column .inf-am{
   position: relative;
-  width: 350px;
+  width: 340px;
   height: 35px;
-  font-size: 0.7em;
-  background-color: #F1F1F1;
+  font-size: 0.8em;
+  background-color: rgb(220,220,220);
   padding-left: 10px;
   color: #000000;
 }
-.heb-div-column .inf span strong{
+.heb-div-column .inf-am span strong{
   font-size: 1.1em;
   font-weight: bold;
 }
-.heb-div-column .inf span{
-  font-size: 0.8em;
+.heb-div-column .inf-am span{
+  font-size: 0.9em;
 }
-.heb-div-column .notation{
-  background-color: #F1F1F1;
-  width: 350px;
+.heb-div-column .notation-am{
+  background-color: rgb(220,220,220);
+  width: 340px;
   height: 10px;
   font-size: 0.6em;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.heb{  
+.hebergement-am{  
   border: 0px gray solid;
   height: 200px;
   margin-top: 25px;
-  background-color: #F2F2F2;  
   margin-left: 5px;
-  margin-right: 40px;
+  margin-right: 50px;
   border-radius: 6%;
 
 }
 .heberge p a{
   text-decoration: none;
+  font-size: 1.2em;
   color: #000000;
 }
 
-.heberge p{
-  display: block;
-  left: 5px;
+.heberge p {
+  position: absolute;  
   width: 100%;
-  top: 1400px;
-  margin-left: 40px;
+  top: 875px;
+  margin-left: 10px;
   color: #000000;
-  text-decoration: none;
+
 }
 
 
 /* Activites Responsive sur Mobile*/
 
 #activite{
-  top: 2475px;
+  top: 2488px;
   max-width: 414px;
-  height: 1140px;
+  height: 860px;
   margin: auto;
-  margin-left: 25px;
+  margin-left: 15px;
+  display: block;
   flex-direction: column;
   background-color: #FFFFFF;
 }
 
 .sectio h2{
   margin-left: 10px;
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+.sectmobile{
+  display: flex;
 }
 
-.hotel6, .hotel5, .hotel4, .hotel3, .hotel2, .hotel1 {
-  position: absolute;
+.hotel-ac5, .hotel-ac4, .hotel-ac3, .hotel-ac2, .hotel-ac1{
+  
   display: flex;
   flex-direction: column;
-  left: 10px;
-  margin-right: 10px;
-  width: 290px;
-  height: 150px;
+  left: 5px;
+  width: 350px;
+  height: 130px;  
   border: 0px gray solid;
   border-top: 0px gray solid;
   border-bottom: 2px;
   border-radius: 3%;
 }
 
-.hotel6{
-  top: 5px;  
+.hotel-ac6{
+  position: absolute;
+  top: -10px; 
+ 
 }
-.hotel5{
+
+.hotel-ac5{
+  position: absolute;
+  margin-left: 20px;
   top: 260px;
-  margin-left: 15px;
-}
-.hotel2{
-  top: 435px;
-  margin-left: 15px;
-}
-.hotel3{
-  top: 610px;
-  margin-left: 15px;
 
 }
-.hotel1{
-  top: 785px;
-  margin-left: 15px;
-}
-.hotel4{
-  top: 960px;
-  margin-left: 15px;
-}
 
-.hotel .imag img{
+.sectmobile .hotel-ac5 .imag-am img{
   width: 350px;
-  height: 140px;
+}
+
+.hotel-ac2 .imag-am img{
+  width: 350px;
+}
+
+.hotel-ac2{
+  top: 460px;
+  margin-left: 20px;
+}
+
+.sectmobile .hotel-ac3{
+  position: absolute;
+  top: 665px;
+  margin-left: 15px;
+}
+
+.sectmobile .hotel-ac1{
+  position: absolute;
+  top: 825px;
+}
+
+.sectmobile .hotel-ac3 .imag-am img{
+  width: 350px;
+  height: 130px;
+}
+.sectmobile .hotel-ac4 .imag-am img{
+
+  width: 350px;
+  height: 130px;
+}
+.sectmobile .hotel-ac1 .imag-am img{
+  width: 350px;
+  height: 130px;
+}
+
+.hotel-ac1{
+  top: 895px;
+  margin-left: 15px;
+}
+
+.hotel-ac4{
+  position: absolute;
+  top: 985px;
+  margin-left: 15px;
+  
+}
+
+.sectmobile .hotel-ac1,.hotel-ac2,.hotel-ac3,.hotel-ac4, .hotel-ac5,.hotel-ac6 .imag-am img{
+  width: 350px;
+  height: 150px;
   border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
 
 .info-hotel-activi{
   width: 340px;
-  height: 35px;
-  font-size: 0.9em;
+  height: 20px;
+  font-size: 0.8em;
   padding-left: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1196,17 +1246,17 @@ nav ul li:hover{
     display: block;
     flex-direction: column;
     width: 414px;
-    font-size: 1em;
+    font-size: 0.91em;
     margin: auto;
     
   }
   
   .sousfoot a:hover{
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     border-left: 2px solid #F3F3F3;
     color: blue;
-    margin-left: 10px;
+    margin-left: 15px;
     cursor: pointer;
   }
 }
