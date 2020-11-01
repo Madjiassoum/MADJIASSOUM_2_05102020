@@ -662,29 +662,27 @@ footer{
   width: 32%;
 	display: inline-block;
 	flex-direction: column;
-	font-size: 1.3em;
-	line-height: 1.4em;
-	margin-right: 50px;
-	padding-left: 10px;
+	font-size: 0.91em;
+	line-height: 1.5em;
+	margin-right: 35px;
+	margin-left: 15px;
 	padding-top: 25px;	
 }
 
 .menu-foot .sousfoot a{
   display: block;
-	text-decoration: none;
-	line-height: 1.4em;  	
-  font-size: 1em;
+  text-decoration: none;  	
   font-weight: normal;
-	color: black;
+  color: black;
 }
 .sousfoot a:hover{
-	font-weight: bold;
-	display: block;
-	flex-direction: row;
-  font-size: 1.1em;    
+  font-weight: bold;
+  display: block;
+  flex-direction: row;
+  font-size: 1em;    
   color: blue;
-  margin-left: 20px;
-  border-left: 2px solid blue;
+  margin-left: 25px;
+  border-left: 3px solid gray;
   cursor: pointer;
 
 }
