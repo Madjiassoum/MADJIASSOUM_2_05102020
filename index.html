@@ -7,13 +7,15 @@
     <link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">            
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400&;display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width: 1440px)" href="style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">   
 </head>    
 <body>
     <div class="contain-page">
-        <header>                  
+        <header>         
+            <!-- logo du site Reservia-->         
                 <img src="images/Reservia@3x.png" id="logo" alt="logo du site reservia"/>
-                        
+
+            <!-- Menu de navigation-->
                 <nav>           
                     <ul class="heb-act-sin">
                         <li class="nav-ul-li-hebergement upline"><a href="#hebergement"> Hébergements </a> </li>
@@ -24,50 +26,73 @@
         </header>
 
         <section class="localise">
-                <h1 class="titre-h1">Trouver votre hébergement pour des vacances de rêve<br>
-                <span class="sous-titre">En plein centre ville ou en pleine nature</span></h1>
+            <!-- Titre de la section-->
+            <h1 class="titre-h1">Trouver votre hébergement pour des vacances de rêve<br>
+            <span class="sous-titre">En plein centre ville ou en pleine nature</span></h1>
 
-                <form method="post" action="#" class="choix-ville">
+            <form method="post" action="#" class="choix">
 
-                    <div class="choix-ville-premier intersection">   
-                        <label><i class="fas fa-map-marker-alt"></i></label>
-                        <input type="search" value="Marseille, France" id="gsearch">
-                        <label><i class="fas fa-search"></i></label>
-                        <button class="button bouton" type="submit">Rechercher</button>
-                    </div>
-                                                                    
-                    <div class="filtre-doption intersection">
+                <!-- div de recherche de la ville-->
+                <div class="choix-premier">   
+                    <label><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="search" value="Marseille, France" id="gsearch">
+                    <label><i class="fas fa-search"></i></label>
+                    <button class="button bouton" type="submit">Rechercher</button>
+                </div>
 
-                        <label class="label-filtre">
-                            FILTRES
-                        </label>
+                    <!-- Filtres d'options -->
+                <div class="choix-deuxieme">
+                    <label class="label-filtre">
+                            Filtres
+                    </label>
+                    <ul class="mes-filtres">
+                        <li class="unit-filtre">
+                            <input name="type-hebergement" id="economique" type="checkbox" value="economique" />
+                            <label for="economique" class="filter-option">
+                                <span aria-hidden="true" class="filter-option__icon">
+                                    <i class="fas fa-money-bill-wave-alt"></i>
+                                </span>
+                                <span class="filter-option__label">Économique</span>
+                            </label>
+                        </li>
 
-                        <div class="option">
-                            <label><i class="fas fa-money-bill-wave-alt" ></i> </label>
-                            <input type="text" class="economique input-filtre" name="econom" value="Economique" />
-                        </div>
+                        <li class="unit-filtre">
+                            <input name="type-hebergement" id="familial" type="checkbox" value="familial" />
+                            <label for="familial" class="filter-option">
+                                <span aria-hidden="true" class="filter-option__icon">
+                                    <i class="fas fa-child"></i>
+                                 </span>
+                                <span class="filter-option__label">Familial</span>
+                            </label>
+                        </li>
 
-                        <div class="option">                                                
-                            <label><i class="fas fa-child"></i></label>   
-                            <input type="text" class="famille input-filtre" name="famille" value="Familial" >
-                        </div>
+                        <li class="unit-filtre">
+                            <input name="type-hebergement" id="romantique" type="checkbox" value="romantique" />
+                            <label for="romantique" class="filter-option">
+                                <span aria-hidden="true" class="filter-option__icon">
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                                <span class="filter-option__label">Romantique</span>
+                            </label>
+                        </li>
 
-                         <div class="option">                                      
-                            <label><i class="fas fa-heart"></i></label>
-                            <input type="text" class="romantique input-filtre" name="roman" value="Romantique"/>
-                        </div>
+                        <li class="unit-filtre">
+                            <input name="type-hebergement" id="animal" type="checkbox" value="Animaux domestiques"/>
+                            <label for="animal" class="filter-option">
+                                <span aria-hidden="true" class="filter-option__icon">
+                                    <i class="fas fa-dog"></i>                            
+                                </span>
+                                <span class="filter-option__label">Animaux domestiques</span>                       
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </form>   
 
-                        <div class="option">                                      
-                            <label><i class="fas fa-dog"></i></label>
-                            <input type="text" class="animaux input-filtre" name="anima" value="Animaux domestiques"/>
-                        </div>
-                    </div>  
-
-                    <div class="logement-info intersection">
-                        <label><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</label>
-                    </div>
-
-                </form>                                           
+            <!-- Point d'information des filtres-->
+            <div class="logement-info">
+                   <p> <i class="fas fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
+            </div>                                        
         </section>
  
            <!--  Le libelle de droite contenant LES PLUS POPULAIRES   -->            
@@ -75,7 +100,7 @@
                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
                 <ul class="cote-droit">
 
-                    <!-- hot pour designer hotel -->
+                    <!-- hotel-lpp pour designer hotel du libelle de droite -->
                     <li class="hotel-lpp">
                         <div class="imag">
                             <a href="#">
@@ -145,7 +170,7 @@
             </section>
                
                <!--  La partie contenant les hébergements de Marseille
-                        contenant SIX hébergements                 -->
+                        contenant SIX hébergements LIBELLE DE GAUCHE         -->
            <section id="hebergement" class="heberge"> 
                 <h2>Hébergements à Marseille</h2>
                 <ul id="container-hebergement-am">

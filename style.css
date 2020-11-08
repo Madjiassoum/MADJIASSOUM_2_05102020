@@ -11,9 +11,12 @@ body{
 .contain-page{
   position: absolute;
   display: block;
-  max-width: 1400px;
+  width: 1400px;
   height: auto;
   margin: auto;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
   top: 5px;  
   box-sizing: border-box;
   background-color: #FFFFFF;
@@ -59,7 +62,8 @@ nav ul{
   list-style-type: none;
   padding-top: 5px;
   color: blue;
-  margin-left: 700px;
+  transition-duration: 2s;
+  margin-left: 690px;
 }
 
 nav ul li{
@@ -112,25 +116,29 @@ nav ul li:hover{
 	flex-direction: column;
 	font-weight: bold;
   top: 65px;
-	width: 1335px;
-	height: 240px;
+	width: 1440px;
+	height: auto;
   margin: auto;
 
   }
 
-.input-filtre{
-  margin-right: 15px;
-  text-align: center;  
-  height: 25px;
-  font-size: 1em;
-  font-weight: bold;
-  border: 1px  gray solid;
-  border-radius: 10px;
-  cursor: pointer;
-  }
 
+.localise .titre-h1{
+  margin-left: 15px;
+}
 
-/* bouton rechercher*/
+.sous-titre{
+  font-size: 0.6em;
+  margin-left: 5px;
+  font-weight: normal;
+
+}
+
+/* Mise en page zone type search et bouton rechercher*/
+
+.choix-premier{
+  margin-left: 10px;
+}
 
 .button {
   border: none;
@@ -141,7 +149,7 @@ nav ul li:hover{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin: 2px;
   cursor: pointer;
@@ -151,104 +159,16 @@ nav ul li:hover{
 }
 
 #gsearch{
+  border: none;
   height: 30px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-left: 9px;
 }
 
-.choix-ville .fa-search {
+.choix .fa-search {
   display: none;
 }
-
-.filtre-doption{
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 5px;
-}
-.filtre-doption .option{
-  display: flex;
-  flex-direction: row;
-  border-radius: 40px;
-}
-.filtre-doption .option:focus{
-  border: 1px  gray solid;
-  border-radius: 10px;
-  background-color: #DEEBFF;
-
-}
-
-.intersection .input-filtre{
-  border: 1px gray solid;
-}
-.titre-h1{
-	margin-left: 10px;
-}
-
-.sous-titre{
-  font-size: 0.8em;
-  margin-left: 15px;
-  font-weight: normal;
-}
-
-/*  les icones du filtres */
-
-.fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{ 
-  position: absolute;
-  background-color: #DEEBFF;
-  color: blue;  
-  border: none;
-  margin-top: 1px;
-  border-radius: 50%;
-  padding: 6px;
-  margin-left: 1px;
-  
-    
-}
-/* icone d'information plus de 500 logements */
-
-.fa-info{
-  background-color: #DEEBFF;
-  color: blue;
-  font-size: 0.6em;
-  margin-right: 5px;
-  border-radius: 45%;
-  padding: 5px;
-  padding-top: 3px;
-}
-
-.logement-info{
-  font-size: 1em;
-  font-weight: normal;
-  margin-left: 10px;
-}
-
-.label-filtre{
-  font-size: 1.3em;
-  margin-left: 10px;
-  margin-right: 15px;
-}
-/* Pour donner un widh personnalisé à chaque input de la class: filtre-doption */
-.economique, .romantique{
-  border-radius: 55px;
-  width: 180px;
-
-}
-
-
-.famille{
-  width: 150px;
-  border-radius: 55px;
-
-}
-
-.animaux{
-  width: 250px;
-  border-radius: 55px;
-}
-/*  carte à gauche ville Marseille */
 
 .localise .fa-map-marker-alt{
   padding-top: 6px;
@@ -263,21 +183,129 @@ nav ul li:hover{
   margin-bottom: 5px;
   color: #000000;
   background-color: rgb(240,240,240);
+
 }
 
-/* input choix ville */
 
-.choix-ville input{
-  border: none;
+ /*  Mise en page NIveau filtre d'options */
+
+.choix-deuxieme{
+  height: 50px;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 1330px;
+  height: 50px;
+  margin-left: 5px;
+  top: 150px;  
+  font-weight: bold;
 }
 
-.input-filtre:hover{
+/*Le titre :filtres */
+
+.label-filtre{
+  font-size: 1.3em;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+/*  les icones du filtres */
+.fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{ 
   background-color: #DEEBFF;
-  padding: 2px;
-  border: 1px  gray solid;
-  border-radius: 10px;
+  border-radius: 50%;
+  padding: 7px;
+  padding-top: 5px;
+  top: 147px;
+  font-size: 15px;
+  color: blue;
+  border: none;   
+  justify-content: center;
+  margin-left: -35px;
+  position: absolute;
 }
-/*=========== LES VILLES POPULAIRES LIBELLE de Droite    =================*/
+
+
+.choix-deuxieme .mes-filtres{
+  object-position: left;
+  display: inline-flex;
+  flex-direction: row;
+}
+.mes-filtres .unit-filtre{
+  margin-right: 30px;
+}
+
+/* ici l'effet selection d'un filtre */
+.choix-deuxieme .unit-filtre input[type=checkbox]:checked ~ label{
+  background-color: #C3C3C1;
+  color: #fff;
+  font-family: cursive;
+  font-size: 17px;
+
+}
+
+.filter-option{
+  font-family: 'raleway';
+  border: 0.01em gray solid;
+  padding-right: 1px;
+  padding: 2px 12px 2px 35px;  
+  color: #000;
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: bold;
+  border-radius: 16px;
+
+}
+
+
+.filter-option:hover{
+  background-color: #F0F094;
+  transform: scale(0.015);
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.unit-filtre input{
+  display: none;
+}
+
+
+.unit-filter .filter-option_label{
+  position: absolute;
+  font-size: 1.5em;
+  line-height: 20px;
+  color: #A01020;
+}
+
+/* icone d'information plus de 500 logements */
+
+.localise .logement-info p .fa-info{
+  position: relative;
+  background-color: rgb(244,244,244);
+  font-size: 0.6em;
+  color: blue;
+  margin-right: 10px; 
+  border-radius: 45%;
+  border: 0.0001em solid gray;
+  padding: 6px 10px 5px 10px;
+  
+}
+
+.logement-info{
+  position: relative;
+  font-size: 0.5em;
+  width: 1330px;
+  font-weight: normal;
+
+}
+
+
+/* LES VILLES POPULAIRES LIBELLE de Droite   */
+
 .libelle-droite{
   position: relative;
   width: 400px;
@@ -662,8 +690,8 @@ footer{
   width: 32%;
 	display: inline-block;
 	flex-direction: column;
-	font-size: 0.91em;
-	line-height: 1.5em;
+	font-size: 1em;
+	line-height: 1.6em;
 	margin-right: 35px;
 	margin-left: 15px;
 	padding-top: 25px;	
@@ -722,7 +750,7 @@ footer{
   align-items: center;
   max-width: 414px;  
   margin: 0px;
-  margin-left: 50px;
+  margin-left: 45px;
   z-index: 1;
   
 }
@@ -730,6 +758,7 @@ footer{
 /* Menu de navigation */
  header nav{
   color: blue;
+  transition-duration: 3s;
 }
 
 header img{
@@ -747,7 +776,7 @@ nav .heb-act-sin{
   padding-bottom: 30px;  
   width: 300px;   
   border: 0px blue solid;
-  margin-left: 0px;
+  margin-left: -10px;
   background-color: #FFFFFF;
   font-size: 1.1em;
   z-index: 9;
@@ -761,15 +790,19 @@ nav .heb-act-sin{
   left: -120px;
   padding: 0px 0px 20px 0px;
 }
+.heb-act-sin .nav-ul-li-hebergement:hover{
+  font-size: 1.5em;
+  transition-duration: 2s;
+}
 .nav-ul-li-activite{
   position: relative;
   padding-top: 70px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .nav-ul-li-inscrire{
   position: relative;
   top: 35px;
-  left: -150px;
+  left: -160px;
   z-index: 100;
   font-size: 0.91em;
 }
@@ -793,18 +826,15 @@ nav ul li span{
 
 
 nav ul li:hover{
- cursor: pointer;
-  padding-right: 0px;
-  margin-right: 0px;
-  border-left: 0px solid #0065;
 
+ cursor: pointer;
+  border-left: 0px solid #0065;
+  font-size: 1.3em;
   
 }
 
-
-
+/* La ligne en dessous de hébergement en mobile */
 .upline{
-
 
   margin: auto;
   height: 1px;
@@ -814,10 +844,7 @@ nav ul li:hover{
 
 }
 
-
-  /* partie localisation de la ville sur mobile*/
-
-
+  /* zone de recherche de la ville   */  
 .localise{
   top: 96px;
   display: flex;
@@ -830,132 +857,174 @@ nav ul li:hover{
   z-index: 4;
 
   }
-  .localise h1{
-    font-size: 1.3em;
-    width: 65%;
-  }
-  .choix-ville .intersection{
-    display: flex;
-    flex-direction: column;
-  }
 
-  .choix-ville .choix-ville-premier{
-    display: inline-block;  
+.localise .titre-h1{
+  width: 300px;
+  margin-left: 15px;
+}
 
+.sous-titre{
+  font-size: 0.7em;
+  margin-left: 5px;
+  font-weight: normal;
 
-  }
-  .choix-ville-premier .button:hover{
-  	background-color: #0A0;
-  }
+}
 
-  .button {
+/* Mise en page zone type search et bouton rechercher*/
+
+.choix-premier{
+  margin-left: 10px;
+}
+.button {
     display: none;
     cursor: pointer;
  
 }
 
-.intersection .fa-search{
-    margin-left: 235px;
-    width: 25px;
-    height: 25px;    
-    background-color: blue;
-    border-radius: 10px;
-    display: flex;
-    color: #F2F2F2F2;
-    position: absolute;    
-    top: 85px;
-    padding: 5px 5px 2px 10px;
-    font-size: 1.5em;
-  }
-
-  /*  icone carte à gauche ville Marseille */
-
-.localise .fa-map-marker-alt{
-  padding-top: 6px;
-  padding-left: 10px;
-  margin-right: -5px;
-  margin-left: 5px;
-  height: 26px;
-  width: 20px;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-left: none; 
-  margin-bottom: 5px; 
-  color: #000000;
-  background-color: rgb(240,240,240);
-}
-
-.localise h1 span{
-  font-size: 0.8em;
-}
-
-.choix-ville .logement-info{
-    top: 325px;
-    display: flex;
-    position: absolute;
-    width: 63%;
-    font-size: 0.9em;
-    font-weight: normal;
-  }
-  /* icone d'information plus de 500 logements */
-
-.fa-info{
-  background-color: #DEEBFF;
-  color: blue;
-  font-size: 0.6em;
-  padding-left: 10px;
-  border-radius: 45%;
-  padding: 5px;
-  padding-top: 3px;
-}
-
 #gsearch{
+  border: none;
   height: 30px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-left: 9px;
 }
 
+.choix .fa-search {
+  position: absolute;
+  margin-left: 266px;
+  width: 25px;
+  height: 25px;    
+  background-color: blue;
+  border-radius: 10px;
+  display: flex;
+  color: #F2F2F2F2;   
+  top: 100px;
+  padding: 5px 5px 2px 10px;
+  font-size: 1.5em;
+}
 
-/* deuxièment ligne concernant les options */
-  .filtre-doption .option{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 400px;
-    border-radius: 40px;
-    margin-left: 0px;
-    margin-right: 10px;
-    margin-top: 5px;
-    position: relative;  
+ /*  Mise en page NIveau filtre d'options */
+
+.choix-deuxieme{
+  height: 50px;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 414px;
+  height: 50px;
+  margin-left: 0px;
+  top: 150px;  
+  font-weight: bold;
+}
+
+/*Le titre :filtres */
+
+.label-filtre{
+  font-size: 1.3em;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+
+.choix-deuxieme .mes-filtres{
+  object-position: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.mes-filtres .unit-filtre{
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  border-radius: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 15px;
+  position: relative;
+
+
+
 
 }
 
+.fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{ 
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  padding-top: 5px;
+  margin-bottom: 15px;  
+  top: -5px;
+  font-size: 15px;
+  color: blue;
+  border: none;   
+  display: flex;
+  justify-content: center;
+  left: 35px;
+  position: absolute;
+}
+
+/* ici l'effet selection d'un filtre */
+.choix-deuxieme .unit-filtre input[type=checkbox]:checked ~ label{
+  background-color: #C3C3C1;
+  color: blue;
+  transition-duration: 2s;
+  font-family: cursive;
+  font-size: 17px;
+
+}
+.filter-option:hover{
+  background-color: #F0F094;
+  transform: scale(0.015);
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.unit-filtre input{
+  display: none;
+}
+
+
+.unit-filter .filter-option_label{
+  position: absolute;
+  font-size: 1.5em;
+  line-height: 15px;
+  color: #A01020;
+}
+
+/* icone d'information plus de 500 logements */
+
+.localise .logement-info p .fa-info{
+  position: relative;
+  background-color: rgb(244,244,244);
+  font-size: 0.6em;
+  color: blue;
+  margin-right: 10px; 
+  border-radius: 45%;
+  border: 0.0001em solid gray;
+  padding: 5px 7px 4px 7px;
+  
+}
+
+.logement-info{
+  position: relative;
+  top: 120px;
+  font-size: 0.6em;
+  width: 414px;
+  font-weight: normal;
+
+}
 
 /* Pour donner un widh personnalisé à chaque input de la class: filtre-doption */
-.economique, .romantique{
-  border-radius: 55px;
-  width: 160px;
-
-}
-
-
-.famille{
-  width: 150px;
-  border-radius: 55px;
-
-}
-
-.animaux{
-  width: 250px;
-  border-radius: 55px;
-}
-
-
   .filtre-doption .option:focus{
-  border: 1px  gray solid;
-  border-radius: 10px;
-  background-color: #DEEBFF;
+    border: 1px  gray solid;
+    border-radius: 10px;
+    background-color: #DEEBFF;
 
 }
  
@@ -1072,7 +1141,7 @@ nav ul li:hover{
 #container-hebergement-am .second-line .hebergement-am{
   margin-left: 10px;
 }
-
+/* premiere ligne de cette section */
 #container-hebergement-am .first-line{
   margin-left: 5px;
 }
@@ -1278,7 +1347,7 @@ nav ul li:hover{
     flex-direction: row;
     width: 400px;
     height: auto;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
   }
 
   .menu-foot .sousfoot strong{
@@ -1313,6 +1382,7 @@ nav ul li:hover{
     cursor: pointer;
   }
 }
+/* orientation paysage et portrait sur petits écrans */
 
   @media (orientation: landscape) {
   body {
