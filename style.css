@@ -852,7 +852,7 @@ footer{
     position: relative;
     top: -15px;
     display: block;
-    width: 400px;
+    width: 360px;
     margin-left: -15px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -864,7 +864,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 15px;
-    margin-right: 0px;
+    margin-right: 10px;
     position: relative;
   }
     /* les icones zone de filtres d'option */
@@ -906,15 +906,10 @@ footer{
     font-weight: normal;
   }
 
-  /* Pour donner un widh personnalisé à chaque input de la class: filtre-doption */
-  .filtre-doption .option:focus{
-    border: 1px  gray solid;
-    border-radius: 10px;
-    background-color: #DEEBFF;
-  }
   
   /*survol filtre d'option*/
   .input-filtre:hover{
+    position: absolute;
     background-color: #DEEBFF;
     padding-right: 2px;
     border: 1px  gray solid;
