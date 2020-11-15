@@ -11,7 +11,8 @@
 </head>    
 <body>
     <div class="contain-page">
-        <header>         
+        <header>
+            <div class="header">         
             <!-- logo du site Reservia-->         
                 <img src="images/Reservia@3x.png" id="logo" alt="logo du site reservia"/>
 
@@ -22,7 +23,8 @@
                         <li class="nav-ul-li-activite"> <a href="#activite"><span>Activités</span> </a> </li>
                         <li class="nav-ul-li-inscrire inscrire"> <a href="#"><strong> S'inscrire</strong> </a></li>                     
                     </ul>
-                </nav>                    
+                </nav>
+                </div>                    
         </header>
 
         <section class="localise">
@@ -98,10 +100,10 @@
            <!--  Le libelle de droite contenant LES PLUS POPULAIRES   -->            
            <section class="libelle-droite" >           
                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
-                <ul class="cote-droit">
-
+               <!-- contenair des artcles -->
+                <div class="cote-droit">
                     <!-- hotel-lpp pour designer hotel du libelle de droite -->
-                    <li class="hotel-lpp">
+                    <article class="hotel-lpp">
                         <div class="imag">
                             <a href="#">
                                 <img src="images/hebergements/4_small/3emile.jpg" alt="" title="J'envoie vers un lien">
@@ -121,9 +123,9 @@
                                 </a>
                             </div> 
                         </div>                                                   
-                    </li>
+                    </article>
 
-                    <li class="hotel-lpp">
+                    <article class="hotel-lpp">
                         <div class="imag">
                             <a href="#">
                                 <img src="images/hebergements/4_small/2aw.jpg" alt="maison de aw-creative" title="J'envoie vers un lien">
@@ -143,9 +145,9 @@
                                 </a>
                             </div>
                         </div>  
-                    </li>
+                    </article>
 
-                   <li class="hotel-lpp">
+                   <article class="hotel-lpp">
                         <div class="imag">
                             <a href="#">
                                 <img src="images/hebergements/4_small/5febrian.jpg" alt="maison febrian" title="J'envoie vers un lien">
@@ -165,36 +167,36 @@
                                 </a>
                             </div>                        
                         </div>
-                    </li>
-                </ul>
+                    </article>
+                </div>
             </section>
                
                <!--  La partie contenant les hébergements de Marseille
                         contenant SIX hébergements LIBELLE DE GAUCHE         -->
            <section id="hebergement" class="heberge"> 
                 <h2>Hébergements à Marseille</h2>
-                <ul id="container-hebergement-am">
-                    <li class="first-line">
+                <!-- contenair des articles hebergement à Marseille -->
+                <div class="container-hebergement-am">
+                    
                         <!-- herbergement-am pour hebergement à Marseille
                             inf-am pour info à marseille
                             notation-am pour notation à Marseille -->
-                        <div class="hebergement-am">   
+                        <article class="hebergement-am">   
                             <a href="#" class="heb-div-column">                         
                                 <div class="imag">                                    
                                     <img src="images/hebergements/4_small/7marcus.jpg" alt="maison de aw-creative" title="J'envoie vers un lien">                            
                                 </div>
                                 <div class="inf-am">                                    
-                                    <span><strong>Auberge la Cannebière</strong><br>
-                                        Nuit à partir de 25€
-                                    </span>                                
+                                    <span><strong>Auberge la Cannebière</strong><br></span>
+                                    <span>Nuit à partir de 25€</span>                                
                                 </div>
                                 <div class="notation-am">                        
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span>      
                                 </div>
                             </a>                                                   
-                        </div>
+                        </article>
             
-                        <div class="hebergement-am">                        
+                        <article class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/6fred.jpg" alt="maison de kleber" title="J'envoie vers un lien">
@@ -208,9 +210,9 @@
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>                     
                                 </div>
                             </a>
-                        </div>
+                        </article>
 
-                        <div class="hebergement-am">
+                        <article class="hebergement-am">
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/9reisetopia.jpg" alt="maison de reisetopia" title="J'envoie vers un lien">
@@ -225,10 +227,9 @@
                                     <i class="fas fa-star"></i><span class="fas fa-star"></span>
                                 </div>
                             </a>
-                        </div>
-                    </li>
-                    <li class="second-line">
-                        <div class="hebergement-am">                        
+                        </article>
+                
+                        <article class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/1annie.jpg" alt="annie-spratt" title="J'envoie vers un lien"/>
@@ -242,9 +243,9 @@
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span><span class="fas fa-star"></span>     
                                 </div>
                             </a>
-                        </div>
+                        </article>
 
-                        <div class="hebergement-am">                        
+                        <article class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">
                                     <img src="images/hebergements/4_small/8nicate.jpg" alt="maison de lee" title="J'envoie vers un lien">
@@ -258,9 +259,9 @@
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="fas fa-star"></span>
                                 </div>                                    
                             </a>
-                        </div>
+                        </article>
 
-                        <div class="hebergement-am">                        
+                        <article class="hebergement-am">                        
                             <a href="#" class="heb-div-column">
                                 <div class="imag">                                
                                     <img src="images/hebergements/4_small/4febrian.jpg" alt="maison de zakaria" title="J'envoie vers un lien">
@@ -274,18 +275,20 @@
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>           
                                 </div>                  
                             </a>
-                        </div>
-                    </li>                   
-                </ul>
+                        </article>                   
+                </div>
+                <!-- Message affiché en dessous des hebergements de marseille -->
                 <p><strong><a href="#">Afficher plus</a></strong></p>
             </section>
 
         <!--================   Activité à Marseille ======= -->
             <section id="activite" class="sectio">
-                <h2 class="act">Activités à Marseille</h2>
+                <h2>Activités à Marseille</h2>
 
-                <ul class="sectio-hotel sectmobile">
-                    <li class="hotel6 hotel-ac6">                        
+                <!-- container des articles d'activités à marseille -->
+                <div class="sectio-hotel">
+                    <!-- article renfermant image et Nom de l'Activité à Marseille -->
+                    <article class="hotel6">                        
                         <div class="imag-am"> 
                             <a href="#">  
                                 <img src="images/activites/4_small/6reno.jpg" alt="maison de reno" title="J'envoie vers un lien">
@@ -294,20 +297,21 @@
                         <div class="info-hotel-activi">
                             <span><strong>Vieux Port</strong></span>
                         </div>                    
-                    </li>
+                    </article>
 
-                    <li class="hotel5 hotel-ac5">                        
+                    <article class="hotel5">                        
                         <div class="imag-am">
                             <a href="#">
                                 <img src="images/activites/4_small/5paul.jpg" alt="maison de paul" title="J'envoie vers un lien">
                             </a>
                         </div>
+                        <!--Nom de l'activité-->
                         <div class="info-hotel-activi">
                             <span><strong>Fort de Pomègues</strong></span>
                         </div>                        
-                    </li>
+                    </article>
 
-                    <li class="hotel2 hotel-ac2">                          
+                    <article class="hotel2">                          
                         <div class="imag-am">  
                             <a href="#">    
                                 <img src="images/activites/4_small/2kevin.jpg" alt="maison de kevin" title="J'envoie vers un lien">
@@ -316,9 +320,9 @@
                         <div class="info-hotel-activi">
                             <span><strong>Iles du Frioul</strong></span>
                         </div>                        
-                    </li>
+                    </article>
 
-                    <li class="hotel3 hotel-ac3">                       
+                    <article class="hotel3">                       
                         <div class="imag-am">
                              <a href="#">
                                 <img src="images/activites/4_small/3kilyan.jpg" alt="maison de kilyan" title="J'envoie vers un lien">
@@ -327,9 +331,9 @@
                         <div class="info-hotel-activi">
                             <span><strong>Parc National des Calanques</strong></span>
                         </div>                        
-                    </li>     
+                    </article>     
 
-                    <li class="hotel1 hotel-ac1">                        
+                    <article class="hotel1">                        
                         <div class="imag-am">
                             <a href="#">
                                 <img src="images/activites/4_small/1florian.jpg" alt="maison florian" title="j'envoie vers un lien">
@@ -338,9 +342,9 @@
                         <div class="info-hotel-activi">
                                 <span><strong>Notre-Dame-de-la-Garde</strong></span>
                         </div>             
-                    </li>
+                    </article>
 
-                    <li class="hotel4 hotel-ac4">                        
+                    <article class="hotel4">                        
                         <div class="imag-am">
                             <a href="#">        
                                 <img src="images/activites/4_small/4lena.jpg" alt="maison de lena" title="J'envoie vers un lien">
@@ -349,34 +353,34 @@
                         <div class="info-hotel-activi">                        
                             <span><strong>Parc Longchamp</strong></span>                        
                         </div>
-                    </li>
-                </ul>
+                    </article>
+                </div>
             </section>
 
         <!--========================= Pied de Page====================   -->
         <footer>
             <section class="menu-foot">
+                <!-- Il n'y a pas de titre ici ni container-->
                 <div class="sousfoot"> 
                     <span><strong>A propos</strong> </span>                       
                         
                      <a href="#"> Fonctionnement du site </a>
                     <a href="#"> Conditions générales de vente </a>
-                    <a href="#"> Données et confidentialité </a>
-                    
+                    <a href="#"> Données et confidentialité </a>                   
                 </div>
+
                 <div class="sousfoot"> 
                         <span><strong>Nos hébergements</strong> </span>   
                                                
                             <a href="#"> Charte qualité </a>
-                            <a href="#"> Soumettre votre hôtel </a>
-                        
+                            <a href="#"> Soumettre votre hôtel </a>                        
                 </div>
+
                 <div class="sousfoot"> 
                     <span><strong> Assistance </strong></span>                      
                                           
                         <a href="#"> Centre d'aide </a>
-                        <a href="#"> Nous contacter </a>
-                    
+                        <a href="#"> Nous contacter </a>                
                 </div>
             </section>
         </footer>       
