@@ -5,7 +5,7 @@ body{
   margin: auto;
   padding: 0px;
   width: 1000px;
-  height: 1400px; 
+  height: 1405px; 
 }
 
 /* container de toute la page */
@@ -17,10 +17,9 @@ body{
   margin: auto; 
   justify-content: center;
   align-items: center;
-  top: 5px;
- 
+  top: 5px; 
   box-sizing: border-box;
- 
+
 
   }
 
@@ -79,7 +78,7 @@ nav ul{
 
 nav ul li{
   margin-left: 35px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   border: none;
   height: 30px;
   padding: 10px 2px 0px 0px;
@@ -106,9 +105,10 @@ nav ul li span{
 
 /* survol des cellules*/
 nav ul li:hover{
+  font-size: 0.8em;
   color: blue;
   text-decoration: none;
-  border-top: 2px solid #0065FC; 
+  border-top: 3px solid #0065FC; 
 
 }
 
@@ -314,9 +314,9 @@ nav ul li:hover{
 /*Container libelle de droite */
 .libelle-droite{
   position: relative;
-  width: 300px;
-  height: 500px;
-  top: 190px;
+  width: 290px;
+  height: 480px;
+  top: 200px;
   left: 660px;
   background-color: #F2F2F2;
   display: inline-block;
@@ -339,7 +339,7 @@ nav ul li:hover{
 
 .libelle-droite h2{
   margin-bottom: 0px;
-  margin-left: 10px;
+  margin-left: 15px;
   font-size: 20px;
 
 }
@@ -348,7 +348,7 @@ nav ul li:hover{
 .hotel-lpp .imag img{
   object-fit: cover;                     
   width: 110px;
-  height: 110px;
+  height: 108px;
   border-top-left-radius: 11%;
   border-bottom-left-radius: 11%;
 }
@@ -360,30 +360,31 @@ nav ul li:hover{
   justify-content: space-between;
   float: left;
   background-color: #F1F1F1;
-  width: 270px;
+  width: 250px;
   height: 110px;
-  margin-left: 5px;  
-  margin-top: 5px;
+  margin-left: 15px;  
+
   border-radius: 9%;
   border: 4px white solid;
   margin-bottom: 15px;
 }
 
-.name-cite{
-  margin-left: 1px;
-}
-.hotel-lpp .name-cite span strong{
+/* titre h5 des noms d'hotels */
+.hotel-lpp .name-cite h5{
   font-weight: bold;
+  display: inline;
   font-size: 1em;
+  margin-top: 5px;
+  border: 1px black solid;
 }
 
 /* L'information qui accompagne la photo */
 .hotel-lpp .information-lpp{
   display: inline-block;    
-  width: 165px;
-  height: 111px;
-  padding: 2px 0px 0px 5px;
-  margin-left: 5px;
+  width: 110px;
+  height: 106px;
+  line-height: 15px;
+  padding: 5px 20px 0px 10px;
   background-color: white;
   font-size: 0.91em;
   text-decoration: none;
@@ -394,7 +395,7 @@ nav ul li:hover{
 /* espace créé entre les etoiles et le nom du site */
 .white-space{
   width: 100px;
-  height: 48px; 
+  height: 17px; 
 }
 
 .notation-lpp{
@@ -407,9 +408,10 @@ nav ul li:hover{
 }
 
 /*div de notation etoile*/
-.notation-lpp span{
+.notation-lpp p{
   color: gray;
-  font-size: 1em;
+  font-size: 0.91em;
+  
 }
 
 .name-cite a{
@@ -425,9 +427,10 @@ nav ul li:hover{
   top: 280px;
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
   background-color: #F2F2F2;
-  width: 655px;
-  height: 500px;
+  width: 645px;
+  height: 480px;
   border: none;
 }
 
@@ -457,9 +460,10 @@ backg #F2F2F2
 */
 .heberge .container-hebergement-am{ 
   top: 20px;
-  left: 10px;
+  left: 20px;
   width: 650px;
   height: 380px;
+  padding-left: 10px;
   display: flex;  
   flex-direction: row;
   flex-wrap: wrap;
@@ -473,8 +477,8 @@ backg #F2F2F2
   margin: 0px 5px 5px 5px;
   padding-bottom: 0px;
   background-color: #F1F1F1;
-  width: 190px;
-  height: 160px;
+  width: 189px;
+  height: 168px;
   border-radius: 7%;
   border: 3px white solid;
 
@@ -497,31 +501,32 @@ backg #F2F2F2
 
 /*  inf-am pour information à Marseille */
 .heb-div-column .inf-am{
+
   position: relative;
-  width: 183px;
-  height: 50px;
-  font-size: 0.9em;
+  line-height: 0px;
   background-color: #FFFFFF;
   padding-left: 10px;
   color: #000000;
 }
 /**/
-.heb-div-column .inf-am span strong{
-    font-size: 1em;
+.heb-div-column .inf-am span h5{
+    font-size: 0.9em;
     font-weight: bold;
+    height: 10px;
+    line-height: 0px;
   }
 
-.heb-div-column .inf-am span{
-    font-size: 0.7em;
+.heb-div-column .inf-am p{
+    font-size: 0.6em;
   }
 
   /* notation pour les etoiles bleues*/
 .heb-div-column .notation-am{
   background-color: #FFFFFF;
-  width: 183px;
-  height: 10px;
+
   font-size: 0.6em;
-  padding-left: 10px;
+  line-height: 0px;
+  padding: 0px 0px 2px 10px;
   color: blue;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -552,17 +557,18 @@ backg #F2F2F2
 .sectio{
   position: absolute;
   display: flex;
-  margin: auto; 
-  top: 800px;
+  margin: auto;
+  margin-left: 10px; 
+  top: 770px;
   width: 980px;
   height: 480px;
-  background-color: #FFFFFF;
+  background-color: rgb(246,246,246);
 }
 
 /* titre de la section */
 .sectio h2{
   margin-left: 25px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 /*Vieux port et parc nat calanques*/
@@ -575,7 +581,7 @@ backg #F2F2F2
   margin-left: 5px;
   margin-right: 20px;
   width: 220px;
-  height: 320px;
+  height: 290px;
   border-top: 5px;
   border-radius: 5%;  
 }
@@ -589,26 +595,25 @@ backg #F2F2F2
 .hotel6 .imag-am img, .hotel3 .imag-am img{
   object-fit: cover;
   width: 220px;
-  height: 320px;
+  height: 285px;
   border-top-left-radius: 7%;
   border-top-right-radius: 7%;
 }
 
 
 /* texte dessous des activités */
-.info-hotel-activi{
-  width: 175px;
-  height: 55px;
-  font-size: 0.7em;
-  padding: 15px 30px 15px 15px;
+.info-hotel-activi h5{  
+  background-color: #FFFFFF;
+  height: 30px;
+  margin-top: -2px;
+  padding: 6px 0px 0px 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: rgb(245,245,245);
-  border: 0em white solid;    
-  margin-top: -1px;
-  margin-left: 0px;
-  font-weight: bold;
+  border: 0.001em gray solid;
+  font-size: 0.6em;
+
 }
+
 
 /*pomegues, frioul, notre-dame et longchamp */
 .sectio .hotel5, .hotel1, .hotel4{
@@ -641,17 +646,16 @@ backg #F2F2F2
 /* Iles frioul */
 .hotel2 {
   position: absolute;
-  top: 315px;
+  top: 280px;
   left: 255px;
   width: 220px;
   height: 135px;
 }
+
+/* hateur de Iles du Frioul */
 .hotel2 .imag-am img{
   height: 80px;
-} 
-.hotel2 .info-hotel-activi{
-  width: 175px;
-  height: 15px;
+
 }
 
 
@@ -663,7 +667,7 @@ backg #F2F2F2
 
 /*parc lonchamps */
 .hotel4 {
-  top: 280px;
+  top: 250px;
   left: 725px;
 }
 
