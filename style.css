@@ -4,24 +4,25 @@ body{
   height: auto;
   margin: auto;
   padding: 0px;
-  width: 1000px;
-  height: 1405px; 
+  min-width: 900px;
+  height: 1390px;
 }
 
 /* container de toute la page */
 
 .contain-page{  
   display: block;
-  width: 1000px;
-  height: 1403px;
-  margin: auto; 
+  width: 900px;
+  height: 1388px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
   align-items: center;
   top: 5px; 
   box-sizing: border-box;
-
-
+  
   }
+
 
 
 *{
@@ -37,7 +38,7 @@ li{
 header{
   display: flex;
   align-items: center;
-  max-width: 1000px;
+  width: 900px;
   height: 80px;
   margin: auto;
   z-index: 1;    
@@ -53,6 +54,7 @@ header{
   align-items: center;
 
 }
+
 /* image logo du site*/
 header img{
 
@@ -78,10 +80,10 @@ nav ul{
 
 nav ul li{
   margin-left: 35px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   border: none;
   height: 30px;
-  padding: 10px 2px 0px 0px;
+  padding: 15px 2px 0px 0px;
 
 }
 
@@ -97,18 +99,20 @@ nav ul li strong{
 nav ul li a{
   text-decoration: none;
   color: blue;
-  }
+}
   /* couleur à Activités */
 nav ul li span{
   color: rgb(85,85,85);
-  }
+}
 
 /* survol des cellules*/
 nav ul li:hover{
   font-size: 0.8em;
+  padding: 18px 0px 0px 0px;
+  height: 30px;
   color: blue;
   text-decoration: none;
-  border-top: 3px solid #0065FC; 
+  border-top: 2px solid #0065FC; 
 
 }
 
@@ -126,17 +130,21 @@ nav ul li:hover{
 }
 
 /* titre h1 et sa suite */
-.localise .titre-h1{
+.localise h1{
+  display: flex;
   margin-left: 15px;
-  font-size: 1.1em;
+  font-size: 1.12em;
+  line-height: 0px;
+
 }
 
 /* Phrase en dessous du titre h1 */
-.sous-titre{
-  font-size: 0.6em;
-  margin-left: 5px;
+.localise p{
+  display: flex;
+  font-size: 0.7em;
+  margin-left: 20px;
   font-weight: normal;
-
+  line-height: 0px;
 }
 
 /* Mise en page zone type search et bouton rechercher*/
@@ -161,6 +169,7 @@ nav ul li:hover{
   padding: 5px 10px 5px 10px;
   margin-left: -1px;
 }
+
 /* input de la zone de recherche*/
 #gsearch{
   border: none;
@@ -169,10 +178,12 @@ nav ul li:hover{
   font-size: 1.2em;
   margin-left: 9px;
 }
+
 /* icone cachée pour le mobile*/
 .choix .fa-search {
   display: none;
 }
+
 /* icone de recherche */
 .localise .fa-map-marker-alt{
   padding-top: 6px;
@@ -219,12 +230,12 @@ nav ul li:hover{
   border-radius: 50%;
   padding: 7px;
   padding-top: 5px;
-  top: 121px;
-  font-size: 15px;
+  top: 104px;
+  font-size: 12px;
   color: blue;
   border: none;   
   justify-content: center;
-  margin-left: -35px;
+  margin-left: -36px;
   position: absolute;
 }
 
@@ -267,7 +278,6 @@ nav ul li:hover{
 }
 
 
-
 /* survol des filtres d'option */
 .filter-option:hover{  
   background-color: gray;
@@ -291,32 +301,37 @@ nav ul li:hover{
 
 /* icone d'information plus de 500 logements */
 .localise .logement-info p .fa-info{
+
   position: relative;
   background-color: rgb(244,244,244);
-  font-size: 0.6em;
+  font-size: 0.7em;
+  top: -5px;
   color: blue;
-  margin: 0px 10px 0px 5px; 
-  border-radius: 45%;
-  border: 0.0001em solid gray;
-  padding: 4px 7px 4px 7px;  
+  margin: 0px 10px 0px 0px; 
+  border-radius: 50%;  
+  padding: 6px 8px 11px 8px;  
+
 }
+
   /*phrase point d'information*/
 .logement-info{
   display: flex;
+  margin-left: 5px;
+  padding-left: 0px;
   position: relative;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: normal;
+  height: 30px;
 
 }
 
 
-/* LES VILLES POPULAIRES LIBELLE de Droite   */
-/*Container libelle de droite */
+/* SECTION: LES PLUS POPULAIRES LIBELLE de Droite */
 .libelle-droite{
   position: relative;
-  width: 290px;
+  width: 280px;
   height: 480px;
-  top: 200px;
+  top: 180px;
   left: 660px;
   background-color: #F2F2F2;
   display: inline-block;
@@ -362,9 +377,8 @@ nav ul li:hover{
   background-color: #F1F1F1;
   width: 250px;
   height: 110px;
-  margin-left: 15px;  
-
-  border-radius: 9%;
+  margin-left: 15px; 
+  border-radius: 10%;
   border: 4px white solid;
   margin-bottom: 15px;
 }
@@ -375,21 +389,22 @@ nav ul li:hover{
   display: inline;
   font-size: 1em;
   margin-top: 5px;
-  border: 1px black solid;
+
 }
 
 /* L'information qui accompagne la photo */
 .hotel-lpp .information-lpp{
   display: inline-block;    
-  width: 110px;
-  height: 106px;
+  width: 108px;
+  height: 110px;
   line-height: 15px;
   padding: 5px 20px 0px 10px;
+  margin-top: -1px;
   background-color: white;
   font-size: 0.91em;
   text-decoration: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 /* espace créé entre les etoiles et le nom du site */
@@ -399,19 +414,20 @@ nav ul li:hover{
 }
 
 .notation-lpp{
-  font-size: 0.7em;
+  font-size: 0.61em;
   padding-left: 5px;
+
 }
 
+/* couleur des étoiles */
 .notation-lpp i{
   color: blue;
 }
 
 /*div de notation etoile*/
-.notation-lpp p{
+.notation-lpp span{
   color: gray;
-  font-size: 0.91em;
-  
+
 }
 
 .name-cite a{
@@ -424,7 +440,7 @@ nav ul li:hover{
 /* DEBUT HEBERGEMENTS a MARSEILLE   */
 .heberge{
   position: absolute;
-  top: 280px;
+  top: 260px;
   display: flex;
   flex-direction: column;
   margin-left: 10px;
@@ -455,9 +471,7 @@ nav ul li:hover{
   
 }
 
-/* Container hebergement à marseille
-backg #F2F2F2
-*/
+/* Container hebergement à marseille backg #F2F2F2  */
 .heberge .container-hebergement-am{ 
   top: 20px;
   left: 20px;
@@ -510,21 +524,20 @@ backg #F2F2F2
 }
 /**/
 .heb-div-column .inf-am span h5{
-    font-size: 0.9em;
-    font-weight: bold;
-    height: 10px;
-    line-height: 0px;
-  }
+  font-size: 0.9em;
+  font-weight: bold;
+  height: 10px;
+  line-height: 0px;
+}
 
 .heb-div-column .inf-am p{
-    font-size: 0.6em;
-  }
+  font-size: 0.61em;
+}
 
   /* notation pour les etoiles bleues*/
 .heb-div-column .notation-am{
   background-color: #FFFFFF;
-
-  font-size: 0.6em;
+  font-size: 0.61em;
   line-height: 0px;
   padding: 0px 0px 2px 10px;
   color: blue;
@@ -560,8 +573,8 @@ backg #F2F2F2
   margin: auto;
   margin-left: 10px; 
   top: 770px;
-  width: 980px;
-  height: 480px;
+  width: 930px;
+  height: 440px;
   background-color: rgb(246,246,246);
 }
 
@@ -580,7 +593,7 @@ backg #F2F2F2
   left: 20px;
   margin-left: 5px;
   margin-right: 20px;
-  width: 220px;
+  width: 200px;
   height: 290px;
   border-top: 5px;
   border-radius: 5%;  
@@ -594,7 +607,7 @@ backg #F2F2F2
 /* images: hotel vieux port et parc national des calanques */
 .hotel6 .imag-am img, .hotel3 .imag-am img{
   object-fit: cover;
-  width: 220px;
+  width: 200px;
   height: 285px;
   border-top-left-radius: 7%;
   border-top-right-radius: 7%;
@@ -605,12 +618,12 @@ backg #F2F2F2
 .info-hotel-activi h5{  
   background-color: #FFFFFF;
   height: 30px;
-  margin-top: -2px;
+  margin-top: -3px;
   padding: 6px 0px 0px 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border: 0.001em gray solid;
-  font-size: 0.6em;
+  font-size: 0.7em;
+  font-weight: bold;
 
 }
 
@@ -623,20 +636,22 @@ backg #F2F2F2
   top: 75px;
   left: 255px;
   margin-right: 10px;
-  width: 220px;
+  width: 200px;
   height: 165px;
   border: 0px gray solid;
   border-bottom: 2px;
   border-radius: 3%;
 } 
+
 /* dimension images pomegues, frioul, notre-dame et longchamp */
 .hotel1, .hotel4, .imag-am img{
   object-fit: cover;
-  width: 220px;
+  width: 200px;
   height: 110px;
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
 /* emplacement iles du frioul */
 .hotel5 .imag-am img{
   height: 150px;
@@ -648,7 +663,7 @@ backg #F2F2F2
   position: absolute;
   top: 280px;
   left: 255px;
-  width: 220px;
+  width: 200px;
   height: 135px;
 }
 
@@ -662,13 +677,13 @@ backg #F2F2F2
 /* notre dame */
 .hotel1{
   top: 75px;
-  left: 725px;
+  left: 720px;
 }
 
 /*parc lonchamps */
 .hotel4 {
   top: 250px;
-  left: 725px;
+  left: 720px;
 }
 
 
@@ -679,8 +694,8 @@ footer .menu-foot{
   background-color: #F2F2F2;
   display: flex;
   flex-direction: row;
-  top: 1280px;
-  width: 990px;
+  top: 1240px;
+  width: 940px;
   height: 140px;
   position: absolute;
   margin-left: auto;
@@ -692,8 +707,8 @@ footer .menu-foot{
   width: 30%;
   display: inline-block;
   flex-direction: column;
-  font-size: 0.9em;
-  line-height: 0.5em;
+  font-size: 0.7em;
+  line-height: 0.7em;
   margin-right: 15px;
   margin-left: 10px;
   padding-top: 25px;  
@@ -719,487 +734,566 @@ footer .menu-foot{
 }
 
 
-/* PHASE: UTILISATION entre TABLETTE et Desktop      */
-@media screen and (min-width: 678px) and (max-width: 1024px){
+
+  /* PHASE: TABLETTE    */
+@media screen and (min-width: 678px) and (max-width: 899px){
   body{
+    width: 678px;
+    height: 1560px;
     margin: auto;
-    background-color: #FFFFFF;
+    margin-right: 0px;
+    padding: 0px;
+    background-color: white;
   }
+
+  /* contenair page en TABLETTE */
   .contain-page{
+
+    display: block;
+    width: 678px;
+    height: 1555px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+ 
+  }
+
+  /* Menu de navigation */
+  nav ul{
+    margin-left: 100px;
+  }
+
+  /* zone de recherche de la ville   */
+  .localise{
+    width: 674px;
+    height: 185px;
+  }
+
+  /* icone cachée pour le mobile*/  
+  .choix-premier .fa-map-marker-alt{
+    margin-right: -10px;
+    margin-left: 10px;
+  }
+
+   /*  Mise en page NIveau des filtres d'options */
+   .choix-deuxieme{
+    width: 98%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+   }
+
+  /*  les icones du filtres */
+  .fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{
+    top: 122px;
+  }
+
+  /* container des filtres d'option*/
+  .choix-deuxieme .mes-filtres{
+    display: flex;
+    flex-direction: row;    
+    margin-top: 35px;
+    margin-left: -80px;  
+  }
+
+  /*chaque filtre */  
+  .mes-filtres .unit-filtre{
+    margin-right: 1px;
+  }
+
+  /* icone d'information plus de 500 logements */
+  .localise .logement-info p .fa-info{ 
+    top: -10px;     
+  }
+
+
+  /*Les plus populaires  */
+  .libelle-droite{
+    position: relative;
+    width: 265px;
+    height: 490px;
+    top: 175px;
+    left: 407px;
+    display: flex;
+    flex-direction: column;    
+  }
+
+  /* ===== ICONE de LES PLUS POPULAIRES =====*/
+  .fa-chart-line{  
+    margin-left: 25px;
+  }
+
+  /*Titre h2 libelle de droite */
+  .libelle-droite h2{
+    font-size: 18px;
+  }
+
+  /* marge de chaque photo et son information en TABLETTE */
+  .cote-droit .hotel-lpp{
+    margin: auto; 
+    margin-bottom: 30px;
+  }
+
+
+  /* DEBUT HEBERGEMENTS a MARSEILLE   */
+  .heberge{    
+    top: 260px;
+    display: flex;
     margin: auto;
+    width: 402px;
+    height: 600px;
+    border: none;
+    background-color: #F2F2F2;
+
+  }
+
+  /* Message: Afficher plus */
+  .heberge p strong a{
+    position: absolute;
+    top: 580px;
+    margin-left: 13px;
+    font-size: 0.71em;
+  }
+
+
+  /* Container hebergement à marseille */
+  .heberge .container-hebergement-am{
+    left: 0px;
+    width: 390px;
+    height: 583px;
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  }
+
+  /* Un hebergement*/
+  .container-hebergement-am .hebergement-am{
+    display: flex;
+    flex-direction: row;  
+    margin: 0px 2px 2px 0px;
+    padding-bottom: 0px;
+    background-color: #F1F1F1;
+    width: 189px;
+    height: 168px;
+    border: 1px white solid;
+  }
+
+  /* taille des etoiles bleues */
+  .notation-am i{
+    font-size: 0.85em;
+  }
+
+  /*  notation avec span pour les étoiles grises*/
+  .heb-div-column .notation-am span{
+    font-size: 0.85em;
+    color: gray;
+  }
+
+
+  /*  SECTION Acitvités à Marseille   */
+  .sectio{
+    position: absolute;
+    display: flex;
+    margin: auto;
+    top: 863px;
+    width: 674px;
+    height: 570px;
+    background-color: rgb(250,250,248);
+
+  }
+
+  /* titre de la section */
+  .sectio h2{
+    margin-left: 10px;
+    font-size: 1.2em;
+  }
+
+
+  /*Vieux port et parc nat calanques*/
+  .sectio .hotel6, .hotel3{  
+    left: 10px;
+    height: 300px;
+  }
+
+
+  /* images: hotel vieux port et parc national des calanques */
+  .hotel6 .imag-am img, .hotel3 .imag-am img{
+    height: 275px;
+  }
+
+  /* margin parc national dess calanques*/
+  .hotel3{
+    left: 450px;
+  }
+
+  /* Iles frioul */
+  .hotel2{
+    top: 270px;
+    left: 235px;
+  }
+
+  /* Fort de pomegues */
+   .sectio .hotel5{
+    top: 75px;
+    left: 235px;
+  } 
+
+  /* notre dame */
+  .hotel1{
+    top: 405px;
+    left: 120px;
+  }
+
+  /*parc lonchamps */
+  .hotel4 {
+    top: 405px;
+    left: 350px;
+  }
+
+  /* MISE EN PAGE du PIED de PAGE
+          container des sousfoot */
+  footer .menu-foot{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    top: 1435px;
+    width: 674px;
+    height: 120px;  
+    margin: auto;
+  }
+
+  .sousfoot{
+    display: block;
+    flex-direction: column;
+    font-size: 0.7em;   
+  }
+
+  .menu-foot .sousfoot a{
+    display: block;
+  }
+
+  .sousfoot a:hover{  
+    font-size: 1em;    
+    margin: 0px;
   }
 
 }
 
 
-/* En dessous de TABLETTES donc les mobiles */
-@media screen and (max-width: 677px){
-  body{ 
-  display: flex;   
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 500px;
-    border: 3px yellow dashed;
-    background-color: red;
-    font-family: 'Raleway', sans-serif, Verdana, Arial;
 
+/*Les mobiles */
+@media screen and (max-width: 677px){
+  body{
+    width: 414px;
+    height: 3350px;
+    margin: auto;
+    padding: 0px;
+    
   }
 
-  /* contenant de la page*/
-  .container-page{
+  /* contenair page en TABLETTE */
+  .contain-page{
 
     display: block;
-    width: 350px;
-    height: 490px;
-    border: 5px red solid;
-    background-color: gray;
+    width: 400px;
+    height: 3345px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0px;
+   
   }
 
-  /* En-tête de la page */
-  .header{
-    position: absolute;
-    display: inline-block;
-    width: 400px;
-    height: 90px;
-    margin: auto; 
-    padding: 0px;      
+
+  header{
+    height: 65px;
+    background-color: white;
+    border-bottom: 0.001px solid #F1F1F1;
+    width: auto;
   }
 
-  /* Menu de navigation mobile */
-  header img{  
-    object-fit: cover;
-    margin-top: 0px;
-    height: 30px;
-    border: none;  
-    width: 70px;
-    margin-left: 30px;
-    
-  }
-  /* container sous nav de navigation*/
-  nav .heb-act-sin{ 
-    position: relative;
-    top: 25px;
-    width: 400px;
-  
-    padding: 0px;  
-    border: none;
+  /* positionnement menu de navigation */
+
+  header nav ul{
+    top: 10px;
+    position: relative;    
     display: flex;
-    margin: 0px auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    font-size: 1em;
-  }
+    transition-duration: 0s;
+    margin-left: -10px;
+  }  
 
   nav ul li{
-    
-    border: 2px black solid;
-    padding: 0px;
-    justify-content: center;
-
-  }
-  .nav-ul-li-hebergement{
-
-  }
-
-
-  .nav-ul-li-activite{    
-    top: 15px;
-    left: 140px;
-    
+  
+    font-size: 0.71em;
+    height: 20px;
+    padding: 0px 3px 5px 3px;
+  
   }
   
+  header nav .heb-act-sin .nav-ul-li-hebergement{
+    margin-left: 0px;
+  }
 
-  .nav-ul-li-inscrire{
+  header .heb-act-sin .nav-ul-li-activite{
+    margin-left: 130px;
+  }
+  header .heb-act-sin .nav-ul-li-inscrire{
     position: relative;
-    top: 50px;
+    top: -30px;
+    margin-left: -40px;
   }
-  
-  nav ul li:hover{
-
-    cursor: pointer;
-    border-top: none;
-    border-bottom: 3px blue solid; 
-
-  }
-
-  /* zone de recherche de la ville   */  
-  .localise{
-    top: 85px;
-    display: flex;
-    width: 385px;
-    height: 320px;
-    margin: auto;
-    margin-left: 20px;   
-    font-size: 0.8em;
-    background-color: #FFFFFF;
-    z-index: 4;
-
-    }
-    /* titre de la zone formulaire */
-  .localise .titre-h1{
-    width: 265px;
-    margin-left: 50px;
-    font-size: 1.4em;
-  }
-
-  .localise h1 span .sous-titre{
-    display: flex;
-    width: 200px;
-    font-size: 0.7em;
-    margin-left: 95px;
-    font-weight: normal;
-
-  }
-
-  /* Mise en page zone type search et bouton rechercher*/
-  .choix-premier{
-    margin-left: 35px;
-  }
-  .button {
-    display: none;
-    cursor: pointer; 
-  }
-
-  #gsearch{
-    border: none;
-    height: 30px;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-left: 9px;
-  }
-
-  .choix .fa-search {
+  /* image logo du site*/  
+  header .header img{
     position: absolute;
-    margin-left: 270px;
-    cursor: pointer;
+    top: 5px;    
+    border: 1px white solid;
+    align-items: baseline;
+    height: 30px;
+  }
+
+  /* survol des cellules*/
+  .heb-act-sin li:hover{
+    font-size: 0.71em;
+    padding: 0px 5px 5px 5px;
+    height: 20px;
+    color: blue;
+    text-decoration: none;
+    border-top: none;
+    border-bottom: 2px solid #0065FC; 
+
+  }
+  /* zone de recherche de la ville   */
+  
+  .localise{
+    top: 73px;
+    display: flex;
+    width: 395px;
+    height: 285px;
+
+  }
+
+
+  /* titre h1 et sa suite */
+  .localise h1{
+    top: 0px;
+    width: 75%;
+    margin: auto;
+    font-size: 1.4em;
+    text-align: center;    
+    line-height: 1em;
+  }
+
+  /* Phrase en dessous du titre h1 */
+  .localise p{
+    display: flex;
+    font-size: 0.7em;
+    margin-left: 20px;
+    font-weight: normal;
+    line-height: 0px;
+  }
+  .choix-premier button{
+    display: none;
+  }
+  .choix-premier input{
+    font-size: 0.81em;
+  }
+
+  /* Icone fa-search qui apparait en version mobile */
+  .choix .choix-premier .fa-search{
+    top: -38px;
+    left: 273px;
+    display: flex;
+    position: relative;
+    color: white;
     width: 25px;
-    height: 25px;    
+    height: 25px;
+    padding: 7px 1px 1px 10px;
     background-color: blue;
     border-radius: 10px;
+
+  }
+
+   /*  Mise en page NIveau des filtres d'options */
+   .choix-deuxieme{
+    top: 0px;
+
+    width: 98%;
+    height: 150px;
+    display: table;
+    flex-direction: column;
+   }
+
+  /*  les icones du filtres */
+  .fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{
     display: flex;
-    color: #F2F2F2F2;   
-    top: 95px;
-    padding: 5px 5px 2px 10px;
-    font-size: 1.5em;
-  }
-
-   /*  Mise en page NIveau filtre d'options */
-  .choix-deuxieme{
-    height: 50px;
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #FFFFFF;
-    width: 380px;
-    height: 40px;
-    margin-left: 30px;
-    top: 150px;  
-    font-weight: bold;
-  }
-
-  /*Le titre :filtres */
-  .label-filtre{
-    font-size: 1.1em;
-    margin-left: 15px;
-    margin-right: 10px;
-  }
-
-  /* Recherche de la ville*/
-  .choix-deuxieme .mes-filtres{
-    position: relative;
-    top: -15px;
-    display: block;
-    width: 360px;
-    margin-left: -15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-  }
-
-  
-  .mes-filtres .unit-filtre{
-    display: inline-block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 15px;
-    margin-right: 0px;
-    margin-right: 10px;
-    position: relative;
-  }
-    /* les icones zone de filtres d'option */
-  .fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{  
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    padding-top: 5px;
-    margin-bottom: 14px;  
-    top: -5px;
-    font-size: 15px;
-    color: blue;
-    border: none;   
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: -3px;
     left: 35px;
-    position: absolute;
   }
 
-  /* icone d'information plus de 500 logements */
-  .localise .logement-info p .fa-info{
-    position: relative;
-    font-size: 1em;
-    color: blue;
-    margin-right: 10px; 
-    border-radius: 45%;
-    border: 0.0001em solid gray;
-    padding: 4px 5px 4px 7px; 
-  }
-
-
-  /* icone d'information plus de 500 logements */
-  .localise .logement-info p .fa-info{
-    position: relative;
-    font-size: 1em;
-    color: blue;
-    margin-right: 10px; 
-    border-radius: 45%;
-    border: 0.0001em solid gray;
-    padding: 4px 5px 4px 7px; 
-  }
-
-  /* point d'information sur les logements */
-  .logement-info{
-    position: relative;
+  /* container des filtres d'option*/
+  .choix-deuxieme .mes-filtres{
+    line-height: 0.8em;
+    width: 300px;
+    height: 90px;
     display: flex;
-    top: 70px;
-    font-size: 0.9em;
-    width: 200px;
-    margin-left: 60px;
-    font-weight: normal;
+    flex-direction: row; 
+    flex-wrap: wrap;   
+    margin-top: 2px;
+    margin-left: 0px;  
   }
 
-  /* Pour donner un widh personnalisé à chaque input de la class: filtre-doption */
-  .filtre-doption .option:focus{
-    border: 1px  gray solid;
-    border-radius: 10px;
-    background-color: #DEEBFF;
+  /*chaque filtre */  
+  .mes-filtres .unit-filtre{
+    position: relative;
+    margin-top: 5px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+  }
+  .localise .logement-info{
+    margin-top: -5px;
   }
 
-  
-  /*survol filtre d'option*/
-  .input-filtre:hover{
-    position: absolute;
-    background-color: #DEEBFF;
-    padding-right: 2px;
-    border: 1px  gray solid;
-    border-radius: 10px;  
+  /* icone d'information plus de 500 logements */
+  .localise .logement-info p .fa-info{ 
+    top: -10px;     
   }
-  
 
 
-/* Libelle-droite: Les PLUS POPULAIRES */
+  /*Les plus populaires  */
   .libelle-droite{
     position: relative;
-    max-width: 414px;
-    height: auto;
-    margin-right: 20px;
-    margin-left: 35px;
-    top: 325px;
-    left: 0px;
-    background-color: #F1F1F1;
-    border: none;
-    z-index: 20;
+    width: 350px;
+    height: 460px;
+    margin: auto;
+    top: 330px;
+    left: 30px;
+   
+  }
+
+  /* ===== ICONE de LES PLUS POPULAIRES =====*/
+  .fa-chart-line{  
+    margin-left: 55px;
+  }
+  .cote-droit{
+    margin-left: 35px; 
 
   }
 
-  /* ICONE de LES PLUS POPULAIRES */
-  .fa-chart-line{
-    margin-right: 45px;
-    margin-left: 115px;
-    margin-bottom: 10px;
 
-  }
-
-  /*  Titre h2 libelle de droite  */
+  /*Titre h2 libelle de droite */
   .libelle-droite h2{
-
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    margin-left: 10px;
+    margin-left: 40px;
+    font-size: 18px;
   }
 
-  /*----------réglage de la taille des photos--------------*/
-  .hotel-lpp .imag img{ 
-    object-fit: cover;                     
-    width: 140px;
-    height: 140px;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
+  /* marge de chaque photo et son information en TABLETTE */
+  .cote-droit .hotel-lpp{    
+    margin-bottom: 10px;
   }
 
-  /* Hauteur de chaque photo et son information */
-  .cote-droit .hotel-lpp{
 
+  /* DEBUT HEBERGEMENTS a MARSEILLE   */
+  .heberge{    
+    top: 823px;
     display: flex;
-    flex-direction: row;
-    width: 300px;
-    height: 140px;
-    margin: 0px 5px 5px 25px;  
-    border-radius: 9px;
-    border: 3px white solid;
-
+    margin: auto;
+    width: 390px;
+    height: 1205px;
+    border: none;
+    background-color: #F2F2F2;
   }
 
-  .information-lpp{
-
-    border-bottom-right-radius: 9px;
-  }
-
-
-  /* section Hebergement mobile */
-  .heberge{
-    top: 962px;
-    display: flex;
+  /* Message: Afficher plus */
+  .heberge p strong a{
     position: absolute;
-    flex-direction: column;
-    height: 1260px;  
-    width: 380px;  
-    padding: 0px;
-    margin-left: 25px;
-    z-index: 8;
+    top: 1190px;
+    left: 20px;
+    font-size: 0.71em;
   }
 
-  .container-hebergement-am{
-    position: absolute;
-    top: -35px;
-    width: 385px;
-    margin-left: 15px;
-    background-color: rgb(253,253,253);
-    height: 1170px;
+  /* Container hebergement à marseille */
+  .heberge .container-hebergement-am{
+    left: 0px;
+    width: 380px;
+    height: 1260px;
     display: flex;  
-    flex-direction: column;
-    padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
   }
 
-  /* classe d'un article*/
-  .hebergement-am{
-    position: relative;  
-    height: 200px;  
-    top: 10px;
-    left: -25px;
-    padding-right: 50px;
-    padding-bottom: 15px;
-    border-radius: 6%;
+  /* Un hebergement*/
+  .container-hebergement-am .hebergement-am{
+    display: flex;
+    flex-direction: row;  
+    margin: 0px 2px 10px 50px;
+    padding-bottom: 0px;
+    background-color: #F1F1F1;
+    width: 280px;
+    height: 175px;
+    border: 2px white solid;
   }
 
-  /*titre hebergement à marseille */
-  .heberge h2{
-    top: -15px;
+  /* largeur de l'image */
+  .heb-div-column .imag img{
+    width: 280px;
+  }
+
+
+  /*  notation avec span pour les étoiles grises*/
+  .heb-div-column .notation-am span{
+    font-size: 0.85em;
+    color: gray;
+
+  }
+
+
+  /* section ACTIVITES à MARSEILLE */  
+  .sectio{
     position: absolute;
+    top: 2035px;
+    width: 390px;
+    height: 930px;
+    margin: auto;
+    padding: 0px;
+    margin-left: 0px;
+    display: block;
+    background-color: rgb(251,251,251);
+    z-index: 15;
+  }
+
+  /* titre de la section */  
+  .sectio h2{
     margin-left: 45px;
     font-size: 1.1em;
   }
 
-  /* image des hebergements marseille */
-  .heb-div-column .imag img{
-    object-fit: cover;
-    width: 281px;
-    height: 100px;
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
-  }
-
-  /*info dessous hebergement */
-  .heb-div-column .inf-am{
-    display: block;
-    padding-right: 50px;
-    height: 45px;
-    background-color: rgb(249,249,249);
-  }
-  /* nom de l'hebergement en gras*/
-  .heb-div-column .inf-am span strong{
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  /* ligne cocernant le prix */
-  .heb-div-column .inf-am span{
-    font-size: 0.9em;
-    width: 400px;
-    display: block;
-  }
-
-  /* notation etoiles en dessous hebergement */
-  .heb-div-column .notation-am{
-    display: block;
-    width: 270px;
-    height: 15px;
-    font-size: 0.6em;
-    background-color: rgb(249,249,249);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-
-  .heberge p a{
-    text-decoration: none;
-    font-size: 0.61em;
-    color: #000000;
-  }
-  /* info Afficher plus */
-  .heberge p {
-    position: absolute;  
-    width: 400px;
-    top: 560px;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-left: 20px;
-    color: #000000;
-
-  }
-
-
-
-  /* section ACTIVITES à MARSEILLE */
-  .sectio{
-    position: absolute;
-    top: 2095px;
-    width: 385px;
-    height: 990px;
-    margin: auto;
-    padding: 0px;
-    margin-left: 40px;
-    display: block;
-    background-color: rgb(253,253,253);
-    z-index: 15;
-  }
-
-  /* titre activité à Marseille */
-  .sectio h2{
-    margin-left: 25px;
-    font-size: 1.2em;
-  }
-
-  /* container contenant des articles*/
-  .sectio-hotel{
-    display: flex;
+  .sectio-hotel h5{
+    margin-left: 0px;
+    width: 290px;
   }
 
   /* hotel pour designer les Activités à Marseille et sont numérotés de 1 à 6 */  
   .sectio-hotel, .hotel5, .hotel2, .hotel1, .hotel4, .hotel6, .hotel3{  
+    position: absolute;
     display: flex;
     flex-direction: column;
     left: 30px;
     width: 300px;
-    height: 130px;  
+    height: 90px;  
     border: 0px gray solid;
     border-top: 0px gray solid;
     border-bottom: 2px;
     border-radius: 3%;
   }
+  .imag-am img{
+    width: 270px;
+    height: 80px;
+  }
 
-  /* Mise en format les images: Activités à sur MOBILE*/
-  .hotel6  .imag-am img, .hotel3 .imag-am img, .hotel2, .hotel4, .hotel5, .hotel1, .imag-am img{
+  /* Mise en format les images: Activités à sur MOBILE*/  
+  .hotel6 .imag-am img, .hotel3 .imag-am img, .hotel2 .imag-am img, .hotel4 .imag-am img, .hotel5 .imag-am img, .hotel1 .imag-am img{
     object-fit: cover;
     width: 300px;
     height: 100px;
@@ -1207,105 +1301,99 @@ footer .menu-foot{
     border-top-right-radius: 7%;
   }
 
-  /* information en dessous des activités sur MOBILE*/
-  .info-hotel-activi{
-    width: 260px;
-    height: 20px;
-    font-size: 0.8em;
-    padding-left: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: rgb(246,245,245);
-    border: 0em white solid;    
-    margin-top: -3px;
-    margin-left: 0px;
-    font-weight: bold;
-  }
 
-  /* Emplacement Vieux Port */
+
+  /* Emplacement Vieux Port */  
   .sectio-hotel .hotel6{
-    top: 45px; 
+    top: 5px; 
+    left: 10px;
   }
 
   /* Fort de Pomègues */
-  .hotel5{
+  .sectio-hotel .hotel5{
     position: relative;
-    margin-top: 130px;
-    margin-left: -320px;
+    top: 150px;
+    left: 15px;
   }
 
   /* Iles Frioul */
   .hotel2{
-    top: 365px;
-    left: 25px;
+    top: 295px;
+    left: 15px;
   }
 
   /*Emplacement Parc National des Calanques */
   .hotel3{
-    top: 520px;
-    left: 20px;
+    top: 440px;
+    left: 10px;
   }
 
   /* Emplacement notre Dame de la garde */
   .hotel1{
-    top: 675px;
-    left: 25px;
+    top: 585px;
+    left: 15px;
   }
   /* Emplacement parc Longchamp*/
   .hotel4{
-    top: 830px;
-    left: 25px;    
+    top: 730px;
+    left: 15px;    
   }
+
+
+
 
   /* Partie PIED DE PAGE */
   footer{
     position: absolute;
     display: block;
-    top: 1645px;
-    width: 414px;
-             
+    width: 414px;  
+    top: 1730px;
+    margin-bottom: 10px;
+    z-index: 1000;
   }
-  
-  .menu-foot{
-    display: block;
-    flex-direction: row;
-    width: 375px;
-    height: auto;
-    margin: auto;
-    left: 40px;   
-    padding: 0px 0px 25px 10px; 
-    font-size: 1.1em;
-    background-color: rgb(220,220,220);
-  }
-    
-  .menu-foot .sousfoot{
-    margin-top: 0px;
-    height: auto;
-    width: 90%;
-    font-size: 1.1em;
 
+  
+  footer .menu-foot{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 400px;     
+    background-color: #F2F2F2;
   }
+
+  .sousfoot h3, p{
+    line-height: 0.61em;
+  }
+
+  .menu-foot .sousfoot{
+    line-height: 0px;
+    font-size: 1em;
+    margin-left: 25px;
+    margin-top: 0px;
+    width: 95%;
+  }
+
 
   /* survol cellule pied de page*/
+
   .sousfoot a:hover{
-    font-weight: bold;
-    line-height: 1.1em;
-    font-size: 1.1em;
-    border-left: 4px solid #F3FA;
-    color: blue;
-    margin-left: 5px;
-    cursor: pointer;
+    font-size: 1em;
+    border-left: 2px solid #F3FA;
+    margin-left: 10px;
 
   }
 }
+
 
 /* orientation paysage et portrait sur petits écrans */
 
-  @media (orientation: landscape) {
+@media (orientation: landscape) {
   body {
     flex-direction: row;
   }
+
 }
+
 
 @media (orientation: portrait) {
   body {
