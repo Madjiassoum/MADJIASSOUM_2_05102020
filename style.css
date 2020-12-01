@@ -1031,7 +1031,8 @@ footer .menu-foot{
   }
   
   header nav .heb-act-sin .nav-ul-li-hebergement{
-    margin-left: 0px;
+  	margin-top: 5px;
+    margin-left: -5px;
   }
 
   header .heb-act-sin .nav-ul-li-activite{
@@ -1042,6 +1043,7 @@ footer .menu-foot{
     top: -30px;
     margin-left: -40px;
   }
+
   /* image logo du site*/  
   header .header img{
     position: absolute;
@@ -1110,6 +1112,7 @@ footer .menu-foot{
     padding: 7px 1px 1px 10px;
     background-color: blue;
     border-radius: 10px;
+    cursor: pointer;
 
   }
 
@@ -1127,7 +1130,7 @@ footer .menu-foot{
   .fa-dog, .fa-child, .fa-heart, .fa-money-bill-wave-alt{
     display: flex;
     position: absolute;
-    top: -3px;
+    top: -4px;
     left: 35px;
   }
 
@@ -1163,11 +1166,12 @@ footer .menu-foot{
   /*Les plus populaires  */
   .libelle-droite{
     position: relative;
-    width: 350px;
-    height: 460px;
+    width: 390px;
+    height: 450px;
     margin: auto;
     top: 330px;
-    left: 30px;
+    left: 0px;
+    
    
   }
 
@@ -1195,19 +1199,23 @@ footer .menu-foot{
 
   /* DEBUT HEBERGEMENTS a MARSEILLE   */
   .heberge{    
-    top: 823px;
+    top: 835px;
     display: flex;
     margin: auto;
     width: 390px;
-    height: 1205px;
+    height: 1210px;
     border: none;
     background-color: #F2F2F2;
   }
 
+  .heberge h2{
+  	margin-left: 50px;
+  	font-size: 1.1em;
+  }
   /* Message: Afficher plus */
   .heberge p strong a{
     position: absolute;
-    top: 1190px;
+    top: 1185px;
     left: 20px;
     font-size: 0.71em;
   }
@@ -1227,7 +1235,7 @@ footer .menu-foot{
   .container-hebergement-am .hebergement-am{
     display: flex;
     flex-direction: row;  
-    margin: 0px 2px 10px 50px;
+    margin: 0px 2px 10px 40px;
     padding-bottom: 0px;
     background-color: #F1F1F1;
     width: 280px;
@@ -1368,7 +1376,7 @@ footer .menu-foot{
   .menu-foot .sousfoot{
     line-height: 0px;
     font-size: 1em;
-    margin-left: 25px;
+    margin-left: 40px;
     margin-top: 0px;
     width: 95%;
   }
