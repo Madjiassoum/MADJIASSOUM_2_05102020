@@ -738,12 +738,13 @@ footer .menu-foot{
   /* PHASE: TABLETTE    */
 @media screen and (min-width: 678px) and (max-width: 899px){
   body{
+
     width: 678px;
     height: 1560px;
     margin: auto;
-    margin-right: 0px;
     padding: 0px;
     background-color: white;
+    
   }
 
   /* contenair page en TABLETTE */
@@ -752,8 +753,8 @@ footer .menu-foot{
     display: block;
     width: 678px;
     height: 1555px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 130px;
     padding: 0px;
  
   }
@@ -992,16 +993,16 @@ footer .menu-foot{
     
   }
 
+
   /* contenair page en TABLETTE */
   .contain-page{
 
     display: block;
     width: 400px;
     height: 3345px;
-    margin-left: 150px;
+    margin-left: 130px;
     margin-right: 150px;
-    padding: 0px;
-   
+    padding: 0px;   
   }
 
 
@@ -1022,8 +1023,7 @@ footer .menu-foot{
     margin-left: -10px;
   }  
 
-  nav ul li{
-  
+  nav ul li{  
     font-size: 0.71em;
     height: 20px;
     padding: 0px 3px 5px 3px;
@@ -1116,14 +1116,14 @@ footer .menu-foot{
 
   }
 
-   /*  Mise en page NIveau des filtres d'options */
-   .choix-deuxieme{
+  /*  Mise en page NIveau des filtres d'options */
+  .choix-deuxieme{
     top: 0px;
-
     width: 98%;
     height: 150px;
     display: table;
     flex-direction: column;
+
    }
 
   /*  les icones du filtres */
