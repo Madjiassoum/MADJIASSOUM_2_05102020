@@ -743,7 +743,7 @@ footer .menu-foot{
     height: 1560px;
     margin: auto;
     padding: 0px;
-    background-color: white;
+    background-color: rgb(240,255,255);
     
   }
 
@@ -782,6 +782,7 @@ footer .menu-foot{
     height: 75px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(240,255,255);
    }
 
   /*  les icones du filtres */
@@ -813,7 +814,7 @@ footer .menu-foot{
     position: relative;
     width: 265px;
     height: 490px;
-    top: 175px;
+    top: 180px;
     left: 407px;
     display: flex;
     flex-direction: column;    
@@ -1001,7 +1002,7 @@ footer .menu-foot{
     width: 400px;
     height: 3345px;
     margin-left: 130px;
-    margin-right: 150px;
+    margin-right: 160px;
     padding: 0px;   
   }
 
