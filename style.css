@@ -22,6 +22,10 @@ body{
   box-sizing: border-box;
   
   }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
 
 
 
@@ -369,7 +373,7 @@ nav ul li:hover{
 }
 
 /* Hauteur de chaque photo et son information */
-.cote-droit .hotel-lpp{
+.cote-droit .hotel-lpp a{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -387,9 +391,10 @@ nav ul li:hover{
 .hotel-lpp .name-cite h5{
   font-weight: bold;
   display: inline;
-  font-size: 1em;
-  margin-top: 5px;
-
+  margin-top: 2px;
+}
+.name-cite p{
+  font-size: 0.7em;
 }
 
 /* L'information qui accompagne la photo */
@@ -397,7 +402,7 @@ nav ul li:hover{
   display: inline-block;    
   width: 108px;
   height: 110px;
-  line-height: 15px;
+  line-height: 10px;
   padding: 5px 20px 0px 10px;
   margin-top: -1px;
   background-color: white;
@@ -410,7 +415,7 @@ nav ul li:hover{
 /* espace créé entre les etoiles et le nom du site */
 .white-space{
   width: 100px;
-  height: 17px; 
+  height: 20px; 
 }
 
 .notation-lpp{
@@ -831,8 +836,8 @@ footer .menu-foot{
   }
 
   /* marge de chaque photo et son information en TABLETTE */
-  .cote-droit .hotel-lpp{
-    margin: auto; 
+  .cote-droit .hotel-lpp a{
+    margin: auto;
     margin-bottom: 30px;
   }
 
@@ -987,23 +992,23 @@ footer .menu-foot{
 /*Les mobiles */
 @media screen and (max-width: 677px){
   body{
-    width: 414px;
-    height: 3350px;
+    max-width: 414px;
+    height: 3350px;    
     margin: auto;
-    padding: 0px;
+    
     
   }
 
 
-  /* contenair page en TABLETTE */
+  /* contenair page en mobile */
   .contain-page{
-
+    position: absolute;
     display: block;
-    width: 400px;
+    width: 414px;
     height: 3345px;
-    margin-left: 130px;
-    margin-right: 160px;
-    padding: 0px;   
+    margin-left: 300px;
+    margin-right: 100px; 
+     
   }
 
 
@@ -1048,7 +1053,8 @@ footer .menu-foot{
   /* image logo du site*/  
   header .header img{
     position: absolute;
-    top: 5px;    
+    top: 5px; 
+    margin-left: 20px;   
     border: 1px white solid;
     align-items: baseline;
     height: 30px;
@@ -1120,6 +1126,7 @@ footer .menu-foot{
   /*  Mise en page NIveau des filtres d'options */
   .choix-deuxieme{
     top: 0px;
+    margin-left: 20px;
     width: 98%;
     height: 150px;
     display: table;
