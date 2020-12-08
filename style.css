@@ -743,14 +743,19 @@ footer .menu-foot{
   /* PHASE: TABLETTE    */
 @media screen and (min-width: 678px) and (max-width: 899px){
   body{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 678px;
     height: 1560px;
-    margin: auto;
+    margin: auto; 
+    margin-left: -50px;
+    margin-right: -350px;
     padding: 0px;
-    background-color: rgb(240,255,255);
+    background-color: rgb(240,255,253);
     
   }
+
 
   /* contenair page en TABLETTE */
   .contain-page{
@@ -758,8 +763,8 @@ footer .menu-foot{
     display: block;
     width: 678px;
     height: 1555px;
-    margin-left: 50px;
-    margin-right: 130px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px;
  
   }
@@ -819,7 +824,7 @@ footer .menu-foot{
     position: relative;
     width: 265px;
     height: 490px;
-    top: 180px;
+    top: 177px;
     left: 407px;
     display: flex;
     flex-direction: column;    
@@ -992,9 +997,14 @@ footer .menu-foot{
 /*Les mobiles */
 @media screen and (max-width: 677px){
   body{
-    max-width: 414px;
-    height: 3350px;    
-    margin: auto;
+    height: 3350px; 
+    width: 414px;   
+    margin-left: -390px;
+    margin-right: -450px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     
   }
@@ -1002,12 +1012,12 @@ footer .menu-foot{
 
   /* contenair page en mobile */
   .contain-page{
-    position: absolute;
+    
     display: block;
-    width: 414px;
-    height: 3345px;
-    margin-left: 300px;
-    margin-right: 100px; 
+    width: 114px;
+    height: 3345px;  
+    margin-left: 10px; 
+    margin-right: -40px;
      
   }
 
