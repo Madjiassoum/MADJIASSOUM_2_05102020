@@ -1,10 +1,10 @@
 body{  
-  background-color: white;
+  background-color: #FFFFFF;
   display: block;
   height: auto;
   margin: auto;
   padding: 0px;
-  min-width: 900px;
+  max-width: 1440px;
   height: 1390px;
 }
 
@@ -12,7 +12,7 @@ body{
 
 .contain-page{  
   display: block;
-  width: 900px;
+  width: 950px;
   height: 1388px;
   margin-left: auto;
   margin-right: auto;
@@ -213,7 +213,7 @@ nav ul li:hover{
   flex-wrap: wrap;
   align-items: center;
   background-color: #FFFFFF;
-  width: 990px;
+  width: 940px;
   height: 50px;
   margin-left: 5px;
   top: 150px;  
@@ -741,53 +741,54 @@ footer .menu-foot{
 
 
   /* PHASE: TABLETTE    */
-@media screen and (min-width: 678px) and (max-width: 899px){
+@media screen and (min-width: 678px) and (max-width: 949px){
   body {
     background-color: #FFFFFF;
     height: auto;
     margin: auto;
+   display: flex;
     padding: 0px;
+
     /*
     min-width: 678px;*/
     }
+    .contain-page{  
+      min-width: 678px;
+      height: 1650px;  
+      display: inline-block;
+      margin-left: 5%;
+      margin-right: -5%;
+    }
 
-  /* contenair page en TABLETTE */
-  .contain-page {
-    display: block;  
-    align-items: center;
-    justify-content: center;     
-    height: 1555px;
-    min-width: 678px;
-    max-width: 899px; 
-    margin-left: 10%;
-    margin-right: auto;
-    padding: 0px;
-
+    header{
+      position: absolute;
+      top: 5px;
+      width: 100%;
+      display: flex;
+    }
+    
+    header .header nav .heb-act-sin{
+      background-color: gray;
+      border: 1px gray solid;
+    }
+    
+  header .header{
+    width: 149px;
+    top: 5px;
+    margin-left: 30px;
+  }
+  header nav{
+    display: flex;
+    margin-left: -35%;
   }
 
- 
-  /* Menu de navigation */
-  nav ul{
-    margin-left: 100px;
-  }
-
-  /* zone de recherche de la ville   */
-  .localise{
-    width: 674px;
-    height: 185px;
-  }
-
-  /* icone cachée pour le mobile*/  
-  .choix-premier .fa-map-marker-alt{
-    margin-right: -10px;
-    margin-left: 10px;
-  }
 
    /*  Mise en page NIveau des filtres d'options */
    .choix-deuxieme{
-    width: 98%;
+    width: 80%;
     height: 75px;
     display: flex;
+    margin-left: 20px;
     flex-direction: column;
     background-color: #FFFFFF;
    }
@@ -805,7 +806,7 @@ footer .menu-foot{
     margin-left: -80px;  
   }
 
-  /*chaque filtre */  
+  /*chaque filtre */
   .mes-filtres .unit-filtre{
     margin-right: 1px;
   }
@@ -818,12 +819,12 @@ footer .menu-foot{
 
   /*Les plus populaires  */
   .libelle-droite{
-    position: relative;
-    width: 265px;
-    height: 490px;
-    top: 177px;
-    left: 407px;
-    display: flex;
+  
+    width: 275px;
+    height: 530px;
+    top: 270px;
+    left: 63%;
+    display: inline-flex;
     flex-direction: column;    
   }
 
@@ -840,17 +841,18 @@ footer .menu-foot{
   /* marge de chaque photo et son information en TABLETTE */
   .cote-droit .hotel-lpp a{
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
 
   /* DEBUT HEBERGEMENTS a MARSEILLE   */
-  .heberge{    
-    top: 260px;
-    display: flex;
-    margin: auto;
-    width: 402px;
-    height: 600px;
+  .heberge{ 
+    position: absolute;
+    top: 270px;
+    display: inline-flex;
+    left: 7%;
+    width: 495px;
+    height: 680px;
     border: none;
     background-color: #F2F2F2;
 
@@ -859,7 +861,7 @@ footer .menu-foot{
   /* Message: Afficher plus */
   .heberge p strong a{
     position: absolute;
-    top: 580px;
+    top: 640px;
     margin-left: 13px;
     font-size: 0.71em;
   }
@@ -867,21 +869,25 @@ footer .menu-foot{
 
   /* Container hebergement à marseille */
   .heberge .container-hebergement-am{
-    left: 0px;
-    width: 390px;
-    height: 583px;
+    margin-left: 3%;
+    width: 465px;
+    height: 575px;
     display: flex;  
     flex-direction: row;
     flex-wrap: wrap;
-   
+    
   }
 
   /* Un hebergement*/
   .container-hebergement-am .hebergement-am{
     display: flex;
-    flex-direction: row;  
-    margin: 0px 2px 2px 0px;
-    padding-bottom: 0px;
+    flex-direction: row;
+    margin-right: 7%;
+    /*
+  
+    
+    margin: 0px 45px 2px 0px;*/
+    margin-bottom: 5%;
     background-color: #F1F1F1;
     width: 189px;
     height: 168px;
@@ -893,35 +899,28 @@ footer .menu-foot{
     font-size: 0.85em;
   }
 
-  /*  notation avec span pour les étoiles grises*/
-  .heb-div-column .notation-am span{
-    font-size: 0.85em;
-    color: gray;
-  }
-
-
   /*  SECTION Acitvités à Marseille   */
   .sectio{
-    position: absolute;
-    display: flex;
+    display: block;
     margin: auto;
-    top: 863px;
-    width: 674px;
+    justify-content: center;
+    top: 960px;
+    width: 100%;
     height: 570px;
-    background-color: rgb(250,250,248);
+    background-color: rgb(250,250,240);
 
   }
 
   /* titre de la section */
   .sectio h2{
-    margin-left: 10px;
+    margin-left: 35px;
     font-size: 1.2em;
   }
 
 
   /*Vieux port et parc nat calanques*/
   .sectio .hotel6, .hotel3{  
-    left: 10px;
+    left: 7%;
     height: 300px;
   }
 
@@ -933,53 +932,50 @@ footer .menu-foot{
 
   /* margin parc national dess calanques*/
   .hotel3{
-    left: 450px;
+    left: 68%;
   }
 
   /* Iles frioul */
   .hotel2{
     top: 270px;
-    left: 235px;
+    left: 38%;
   }
 
   /* Fort de pomegues */
    .sectio .hotel5{
     top: 75px;
-    left: 235px;
+    left: 38%;
   } 
 
   /* notre dame */
   .hotel1{
     top: 405px;
-    left: 120px;
+    left: 20%;
   }
 
   /*parc lonchamps */
   .hotel4 {
     top: 405px;
-    left: 350px;
+    left: 50%;
   }
 
   /* MISE EN PAGE du PIED de PAGE
           container des sousfoot */
-  footer .menu-foot{
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: row;
-    top: 1435px;
-    width: 674px;
-    height: 120px;  
-    margin: auto;
-  }
 
-  .sousfoot{
+  footer .menu-foot {
+    position: absolute;
     display: block;
-    flex-direction: column;
-    font-size: 0.7em;   
+    top: 1550px;
+    width: 768px;
+    height: auto;
+    margin-left: 0px;
+  
   }
-
-  .menu-foot .sousfoot a{
-    display: block;
+  .menu-foot .sousfoot{
+    margin-right: 5px;
+    width: 30%;
+    padding: 0px;
+  
   }
 
   .sousfoot a:hover{  
@@ -996,6 +992,7 @@ footer .menu-foot{
   body {
     background-color: #FFFFFF;
     height: 3395px;
+    max-width: 677px;
     margin: auto;
     margin-left: 10%;
     margin-right: -20%;
@@ -1005,7 +1002,7 @@ footer .menu-foot{
 
   /* contenair page en TABLETTE */
   .contain-page{
-    display: table;    
+    display: flex;    
     width: 414px; 
     height: 3390px;
     margin-left: 0px;
@@ -1016,7 +1013,9 @@ footer .menu-foot{
 
 
   header{
+
     position: absolute;
+    top: 0px;
     height: 65px;
     background-color: white;
     border-bottom: 0.001px solid #F1F1F1;
@@ -1041,7 +1040,7 @@ footer .menu-foot{
   }
   
   header nav .heb-act-sin .nav-ul-li-hebergement{
-  	margin-top: 5px;
+    margin-top: 5px;
     margin-left: -5px;
   }
 
@@ -1178,12 +1177,12 @@ footer .menu-foot{
   /*Les plus populaires  */
   .libelle-droite{
     position: relative;
+    display: flex;
     width: 395px;
     height: 465px;
     margin: auto;
-    top: 400px;
-    left: 5px;
-    
+    margin-top: 225px;
+    left: 5px;  
    
   }
 
@@ -1215,14 +1214,14 @@ footer .menu-foot{
     display: flex;
     margin: auto;
     width: 390px;
-    height: 1210px;
+    height: 1215px;
     border: none;
     background-color: #F2F2F2;
   }
 
   .heberge h2{
-  	margin-left: 50px;
-  	font-size: 1.1em;
+    margin-left: 50px;
+    font-size: 1.1em;
   }
   /* Message: Afficher plus */
   .heberge p strong a{
@@ -1272,7 +1271,7 @@ footer .menu-foot{
   /* section ACTIVITES à MARSEILLE */  
   .sectio{
     position: absolute;
-    top: 2070px;
+    top: 2075px;
     width: 390px;
     height: 930px;
     margin: auto;
@@ -1367,7 +1366,8 @@ footer .menu-foot{
     position: absolute;
     display: block;
     width: 414px;  
-    top: 1750px;
+    top: 1765px;
+    margin-left: 20px;
     margin-bottom: 10px;
     z-index: 1000;
   }
