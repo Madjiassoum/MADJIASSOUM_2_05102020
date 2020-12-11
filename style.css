@@ -742,33 +742,30 @@ footer .menu-foot{
 
   /* PHASE: TABLETTE    */
 @media screen and (min-width: 678px) and (max-width: 899px){
-  body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 678px;
-    height: 1560px;
-    margin: auto; 
-    margin-left: -50px;
-    margin-right: -350px;
+  body {
+    background-color: #FFFFFF;
+    height: auto;
+    margin: auto;
     padding: 0px;
-    background-color: rgb(240,255,253);
-    
-  }
-
+    /*
+    min-width: 678px;*/
+    }
 
   /* contenair page en TABLETTE */
-  .contain-page{
-
-    display: block;
-    width: 678px;
+  .contain-page {
+    display: block;  
+    align-items: center;
+    justify-content: center;     
     height: 1555px;
-    margin-left: auto;
+    min-width: 678px;
+    max-width: 899px; 
+    margin-left: 10%;
     margin-right: auto;
     padding: 0px;
- 
+
   }
 
+ 
   /* Menu de navigation */
   nav ul{
     margin-left: 100px;
@@ -792,7 +789,7 @@ footer .menu-foot{
     height: 75px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(240,255,255);
+    background-color: #FFFFFF;
    }
 
   /*  les icones du filtres */
@@ -994,40 +991,36 @@ footer .menu-foot{
 
 
 
-/*Les mobiles */
+/*Les mobiles taille ecran 414px */
 @media screen and (max-width: 677px){
-  body{
-    height: 3350px; 
-    width: 414px; 
-    margin: auto;  
-    margin-left: -390px;
-    margin-right: -450px;
+  body {
+    background-color: #FFFFFF;
+    height: 3395px;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: -20%;
     padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-  }
+  
+    }
 
-
-  /* contenair page en mobile */
+  /* contenair page en TABLETTE */
   .contain-page{
+    display: table;    
+    width: 414px; 
+    height: 3390px;
+    margin-left: 0px;
+    margin-right: auto;
+  
     
-    display: block;
-    width: 114px;
-    height: 3345px;  
-    margin-left: 10px; 
-    margin-right: -40px;
-     
   }
 
 
   header{
+    position: absolute;
     height: 65px;
     background-color: white;
     border-bottom: 0.001px solid #F1F1F1;
-    width: auto;
+    width: 400px;
   }
 
   /* positionnement menu de navigation */
@@ -1137,7 +1130,7 @@ footer .menu-foot{
   /*  Mise en page NIveau des filtres d'options */
   .choix-deuxieme{
     top: 0px;
-    margin-left: 20px;
+    margin-left: 5px;
     width: 98%;
     height: 150px;
     display: table;
@@ -1178,18 +1171,18 @@ footer .menu-foot{
 
   /* icone d'information plus de 500 logements */
   .localise .logement-info p .fa-info{ 
-    top: -10px;     
+    top: -8px;     
   }
 
 
   /*Les plus populaires  */
   .libelle-droite{
     position: relative;
-    width: 390px;
-    height: 450px;
+    width: 395px;
+    height: 465px;
     margin: auto;
-    top: 330px;
-    left: 0px;
+    top: 400px;
+    left: 5px;
     
    
   }
@@ -1218,7 +1211,7 @@ footer .menu-foot{
 
   /* DEBUT HEBERGEMENTS a MARSEILLE   */
   .heberge{    
-    top: 845px;
+    top: 875px;
     display: flex;
     margin: auto;
     width: 390px;
@@ -1279,7 +1272,7 @@ footer .menu-foot{
   /* section ACTIVITES à MARSEILLE */  
   .sectio{
     position: absolute;
-    top: 2045px;
+    top: 2070px;
     width: 390px;
     height: 930px;
     margin: auto;
@@ -1374,7 +1367,7 @@ footer .menu-foot{
     position: absolute;
     display: block;
     width: 414px;  
-    top: 1735px;
+    top: 1750px;
     margin-bottom: 10px;
     z-index: 1000;
   }
@@ -1410,6 +1403,7 @@ footer .menu-foot{
 
   }
 }
+
 
 
 /* orientation paysage et portrait sur petits écrans */
