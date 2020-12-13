@@ -15,7 +15,6 @@ body{
   width: 950px;
   height: 1388px;
   margin: 0 auto;
-
   justify-content: center;
   align-items: center;
   top: 5px; 
@@ -741,27 +740,28 @@ footer .menu-foot{
  
 
   /* PHASE: TABLETTE    */
-@media screen and (min-width: 678px) and (max-width: 949px){
+@media screen and (min-width: 678px) and (max-width: 849px){
   body {
+    max-width: 949px;
     background-color: #FFF;
     height: auto;
-    text-align: center;    
-    margin: 0 auto;
+    margin: auto;
     padding: 0px;
 
   }
 
   .contain-page{   
-    display: inline; 
+    display: inline-block; 
     margin: 0 auto;
-    height: 1950px;  
+    height: 1950px;
+    width: 100%;  
   }
 
   header{
     position: absolute;
     top: 5px;
-    width: 100%;
-    display: flex;
+    width: 149px;
+    
   }
   
   header .header{
@@ -772,15 +772,13 @@ footer .menu-foot{
   header nav .heb-act-sin{
     position: relative;
     display: inline-flex;
-
     margin-left: 0px;
   }
 
 
    /*  Mise en page NIveau des filtres d'options */
   .localise{
-    left: 20px;
-    display: flex;
+    width: 800px;
    }
   .choix-premier{
     display: inline;
@@ -790,7 +788,7 @@ footer .menu-foot{
     width: 80%;
     height: 75px;
     display: inline-block;
-    margin-left: 0%;
+    margin-left: 20px;
     flex-direction: column;
     background-color: #FFF;
   }
